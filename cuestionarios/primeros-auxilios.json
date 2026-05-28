@@ -1,0 +1,311 @@
+{
+  "subject": {
+    "id": "primeros-auxilios",
+    "name": "Primera Ayuda / Primeros Auxilios",
+    "teacher": "Od. Pamela Vera G."
+  },
+  "exam": {
+    "title": "Cuestionario de Examen — Primeros Auxilios",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "basic-concepts",
+      "name": "Conceptos básicos y actuación inicial",
+      "description": "Pasos previos al socorro, seguridad de la escena y actitud del rescatista.",
+      "questions": [
+        {
+          "id": "pa-bc-001",
+          "question": "¿Cuál es el orden correcto para atender una emergencia?",
+          "options": [
+            { "id": "a", "text": "Aire, boca, circulación" },
+            { "id": "b", "text": "Proteger, avisar y socorrer" },
+            { "id": "c", "text": "Presión, pulso, respiración" },
+            { "id": "d", "text": "Aire, tiempo y movimiento" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La conducta PAS (Proteger, Avisar, Socorrer) es la secuencia universal: primero proteger la escena para no convertirse en otra víctima, luego avisar a los servicios de emergencia (912) y, por último, socorrer al accidentado. Atender sin asegurar la escena puede generar más víctimas.",
+          "source": "materias/primeros-auxilios/2026-05-05_introduccion-primeros-auxilios.md"
+        },
+        {
+          "id": "pa-bc-002",
+          "question": "¿Qué es lo primero que se debe hacer al llegar donde ocurrió un accidente?",
+          "options": [
+            { "id": "a", "text": "Dar respiración boca a boca" },
+            { "id": "b", "text": "Llamar a los bomberos" },
+            { "id": "c", "text": "Revisar que el lugar sea seguro antes de acercarse" },
+            { "id": "d", "text": "Tomar el pulso a la víctima" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Antes de tocar a la víctima hay que evaluar la escena: cables de alta tensión, tránsito, sustancias tóxicas, fuego o gases inodoros. La docente insistió en que un rescatista herido deja de ser rescatista y suma una víctima más. Solo cuando el lugar es seguro se procede a auxiliar.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-bc-003",
+          "question": "Verdadero o falso: Estar tranquilo ayuda al rescatista a tomar mejores decisiones en una emergencia.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La calma del rescatista permite priorizar correctamente (PAS, niveles de emergencia, decisión de aplicar o no RCP) y comunicar información precisa al 912. El pánico empuja a intervenciones precipitadas como mover a un herido con sospecha de lesión cervical, lo que puede agravar el cuadro.",
+          "source": "materias/primeros-auxilios/2026-05-05_introduccion-primeros-auxilios.md"
+        }
+      ]
+    },
+    {
+      "id": "vital-signs",
+      "name": "Signos vitales",
+      "description": "Valores normales y factores que alteran pulso, respiración, temperatura y presión arterial.",
+      "questions": [
+        {
+          "id": "pa-vs-001",
+          "question": "¿A partir de qué temperatura se dice que una persona tiene fiebre?",
+          "options": [
+            { "id": "a", "text": "36 °C" },
+            { "id": "b", "text": "37.5 °C" },
+            { "id": "c", "text": "35 °C" },
+            { "id": "d", "text": "39 °C" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La temperatura corporal normal de un adulto se ubica entre 36.5 y 37.5 °C. Por encima de 37.5 °C se considera fiebre, una señal de que el cuerpo está combatiendo una infección. Valores muy altos pueden derivar en convulsiones, por eso se monitorea.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-vs-002",
+          "question": "¿Cuántas veces por minuto late el corazón de una persona adulta sana en reposo?",
+          "options": [
+            { "id": "a", "text": "Entre 15 y 20 veces" },
+            { "id": "b", "text": "Entre 60 y 100 veces" },
+            { "id": "c", "text": "Entre 40 y 60 veces" },
+            { "id": "d", "text": "Entre 100 y 120 veces" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El rango normal de frecuencia cardíaca en un adulto en reposo es de 60 a 100 latidos por minuto. Por encima se denomina taquicardia (riesgo de paro si es sostenida) y por debajo bradicardia, frecuente en pacientes con pérdida de sangre.",
+          "source": "materias/primeros-auxilios/2026-05-05_introduccion-primeros-auxilios.md"
+        },
+        {
+          "id": "pa-vs-003",
+          "question": "¿Cuáles son los factores que afectan a los signos vitales?",
+          "options": [
+            { "id": "a", "text": "Solo la edad y el género del paciente" },
+            { "id": "b", "text": "Únicamente las enfermedades graves y medicamentos fuertes" },
+            { "id": "c", "text": "El ejercicio, el estrés, la temperatura ambiental, la edad y el estado emocional" },
+            { "id": "d", "text": "Ningún factor externo altera los signos vitales, ya que son constantes fisiológicas" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Los signos vitales no son constantes fijas: cambian con la edad, el sexo, la actividad física, la temperatura ambiental y muy especialmente con el estrés y el estado emocional. La docente remarcó que el estrés es el factor más determinante para el desarrollo de enfermedades.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-vs-004",
+          "question": "¿Para qué sirve medir la frecuencia cardíaca?",
+          "options": [
+            { "id": "a", "text": "Para saber si los riñones están funcionando bien" },
+            { "id": "b", "text": "Para saber si el corazón está latiendo bien" },
+            { "id": "c", "text": "Para detectar si tiene fiebre" },
+            { "id": "d", "text": "Para medir la presión arterial" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La frecuencia cardíaca mide cuántas veces late el corazón por minuto y permite evaluar su funcionamiento. Sirve para diagnóstico, seguimiento de tratamientos y detección temprana de alteraciones como taquicardia o bradicardia. Fiebre y presión arterial se miden con otros instrumentos.",
+          "source": "materias/primeros-auxilios/2026-05-05_introduccion-primeros-auxilios.md"
+        },
+        {
+          "id": "pa-vs-005",
+          "question": "¿Cuál es la presión arterial normal de una persona adulta sana?",
+          "options": [
+            { "id": "a", "text": "80/40 mmHg" },
+            { "id": "b", "text": "100/60 mmHg" },
+            { "id": "c", "text": "120/80 mmHg" },
+            { "id": "d", "text": "140/90 mmHg" }
+          ],
+          "correct_answer": "c",
+          "explanation": "El valor de referencia para un adulto sano es 120/80 mmHg: 120 corresponde a la presión sistólica (contracción cardíaca) y 80 a la diastólica (llenado). Por debajo de 90/60 se considera hipotensión y por encima de 140 de sistólica, hipertensión.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-vs-006",
+          "question": "¿Cuántas veces por minuto respira normalmente una persona adulta?",
+          "options": [
+            { "id": "a", "text": "Entre 8 y 12 veces" },
+            { "id": "b", "text": "Entre 12 y 20 veces" },
+            { "id": "c", "text": "Entre 20 y 30 veces" },
+            { "id": "d", "text": "Entre 30 y 40 veces" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Un adulto sano respira entre 12 y 20 veces por minuto. Cada ciclo es una inhalación más una exhalación. Por encima de 20 se denomina taquipnea (paciente agitado o en shock) y por debajo de 12, bradipnea (posible obstrucción de vías respiratorias).",
+          "source": "materias/primeros-auxilios/2026-05-05_introduccion-primeros-auxilios.md"
+        }
+      ]
+    },
+    {
+      "id": "reflexes",
+      "name": "Reflejos y evaluación neurológica",
+      "description": "Reflejos como indicadores del estado del sistema nervioso, en particular la respuesta pupilar a la luz.",
+      "questions": [
+        {
+          "id": "pa-rf-001",
+          "question": "¿Qué reflejo se revisa para detectar si hay daño en el sistema nervioso de un accidentado?",
+          "options": [
+            { "id": "a", "text": "El reflejo de la rodilla" },
+            { "id": "b", "text": "El reflejo de parpadeo" },
+            { "id": "c", "text": "El reflejo de la pupila a la luz" },
+            { "id": "d", "text": "El reflejo del talón" }
+          ],
+          "correct_answer": "c",
+          "explanation": "El reflejo pupilar es el indicador más útil en primeros auxilios. Al alumbrar el ojo, la pupila debe contraerse; al retirar la luz, debe dilatarse. Si no responde, o si las pupilas tienen tamaños distintos, se sospecha daño neurológico grave o herida craneoencefálica, y al paciente no se lo debe mover.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-rf-002",
+          "question": "Verdadero o falso: Evaluar los reflejos ayuda a ver si el sistema nervioso está funcionando.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los reflejos son respuestas involuntarias mediadas por el sistema nervioso. Evaluarlos (rotuliano, aquiles, pupilar) aporta información sobre su integridad. Eso sí, la docente aclaró que los reflejos por sí solos no confirman vida, ya que pueden registrarse residualmente incluso en cadáveres.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-rf-003",
+          "question": "¿Los reflejos del cuerpo son movimientos que ocurren de manera voluntaria o involuntaria?",
+          "options": [
+            { "id": "a", "text": "Voluntaria" },
+            { "id": "b", "text": "Involuntaria" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Por definición, un reflejo es una respuesta involuntaria del organismo ante un estímulo externo. No requiere decisión consciente: el golpe en el tendón rotuliano provoca la extensión de la pierna sin que la persona lo piense.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        }
+      ]
+    },
+    {
+      "id": "shock",
+      "name": "Shock",
+      "description": "Reconocimiento y manejo inicial del estado de shock.",
+      "questions": [
+        {
+          "id": "pa-sh-001",
+          "question": "¿Cuándo ocurre el shock?",
+          "options": [
+            { "id": "a", "text": "Cuando la temperatura del cuerpo sube mucho" },
+            { "id": "b", "text": "Cuando la sangre no llega bien a los órganos del cuerpo" },
+            { "id": "c", "text": "Cuando hay demasiada azúcar en la sangre" },
+            { "id": "d", "text": "Cuando la persona respira demasiado rápido" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El shock es una falla circulatoria aguda: la sangre y el oxígeno no llegan adecuadamente a los órganos, lo que puede derivar en fallo multiorgánico. Las causas son variadas (hemorragia, sepsis, reacción alérgica, daño neurológico), pero el denominador común es la mala perfusión.",
+          "source": "materias/primeros-auxilios/2026-05-14_shock-heridas-insolacion.md"
+        },
+        {
+          "id": "pa-sh-002",
+          "question": "Verdadero o falso: Una persona en shock puede perder el conocimiento.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Al disminuir el flujo sanguíneo al cerebro, el paciente puede pasar de la desorientación a la pérdida de conciencia. Por eso una de las prioridades en el manejo inicial es mantenerlo consciente, acostado y comunicándose, hasta que lleguen los servicios de emergencia.",
+          "source": "materias/primeros-auxilios/2026-05-14_shock-heridas-insolacion.md"
+        },
+        {
+          "id": "pa-sh-003",
+          "question": "Verdadero o falso: Un pulso débil puede ser señal de que la persona está en estado de shock.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "En el shock, el corazón bombea menos volumen útil de sangre, por eso el pulso se percibe débil y rápido. Acompaña a otros signos típicos: piel pálida, fría y sudorosa, respiración superficial y pupilas dilatadas.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-sh-004",
+          "question": "¿Cuál de estas señales indica que una persona puede estar en estado de shock?",
+          "options": [
+            { "id": "a", "text": "Piel caliente y seca" },
+            { "id": "b", "text": "Pulso lento y fuerte" },
+            { "id": "c", "text": "Piel fría y sudorosa" },
+            { "id": "d", "text": "Temperatura corporal alta" }
+          ],
+          "correct_answer": "c",
+          "explanation": "La piel fría y sudorosa es uno de los signos clásicos del shock: el organismo redirige la sangre hacia órganos vitales y deja la piel mal perfundida. Se combina con palidez, pulso débil y rápido, respiración superficial y pupilas dilatadas.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        }
+      ]
+    },
+    {
+      "id": "wounds-trauma",
+      "name": "Heridas y traumatismos",
+      "description": "Manejo de fracturas de cráneo y fracturas abiertas en el sitio del accidente.",
+      "questions": [
+        {
+          "id": "pa-wt-001",
+          "question": "Si se sospecha que una persona tiene fractura en el cráneo, ¿qué se debe hacer?",
+          "options": [
+            { "id": "a", "text": "Moverlo para mejorar la vía aérea" },
+            { "id": "b", "text": "Presionar la herida para parar el sangrado" },
+            { "id": "c", "text": "No moverlo y llamar a los servicios de emergencia de inmediato" },
+            { "id": "d", "text": "Darle un calmante para el dolor" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Ante una sospecha de fractura craneoencefálica no se debe mover al paciente: cualquier desplazamiento puede provocar hemorragia o inflamación cerebral y dejarlo con secuelas permanentes. Tampoco se presiona directamente la herida (puede haber fragmentos óseos) ni se administran medicamentos. Lo único correcto es activar el 912 y esperar personal especializado.",
+          "source": "materias/primeros-auxilios/2026-05-07_signos-vitales-reflejos.md"
+        },
+        {
+          "id": "pa-wt-002",
+          "question": "¿Cuál es la actuación correcta ante una fractura abierta en primeros auxilios?",
+          "options": [
+            { "id": "a", "text": "Introducir con cuidado el fragmento óseo expuesto dentro de la herida para evitar infecciones" },
+            { "id": "b", "text": "Lavar la herida con alcohol puro, aplicar pomada antibiótica y masajear la zona" },
+            { "id": "c", "text": "Controlar la hemorragia mediante presión, cubrir la herida con apósitos estériles húmedos e inmovilizar el miembro en la posición en que se encuentra" },
+            { "id": "d", "text": "Retirar los fragmentos óseos visibles y vendar fuertemente la herida" }
+          ],
+          "correct_answer": "c",
+          "explanation": "En una fractura abierta nunca se manipula el hueso ni se aplican alcohol, pomadas o masajes. El protocolo es controlar la hemorragia con presión, cubrir la herida con apósitos estériles e inmovilizar el miembro en la posición en que quedó, hasta el traslado. La docente lo confirmó en el repaso del 26 de mayo: presión sin torniquete y apósito estéril si está disponible.",
+          "source": "raw/transcripciones-mejoradas/2026-05-26_primeros-auxilios_mordeduras-serpientes-repaso-examen.md"
+        }
+      ]
+    },
+    {
+      "id": "poisoning",
+      "name": "Intoxicaciones",
+      "description": "Cuándo NO inducir el vómito y manejo de derivados del petróleo.",
+      "questions": [
+        {
+          "id": "pa-po-001",
+          "question": "Verdadero o falso: Si alguien tomó por accidente gasolina, se le debe provocar el vómito como medida de primer auxilio.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La gasolina es un derivado del petróleo, igual que el cloro y los ácidos de limpieza. Al regresar por el esófago vuelven a quemar las mucosas y pueden pasar a la vía respiratoria, causando neumonía química. La conducta correcta es diluir con abundante agua helada y trasladar a emergencias, nunca inducir el vómito.",
+          "source": "materias/primeros-auxilios/2026-05-12_intoxicaciones-asfixia.md"
+        }
+      ]
+    },
+    {
+      "id": "snake-bites",
+      "name": "Mordeduras de serpientes",
+      "description": "Atención inmediata frente a la mordedura de una serpiente venenosa.",
+      "questions": [
+        {
+          "id": "pa-sb-001",
+          "question": "¿Qué se debe hacer si una serpiente muerde a una persona?",
+          "options": [
+            { "id": "a", "text": "Poner hielo, hacer un corte y sacar el veneno chupando" },
+            { "id": "b", "text": "Poner un torniquete muy apretado y levantar el brazo" },
+            { "id": "c", "text": "Mantenerla quieta, inmovilizar la parte afectada y llevarla al centro de salud para el antídoto" },
+            { "id": "d", "text": "Darle una pastilla para el dolor y esperar en casa" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Lo que define el pronóstico es llegar rápido al antídoto. Mientras tanto, se mantiene a la persona en reposo y se inmoviliza el miembro afectado para enlentecer la circulación del veneno. Succionar, cortar la herida o aplicar torniquete apretado son prácticas desaconsejadas: dañan tejido, comprometen al rescatista y pueden derivar en amputación.",
+          "source": "raw/transcripciones-mejoradas/2026-05-26_primeros-auxilios_mordeduras-serpientes-repaso-examen.md"
+        }
+      ]
+    }
+  ]
+}

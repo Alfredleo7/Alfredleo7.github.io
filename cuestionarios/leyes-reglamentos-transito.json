@@ -1,0 +1,527 @@
+{
+  "subject": {
+    "id": "leyes-reglamentos-transito",
+    "name": "Leyes y Reglamentos de Tránsito",
+    "teacher": "Ab. Kevin Estrella"
+  },
+  "exam": {
+    "title": "Cuestionario Final Tercer Crédito — Ley y Reglamento de Tránsito",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "legal-framework",
+      "name": "Marco normativo y conceptos generales",
+      "description": "Cuerpo legal aplicable, definiciones de contravención y unidad de medida del alcohol en sangre.",
+      "questions": [
+        {
+          "id": "lr-lf-001",
+          "question": "¿En qué cuerpo normativo se encuentran detalladas las contravenciones de tránsito?",
+          "options": [
+            { "id": "a", "text": "Código Orgánico Integral Penal" },
+            { "id": "b", "text": "Ley Orgánica de Transporte Terrestre, Tránsito y Seguridad Vial" },
+            { "id": "c", "text": "Ordenanzas Municipales" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las contravenciones de tránsito están tipificadas en el COIP, artículos 386 a 392, organizadas en siete clases según gravedad. La LOTTTSV regula el sistema de transporte (licencias, matrículas, títulos habilitantes), pero las sanciones penales por contravenciones viven en el COIP.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-lf-002",
+          "question": "¿Es una contravención realizar actividades o competencias deportivas en las vías públicas con vehículos de tracción humana o animal?",
+          "options": [
+            { "id": "a", "text": "No, si tienen permiso" },
+            { "id": "b", "text": "No" },
+            { "id": "c", "text": "Sí, es una contravención" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las competencias deportivas en vía pública sí están permitidas siempre que cuenten con la autorización correspondiente del ente regulador. Sin ese permiso constituyen contravención. La condición clave es el permiso, no el tipo de vehículo.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-lf-003",
+          "question": "¿Puede ser sancionado el conductor que no encienda las luces del vehículo en horas de la noche o conduzca en sitios oscuros como túneles con las luces apagadas?",
+          "options": [
+            { "id": "a", "text": "Sí, con un llamado de atención de la autoridad" },
+            { "id": "b", "text": "Sí, por cometer una contravención" },
+            { "id": "c", "text": "No, ya que no se considera una contravención" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Conducir sin luces de noche o en túneles es contravención de sexta clase (multa del 10% del SBU). No es un simple llamado de atención: queda registrada en el sistema. La opción a tienta porque parece más leve, pero la ley exige sanción económica formal.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-lf-004",
+          "question": "¿Puede ser sancionado el conductor, controlador o ayudante de transporte público o comercial que maltrate de obra o de palabra a los usuarios?",
+          "options": [
+            { "id": "a", "text": "Sí, por cometer una contravención de sexta clase" },
+            { "id": "b", "text": "Sí, solo si la persona afectada cuenta con su documento de identificación al momento de la contravención" },
+            { "id": "c", "text": "No, ya que no se considera una contravención" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Maltratar a los usuarios del transporte público o comercial es contravención de sexta clase (10% del SBU). No depende de que la víctima exhiba un documento: la sanción aplica por el solo hecho. La opción b es una trampa que confunde requisito de prueba con condición de tipicidad.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-lf-005",
+          "question": "Si se queda sin combustible y por esa razón obstaculiza el tránsito vehicular, ¿está cometiendo una contravención?",
+          "options": [
+            { "id": "a", "text": "No" },
+            { "id": "b", "text": "Sí" },
+            { "id": "c", "text": "No es una contravención si las condiciones climáticas son desfavorables" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Quedarse sin combustible y bloquear la vía sí es contravención: la ley considera que es responsabilidad del conductor garantizar que el vehículo tenga las condiciones para circular, y eso incluye combustible suficiente. El clima no es eximente.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-lf-006",
+          "question": "La prueba de alcoholemia se mide en:",
+          "options": [
+            { "id": "a", "text": "Grados / litro de sangre" },
+            { "id": "b", "text": "Miligramos / litro de sangre" },
+            { "id": "c", "text": "Gramos / Litro de sangre" }
+          ],
+          "correct_answer": "c",
+          "explanation": "La unidad oficial es gramos de alcohol por litro de sangre (g/L). Por eso los umbrales legales se expresan así: 0.3, 0.8, 1.2 g/L. Los miligramos por litro corresponden al aire espirado (alcoholímetro), una unidad distinta usada para la medición indirecta.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-muerte-embriaguez-negligencia.md"
+        }
+      ]
+    },
+    {
+      "id": "economic-sanctions",
+      "name": "Contravenciones con sanción económica (% del SBU)",
+      "description": "Contravenciones de sexta y séptima clase, sancionadas únicamente con multa en porcentaje del salario básico unificado.",
+      "questions": [
+        {
+          "id": "lr-es-001",
+          "question": "¿Cuál es la multa en el caso de obstaculizar o estacionar su vehículo en sitios prohibidos o destinados a un uso exclusivo de personas con discapacidad o mujeres embarazadas?",
+          "options": [
+            { "id": "a", "text": "30% de un salario básico unificado del trabajador general" },
+            { "id": "b", "text": "40% de un salario básico unificado del trabajador general" },
+            { "id": "c", "text": "10% de un salario básico unificado del trabajador general" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Es contravención de sexta clase: 10% del SBU. Las opciones de 30% y 40% corresponden a contravenciones de cuarta y tercera clase respectivamente, que sancionan conductas más graves.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-002",
+          "question": "¿Cuál es el valor de la multa en el caso de conducir un vehículo en el que transporte a niños sin las correspondientes seguridades?",
+          "options": [
+            { "id": "a", "text": "15% de un salario básico unificado del trabajador general" },
+            { "id": "b", "text": "50% de un salario básico unificado del trabajador general" },
+            { "id": "c", "text": "10% de un salario básico unificado del trabajador general" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Transportar niños sin silla de seguridad u otras protecciones es contravención de sexta clase: 10% del SBU. La sexta clase agrupa varias conductas que ponen en riesgo la seguridad sin generar inmediatamente un accidente.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-003",
+          "question": "¿Cuál es la sanción económica para la persona que desde el interior de un vehículo arroje a la vía pública desechos que contaminen el ambiente?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 5% de un salario básico" },
+            { "id": "b", "text": "Multa equivalente al 10% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 30% de un salario básico" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Arrojar desechos desde el vehículo es contravención de séptima clase: 5% del SBU. Es la sanción más baja del régimen contravencional, pero queda en historial. Las opciones de 10% y 30% son distractores que corresponden a otras clases.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-004",
+          "question": "¿Cuál es la sanción para el peatón que ante las señales de alarma o toque de sirena de un vehículo de emergencia no deje la vía libre?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 10% de un salario básico" },
+            { "id": "b", "text": "Multa equivalente al 5% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 20% de un salario básico" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Sanción al peatón: 5% del SBU. La ley también sanciona a peatones, no solo a conductores. La conducta clave es obstruir el paso de un vehículo de emergencia, que puede costar vidas.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-es-005",
+          "question": "¿Cuál es la sanción para quien conduce sin mantener una distancia prudente de seguimiento?",
+          "options": [
+            { "id": "a", "text": "Multa del 40% de un salario básico" },
+            { "id": "b", "text": "Multa del 30% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 5% de un salario básico" }
+          ],
+          "correct_answer": "c",
+          "explanation": "No mantener distancia prudente de seguimiento (la regla de tres segundos) es contravención de séptima clase: 5% del SBU. Es una sanción baja considerando que esta conducta produce la mayoría de choques por alcance.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-006",
+          "question": "¿Cuál es la sanción que recibirá si usa inadecuadamente y reiteradamente la bocina u otros dispositivos sonoros?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 10% de un salario básico unificado" },
+            { "id": "b", "text": "Multa equivalente al 30% por ciento de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 5% de un salario básico" }
+          ],
+          "correct_answer": "c",
+          "explanation": "El uso indebido de la bocina es contravención de séptima clase: 5% del SBU. La ley sanciona el uso reiterado e inadecuado, no el uso ocasional para señalar peligro, que es función legítima del dispositivo.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-007",
+          "question": "La o el comprador de un vehículo que no realice el traspaso de dominio dentro del plazo de treinta días, contados a partir de la fecha del respectivo contrato, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 50% de un salario básico" },
+            { "id": "b", "text": "Multa equivalente al 10% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 5% de un salario básico" }
+          ],
+          "correct_answer": "c",
+          "explanation": "No registrar el traspaso de dominio en 30 días es contravención de séptima clase: 5% del SBU. El plazo importa: si pasa, el comprador queda en falta administrativa y el vendedor original sigue figurando como responsable ante cualquier infracción del vehículo.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-008",
+          "question": "¿Cuál es la sanción para quien conduce sin utilizar el cinturón de seguridad?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 15% de un salario básico unificado" },
+            { "id": "b", "text": "Multa equivalente al 5% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 10% de un salario básico unificado" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Conducir sin cinturón es contravención de séptima clase: 5% del SBU. Distinta es la sanción para el conductor profesional que no exige el cinturón a sus pasajeros, que es de quinta clase (15%). La pregunta apunta solo al conductor que no se lo coloca.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-009",
+          "question": "Los propietarios de vehículos de servicio público, comercial o privado que instalen equipos de video o televisión en sitios que provocan la distracción del conductor, serán sancionados con:",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 10% de un salario básico unificado" },
+            { "id": "b", "text": "Multa equivalente al 15% de un salario básico unificado" },
+            { "id": "c", "text": "Multa equivalente al 50% de un salario básico unificado" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Instalar pantallas que distraen al conductor es contravención de sexta clase: 10% del SBU. La sanción cae sobre el propietario, no sobre el conductor, porque la responsabilidad de la instalación es de quien decide modificar el vehículo.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-es-010",
+          "question": "¿Cuál es la sanción económica que recibirá si como conductor de un vehículo de transporte público o comercial no pone a disposición de los pasajeros recipientes o fundas para recolección de basura o desechos?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 10% de un salario básico" },
+            { "id": "b", "text": "Multa equivalente al 5% de un salario básico" },
+            { "id": "c", "text": "Multa equivalente al 15% de un salario básico" }
+          ],
+          "correct_answer": "b",
+          "explanation": "No proveer fundas o recipientes para basura en transporte público es contravención de séptima clase: 5% del SBU. Es una sanción de cumplimiento básico orientada a la limpieza del servicio.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-011",
+          "question": "¿Cuál es la sanción en el caso de conducir un vehículo en el que transporte a niños sin las correspondientes seguridades?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 15% de 1 salario básico unificado del trabajador en general" },
+            { "id": "b", "text": "Multa equivalente al 50% de 1 salario básico unificado del trabajador en general" },
+            { "id": "c", "text": "Multa equivalente al 10% de 1 salario básico unificado del trabajador en general" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Misma sanción que la pregunta lr-es-002: contravención de sexta clase, 10% del SBU. El cuestionario repite la pregunta para verificar memorización.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-es-012",
+          "question": "¿Cuál es la sanción para la persona que desde el interior de un vehículo arroje a la vía pública desechos que contaminen el ambiente?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente al 5% de 1 salario básico unificado del trabajador en general" },
+            { "id": "b", "text": "Multa equivalente al 10% de 1 salario básico unificado del trabajador en general" },
+            { "id": "c", "text": "Multa equivalente al 30% de 1 salario básico unificado del trabajador en general" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Misma sanción que la pregunta lr-es-003: contravención de séptima clase, 5% del SBU. El cuestionario repite la pregunta para verificar memorización del concepto.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        }
+      ]
+    },
+    {
+      "id": "license-points",
+      "name": "Pérdida de puntos en la licencia",
+      "description": "Casos donde la sanción incluye deducción de puntos del registro de conducir o donde NO hay deducción.",
+      "questions": [
+        {
+          "id": "lr-lp-001",
+          "question": "¿Cuántos puntos de la licencia perderá si conduce un vehículo automotor sin portar su licencia de conducir?",
+          "options": [
+            { "id": "a", "text": "Ninguno" },
+            { "id": "b", "text": "Cinco" },
+            { "id": "c", "text": "Nueve" }
+          ],
+          "correct_answer": "a",
+          "explanation": "No portar la licencia (olvidarla) no resta puntos: solo aplica multa de quinta clase (15% del SBU). Distinto es conducir sin haber obtenido la licencia, que es contravención de primera clase con cárcel. La trampa está en confundir las dos conductas.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-lp-002",
+          "question": "¿Cuántos puntos de su licencia perderá si invade con su vehículo las vías exclusivas asignadas a los buses de transporte rápido?",
+          "options": [
+            { "id": "a", "text": "10" },
+            { "id": "b", "text": "Ninguno" },
+            { "id": "c", "text": "3" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Invadir el carril exclusivo de buses BRT no resta puntos: la sanción es únicamente económica, no afecta el registro de la licencia. El sistema de puntos se reserva para conductas de mayor riesgo directo (alcohol, exceso fuera de rango, velocidad, etc.).",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-lp-003",
+          "question": "El conductor de transporte por cuenta propia o comercial que exceda el número de pasajeros o volumen de carga de capacidad del automotor, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa de un salario básico unificado del trabajador en general" },
+            { "id": "b", "text": "Multa de un salario básico unificado del trabajador en general y reducción de 9 puntos en el registro de su licencia" },
+            { "id": "c", "text": "Multa del 50% de un salario básico, reducción de 9 puntos en su licencia" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Es contravención de segunda clase: 50% del SBU y reducción de 9 puntos. La opción b suena lógica pero infla la multa a un SBU completo, lo cual corresponde a contravención de primera clase. La diferencia entre 50% y 100% del SBU es la clave.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        }
+      ]
+    },
+    {
+      "id": "speed-and-license",
+      "name": "Velocidad, sin licencia y estado del vehículo",
+      "description": "Sanciones graves con privación de libertad: exceso fuera del rango moderado, conducir sin licencia y vehículo con llantas en mal estado.",
+      "questions": [
+        {
+          "id": "lr-sl-001",
+          "question": "Si conduce un vehículo automotor, excediendo los límites de velocidad fuera del rango moderado establecido, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Reducción de 10 puntos en su licencia de conducir" },
+            { "id": "b", "text": "Pena privativa de libertad de 3 días, multa de un salario básico unificado del trabajador en general y reducción de 10 puntos en su licencia" },
+            { "id": "c", "text": "Multa de un salario básico unificado del trabajador en general" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Según el texto del COIP (Art. 386), exceder la velocidad fuera del rango moderado es contravención de primera clase: 3 días de prisión, multa de un SBU y deducción de 10 puntos. Una resolución posterior de la Corte Constitucional eliminó la prisión por considerarla excesiva, pero el cuestionario evalúa el texto literal de la norma.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-sl-002",
+          "question": "Si conduce un vehículo sin haber obtenido previamente la licencia de conducir, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa de un salario básico unificado del trabajador en general y 10 días de privación de la libertad" },
+            { "id": "b", "text": "Pena privativa de libertad de 3 días" },
+            { "id": "c", "text": "Privación de libertad de 3 días y multa de un salario básico, el vehículo será detenido y solo será devuelto cuando cancele la multa; el propietario del mismo será solidariamente responsable del pago de esta multa" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Conducir sin haber obtenido licencia es contravención de primera clase: 3 días de prisión, un SBU de multa y detención del vehículo hasta el pago. No restan puntos (no hay licencia que descontar) y el propietario responde solidariamente, lo cual es la trampa de las opciones b (solo prisión) y a (10 días, no 3).",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-substances",
+      "name": "Conducción bajo alcohol y sustancias estupefacientes",
+      "description": "Escalas de sanción según nivel de alcohol en sangre y conducción bajo sustancias psicotrópicas.",
+      "questions": [
+        {
+          "id": "lr-as-001",
+          "question": "Si conduce un vehículo bajo los efectos de sustancias estupefacientes, psicotrópicas o preparados que las contengan, será sancionada con:",
+          "options": [
+            { "id": "a", "text": "Reducción de 15 puntos de su licencia, 30 días de privación de libertad y aprehensión del vehículo por 24 horas" },
+            { "id": "b", "text": "Reducción de 5 puntos de su licencia y 15 días de privación de libertad" },
+            { "id": "c", "text": "Reducción de 15 puntos de su licencia y aprehensión del vehículo por 24 horas" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Conducir bajo sustancias estupefacientes implica las tres sanciones juntas: pérdida de 15 puntos (más que cualquier nivel de alcohol), 30 días de prisión y aprehensión del vehículo por 24 horas. Las opciones b y c son parciales: la b baja los puntos y la c omite la prisión.",
+          "source": "reglamentos/COIP-articulos-transito.md"
+        },
+        {
+          "id": "lr-as-002",
+          "question": "Si conduce un vehículo de transporte público liviano o pesado, comercial o de carga y excede el nivel máximo de alcohol, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Pena privativa de libertad de 90 días y como medida preventiva se aprehenderá el vehículo por 24 horas" },
+            { "id": "b", "text": "Pérdida de 30 puntos en su licencia de conducir, pena privativa de libertad de 90 días y como medida preventiva se aprehenderá el vehículo por 24 horas" },
+            { "id": "c", "text": "Pérdida de treinta puntos en su licencia de conducir y pena privativa de libertad de noventa días" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Para conductor profesional o de transporte público que exceda los 0.1 g/L: 30 puntos perdidos, 90 días de prisión y aprehensión del vehículo por 24 horas. Las opciones a y c omiten un componente cada una (los puntos en a, la aprehensión en c). La sanción es la más severa del régimen de embriaguez al volante.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-muerte-embriaguez-negligencia.md"
+        },
+        {
+          "id": "lr-as-003",
+          "question": "Si conduce un vehículo en estado de embriaguez y el nivel de alcohol por litro de sangre es de 0.3 a 0.8 gramos, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa de un salario básico unificado, pérdida de 5 puntos en su licencia y 5 días de privación de libertad y como medida preventiva se aprehenderá el vehículo por 24 horas" },
+            { "id": "b", "text": "Multa de 2 salarios básicos unificados del trabajador en general, pérdida de 10 puntos en su licencia de conducir y quince días de privación de libertad" },
+            { "id": "c", "text": "Suspensión de la licencia por 60 días y 30 días de privación de libertad" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Nivel mínimo de embriaguez (0.3–0.8 g/L): 1 SBU de multa, 5 puntos menos, 5 días de prisión y aprehensión del vehículo por 24 horas. La escala respeta la regla 'a más alcohol, más sanción en los tres componentes': multa, puntos y días de prisión.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-muerte-embriaguez-negligencia.md"
+        },
+        {
+          "id": "lr-as-004",
+          "question": "Si conduce un vehículo en estado de embriaguez y el nivel de alcohol por litro de sangre es mayor de 0.8 hasta 1.2 gramos, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa de un salario básico unificado del trabajador en general, pérdida de cinco puntos en su licencia de conducir y cinco días de privación de libertad" },
+            { "id": "b", "text": "Multa de 2 salarios básicos unificados del trabajador en general, pérdida de 10 puntos en su licencia de conducir, 15 días de privación de libertad y como medida preventiva se aprehenderá el vehículo por 24 horas" },
+            { "id": "c", "text": "Suspensión de la licencia por sesenta días y treinta días de privación de libertad" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Nivel medio (0.8–1.2 g/L): 2 SBU, 10 puntos menos, 15 días de prisión y aprehensión por 24 horas. Comparado con la franja anterior (0.3–0.8), todos los componentes se duplican: la multa, los puntos y los días de prisión. La opción a corresponde a la franja anterior y la c es para la franja superior.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-muerte-embriaguez-negligencia.md"
+        },
+        {
+          "id": "lr-as-005",
+          "question": "Si conduce un vehículo en estado de embriaguez y el nivel de alcohol por litro de sangre supera 1.2 gramos, será sancionado con:",
+          "options": [
+            { "id": "a", "text": "Multa de un salario básico unificado del trabajador en general, pérdida de 5 puntos en su licencia de conducir y 5 días de privación de libertad" },
+            { "id": "b", "text": "Multa de 2 salarios básicos unificados del trabajador en general, pérdida de 10 puntos en su licencia de conducir y 15 días de privación de libertad" },
+            { "id": "c", "text": "Multa de 3 salarios básicos, suspensión de la licencia por 60 días, 30 días de privación de libertad y como medida preventiva se aprehenderá el vehículo por 24 horas" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Nivel máximo (>1.2 g/L): 3 SBU, suspensión de la licencia por 60 días (no solo pérdida de puntos), 30 días de prisión y aprehensión del vehículo por 24 horas. Esta es la franja más severa: la sanción ya no descuenta puntos sino que suspende la licencia, porque a este nivel la persona pierde casi por completo la capacidad de conducir.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-muerte-embriaguez-negligencia.md"
+        }
+      ]
+    },
+    {
+      "id": "public-transport-operation",
+      "name": "Transporte sin permiso o contrato de operación",
+      "description": "Sanción específica al conductor de transporte de pasajeros o bienes que opera sin título habilitante.",
+      "questions": [
+        {
+          "id": "lr-pt-001",
+          "question": "¿Cuál es la sanción que se le aplica al conductor de transporte de pasajeros o bienes que conduzca sin contar con el respectivo permiso o contrato de operación?",
+          "options": [
+            { "id": "a", "text": "Multa de dos salarios básicos, reducción de 10 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de siete días" },
+            { "id": "b", "text": "Multa de dos salarios básicos, reducción de 5 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de cinco días" },
+            { "id": "c", "text": "Multa de dos salarios básicos, reducción de 7 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de siete días" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Sanción para transporte sin permiso: 2 SBU, 10 puntos menos y retención del vehículo por mínimo 7 días. La multa coincide en las tres opciones; la trampa está en los puntos (10, no 5 ni 7) y los días de retención (7, no 5). Este caso aplica al transporte pirata y a operadores que prestan servicio fuera del ámbito autorizado.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        },
+        {
+          "id": "lr-pt-002",
+          "question": "¿Cuál es la sanción que se le aplica al conductor de transporte de pasajeros o bienes que conduzca sin contar con el respectivo permiso o contrato de operación?",
+          "options": [
+            { "id": "a", "text": "Multa equivalente a 2 salarios básicos unificados del trabajador en general, reducción de 10 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de 7 días" },
+            { "id": "b", "text": "Multa equivalente a 2 salarios básicos unificados del trabajador en general, reducción de 5 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de 5 días" },
+            { "id": "c", "text": "Multa equivalente a 2 salarios básicos unificados del trabajador en general, reducción de 7 puntos en su licencia de conducir y retención del vehículo por el plazo mínimo de 7 días" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Misma respuesta que lr-pt-001, con redacción ligeramente distinta. Confirma la regla: 2 SBU, 10 puntos y 7 días de retención. El cuestionario repite la pregunta para verificar memorización de los tres componentes.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-18_contravenciones-primera-septima-clase.md"
+        }
+      ]
+    },
+    {
+      "id": "additional",
+      "name": "Adicionales — temas señalados por el docente para el examen",
+      "description": "Preguntas sobre temas con alerta [EXAMEN] explícita en clases de mayo que no aparecen en el cuestionario oficial: procedimiento de detención, tipos de prueba de alcoholemia, intervención en contravenciones, responsabilidad legal de garante, juego entre agravantes y atenuantes, y cálculo de penas por lesiones del Art. 379.",
+      "questions": [
+        {
+          "id": "lr-xt-001",
+          "question": "¿Cuáles son las tres pruebas que el agente civil de tránsito debe ofrecer al conductor detenido por sospecha de embriaguez?",
+          "options": [
+            { "id": "a", "text": "Alcoholímetro, examen de sangre y examen de orina" },
+            { "id": "b", "text": "Prueba de alcoholemia, COtés y examen psicosomático" },
+            { "id": "c", "text": "Examen toxicológico, prueba psicotécnica y análisis de aliento" },
+            { "id": "d", "text": "Test de coordinación, examen cardiovascular y prueba ocular" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Son exactamente esas tres: alcoholemia (sangre), COtés (aire espirado) y examen psicosomático (coordinación y reflejos). El detenido tiene derecho a saber que existen y a elegir. Si el agente no informa de las tres, todo el procedimiento puede declararse nulo en audiencia. El docente subrayó que esta pregunta cae siempre.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-20_procedimientos-contravenciones.md"
+        },
+        {
+          "id": "lr-xt-002",
+          "question": "En la audiencia por una contravención de tránsito, ¿quién interviene además del juez, el detenido y su abogado?",
+          "options": [
+            { "id": "a", "text": "El fiscal de tránsito junto con el agente civil que tomó el procedimiento" },
+            { "id": "b", "text": "Únicamente el juez con su secretario; no se requiere otra autoridad" },
+            { "id": "c", "text": "Solo el agente civil de tránsito; en contravenciones no interviene fiscal" },
+            { "id": "d", "text": "El fiscal especializado en tránsito y la policía judicial" }
+          ],
+          "correct_answer": "c",
+          "explanation": "En contravenciones interviene únicamente el agente civil de tránsito que hizo la detención; no hay fiscal. La presencia de fiscal está reservada para delitos. El docente repitió varias veces que esto cae en examen, porque muchos confunden el rol del fiscal entre contravenciones y delitos.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-20_procedimientos-contravenciones.md"
+        },
+        {
+          "id": "lr-xt-003",
+          "question": "¿Cuál es el tiempo máximo que una persona puede permanecer detenida antes de ser presentada ante un juez?",
+          "options": [
+            { "id": "a", "text": "12 horas, como máximo antes de comparecer al juez" },
+            { "id": "b", "text": "24 horas; pasado ese plazo se vulneran sus derechos y debe ser liberada" },
+            { "id": "c", "text": "48 horas, mientras se prepara el procedimiento" },
+            { "id": "d", "text": "72 horas si el agente requiere mayor tiempo de investigación" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El límite constitucional es 24 horas en calidad de aprehendido. Si pasan sin audiencia, el juez debe liberar al detenido inmediatamente. Casos reales en Cuenca muestran que personas resultan libres no por inocencia sino porque los agentes incumplieron este plazo u otros pasos del procedimiento.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-20_procedimientos-contravenciones.md"
+        },
+        {
+          "id": "lr-xt-004",
+          "question": "¿Cuál es la diferencia entre auxiliar a una víctima y brindar primeros auxilios?",
+          "options": [
+            { "id": "a", "text": "Auxiliar y primeros auxilios son sinónimos legales que cualquier persona puede aplicar" },
+            { "id": "b", "text": "Auxiliar significa cualquier acción de ayuda; primeros auxilios solo puede darlos personal médico" },
+            { "id": "c", "text": "Auxiliar es la asistencia básica para evitar males mayores (llamar ambulancia, posición de seguridad); primeros auxilios son maniobras técnicas como RCP que solo deben realizar personas capacitadas" },
+            { "id": "d", "text": "Auxiliar es opcional por ley; primeros auxilios es una obligación legal de todo ciudadano" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Auxiliar es lo que la ley exige a cualquier persona involucrada en un accidente: llamar al 911, evitar que el herido se ahogue con su vómito, no moverlo si hay sospecha de lesión de columna. Primeros auxilios son técnicas (RCP, intubación) que requieren capacitación. Aplicar primeros auxilios sin saber puede empeorar la situación y generar responsabilidad penal por asunción.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-06_responsabilidad-legal-auxilio.md"
+        },
+        {
+          "id": "lr-xt-005",
+          "question": "¿Cuáles son los tres tipos de responsabilidad de garante que obligan a una persona a actuar para evitar un daño?",
+          "options": [
+            { "id": "a", "text": "Responsabilidad civil, penal y administrativa" },
+            { "id": "b", "text": "Responsabilidad contractual, legal y por asunción" },
+            { "id": "c", "text": "Responsabilidad directa, indirecta y solidaria" },
+            { "id": "d", "text": "Responsabilidad familiar, profesional y voluntaria" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Contractual (enfermero que abandona a un paciente), legal (padre que no alimenta a un hijo) y por asunción (quien empieza a auxiliar y abandona a mitad de camino). Sin alguna de estas tres no hay obligación previa y por lo tanto no hay responsabilidad penal por omisión. Las demás opciones describen otras clasificaciones jurídicas pero no la del garante.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-06_responsabilidad-legal-auxilio.md"
+        },
+        {
+          "id": "lr-xt-006",
+          "question": "Si un conductor tiene un agravante y cinco atenuantes en el mismo caso, ¿cómo se calcula su pena?",
+          "options": [
+            { "id": "a", "text": "Cada atenuante reduce parcialmente el efecto del agravante, llegando a una pena intermedia" },
+            { "id": "b", "text": "Los atenuantes priman sobre el agravante por ser mayores en número, por lo que se aplica la pena mínima reducida en 1/3" },
+            { "id": "c", "text": "Basta un solo agravante para aplicar la pena máxima sin reducción, sin importar cuántos atenuantes existan" },
+            { "id": "d", "text": "El juez puede decidir libremente cuál de los dos criterios aplica según el caso" }
+          ],
+          "correct_answer": "c",
+          "explanation": "La regla del Art. 374 del COIP es categórica: un solo agravante anula todos los atenuantes y obliga al juez a aplicar la pena máxima del tipo penal sin posibilidad de reducción. Por eso huir del lugar es tan grave: convierte cualquier reducción posible en imposible. Las opciones de compensación parcial o discrecional judicial son falsas.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-06_agravantes-delitos-transito.md"
+        },
+        {
+          "id": "lr-xt-007",
+          "question": "Para un delito de lesiones de tránsito SIN embriaguez (Art. 379 COIP), ¿cómo se calcula la pena con base en el Art. 152?",
+          "options": [
+            { "id": "a", "text": "Se toma la pena máxima del Art. 152 y se reduce en 1/3" },
+            { "id": "b", "text": "Se toma la pena mínima del Art. 152 y se reduce en 1/4" },
+            { "id": "c", "text": "Se aplica la pena promedio del Art. 152 sin modificaciones" },
+            { "id": "d", "text": "Se toma la pena máxima del Art. 152 y se aumenta en 1/4" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Sin embriaguez la ley es benigna: parte del mínimo del rango del Art. 152 para ese nivel de lesión y le resta un cuarto. Ejemplo: una lesión leve (30–60 días) sin embriaguez sale a 30 días – 7.5 = 22 días de cárcel. Los distractores mezclan máxima/mínima y reducción/aumento, que es justo la trampa que el docente plantea.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-lesiones-calculo-penas.md"
+        },
+        {
+          "id": "lr-xt-008",
+          "question": "Para un delito de lesiones de tránsito CON embriaguez (Art. 379 COIP), ¿cómo se calcula la pena con base en el Art. 152?",
+          "options": [
+            { "id": "a", "text": "Se toma la pena máxima del Art. 152 y se reduce en 1/3" },
+            { "id": "b", "text": "Se toma la pena mínima del Art. 152 y se aumenta en 1/3" },
+            { "id": "c", "text": "Se toma la pena máxima del Art. 152 y se aumenta en 1/3" },
+            { "id": "d", "text": "Se toma la pena mínima del Art. 152 y se reduce en 1/4" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Con embriaguez la ley es severa: parte de la pena máxima del rango y le suma un tercio. Ejemplo: lesión leve (30–60 días) con embriaguez sale a 60 días + 20 = 80 días. Comparado con los 22 días del mismo caso sin embriaguez, la diferencia es casi cuatro veces. La regla 'sin embriaguez resta del mínimo, con embriaguez suma al máximo' es la que conviene memorizar.",
+          "source": "materias/leyes-reglamentos-transito/2026-05-11_delitos-lesiones-calculo-penas.md"
+        }
+      ]
+    }
+  ]
+}

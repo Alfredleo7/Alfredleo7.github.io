@@ -1,0 +1,485 @@
+{
+  "subject": {
+    "id": "relaciones-humanas",
+    "name": "Relaciones Humanas",
+    "teacher": "Ps. Cl. Andrea Calderón"
+  },
+  "exam": {
+    "title": "Cuestionario de Examen — Relaciones Humanas",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "emotional-intelligence",
+      "name": "Inteligencia emocional y emociones",
+      "description": "Definición de inteligencia emocional, qué son las emociones, emociones básicas y manejo emocional.",
+      "questions": [
+        {
+          "id": "rh-ei-001",
+          "question": "¿Qué es inteligencia emocional?",
+          "options": [
+            { "id": "a", "text": "Es la capacidad de manejar, comprender, percibir y utilizar las emociones" },
+            { "id": "b", "text": "Es la capacidad de controlar, percibir y utilizar los estímulos" },
+            { "id": "c", "text": "Es la capacidad de manejar, percibir y utilizar los estímulos y emociones" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La docente la define como la capacidad de percibir, comprender, manejar y utilizar las emociones. Las opciones b y c sustituyen 'emociones' por 'estímulos', lo cual cambia el sentido: la inteligencia emocional opera sobre las emociones, no sobre los estímulos en sí mismos.",
+          "source": "materias/relaciones-humanas/2026-05-05_inteligencia-emocional.md"
+        },
+        {
+          "id": "rh-ei-002",
+          "question": "¿Qué son las emociones?",
+          "options": [
+            { "id": "a", "text": "Son reacciones fisiológicas que representan modos de adaptación a un estímulo" },
+            { "id": "b", "text": "Es aquello que sentimos cuando percibimos algo o a alguien" },
+            { "id": "c", "text": "No son universales ni comunes a todas las culturas" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las emociones son reacciones psicofisiológicas con función adaptativa: el cuerpo entero reacciona ante un estímulo (corazón, respiración, músculos) para ayudarnos a sobrevivir y aprender. La opción b es una definición coloquial vaga y la c es falsa: las seis emociones básicas son universales y comunes a todas las culturas.",
+          "source": "materias/relaciones-humanas/2026-05-05_inteligencia-emocional.md"
+        },
+        {
+          "id": "rh-ei-003",
+          "question": "¿Cuáles son las emociones básicas?",
+          "options": [
+            { "id": "a", "text": "Felicidad, Tristeza, Ira, Miedo, Asco, Sorpresa" },
+            { "id": "b", "text": "Calma, Alegría, Tristeza, Ira, Sorpresa" },
+            { "id": "c", "text": "Calma, Alegría, Tristeza, Rabia, Contento" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Son seis: alegría (felicidad), tristeza, ira, miedo, asco y sorpresa. Las opciones b y c incluyen 'calma' y 'contento' que no son emociones básicas, y omiten 'miedo' y 'asco', dos de las seis fundamentales. Cada emoción básica se ramifica en otras (el miedo en ansiedad, la tristeza en melancolía, etc.).",
+          "source": "materias/relaciones-humanas/2026-05-05_inteligencia-emocional.md"
+        },
+        {
+          "id": "rh-ei-004",
+          "question": "¿Existen técnicas para el manejo de las emociones?",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Verdadero. La docente trabajó cuatro técnicas concretas: el semáforo (parar, pensar, actuar), el testigo imaginario (verme desde fuera), atender a las sensaciones físicas y la respiración 4-7-8. Todas ellas dan al cerebro un momento para recuperarse antes de actuar impulsivamente.",
+          "source": "materias/relaciones-humanas/2026-05-12_manejo-emocional-salud-mental.md"
+        }
+      ]
+    },
+    {
+      "id": "human-relations",
+      "name": "Relaciones humanas — concepto, tipos y factores",
+      "description": "El ser humano como ser social, definición, objetivo, tipos y factores positivos en las relaciones humanas.",
+      "questions": [
+        {
+          "id": "rh-hr-001",
+          "question": "Verdadero o falso: ¿El ser humano es el ser social por excelencia?",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Verdadero. Aunque algunas personas prefieren la soledad, todos necesitamos de la sociedad para vivir: desde la comida que comemos hasta la tecnología que usamos. La docente marcó este concepto como pregunta segura del examen.",
+          "source": "materias/relaciones-humanas/2026-05-14_ser-social-comunicacion.md"
+        },
+        {
+          "id": "rh-hr-002",
+          "question": "¿Qué se necesita para relacionarse?",
+          "options": [
+            { "id": "a", "text": "Palabra, Emoción, Convicción intelectual, Impresión visual" },
+            { "id": "b", "text": "Palabras justas, Emoción, Convicción intelectual, Impresión visual" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La docente insistió en que las palabras tienen poder y que una frase mal dicha puede destruir cosas; por eso hay que cuidar lo que uno dice. 'Palabras justas' refleja esa idea de elegir conscientemente lo que se dice, junto a la emoción, la convicción intelectual y la impresión visual (lenguaje no verbal).",
+          "source": "materias/relaciones-humanas/2026-05-14_ser-social-comunicacion.md"
+        },
+        {
+          "id": "rh-hr-003",
+          "question": "¿Cuál es el objetivo de las Relaciones Humanas?",
+          "options": [
+            { "id": "a", "text": "Valorar y comprender a cada una de las personas porque no todos somos iguales, ni tenemos el mismo nivel de educación" },
+            { "id": "b", "text": "Ayuda a entender que se trata de uno mismo, no de la persona con la que nos comunicamos" },
+            { "id": "c", "text": "No llegaremos lejos sino trabajamos con los demás, solo cuando los necesitamos" }
+          ],
+          "correct_answer": "a",
+          "explanation": "El objetivo es valorar y comprender las diferencias de cada persona: nadie tiene la misma crianza, valores o nivel de educación. La opción b es lo contrario (centrarse en uno mismo destruye la relación) y la c distorsiona la idea de red de apoyo (no se usa a la gente solo cuando se la necesita).",
+          "source": "materias/relaciones-humanas/2026-05-14_ser-social-comunicacion.md"
+        },
+        {
+          "id": "rh-hr-004",
+          "question": "¿Qué son las Relaciones Humanas?",
+          "options": [
+            { "id": "a", "text": "Son vínculos físicos o emocionales que se generan entre dos o más personas a través de formas de comunicación" },
+            { "id": "b", "text": "Son vínculos sociales o emocionales que se generan entre dos o más personas de diferentes formas" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La definición distingue dos tipos de vínculos: físicos (superficiales, por necesidad — como comprar en una tienda) y emocionales (con afecto y conexión). En ambos casos la comunicación es el medio. La opción b cambia 'físicos' por 'sociales', que no es la categoría que usó la docente.",
+          "source": "materias/relaciones-humanas/2026-05-14_ser-social-comunicacion.md"
+        },
+        {
+          "id": "rh-hr-005",
+          "question": "Señale lo correcto. Las Relaciones Humanas son:",
+          "options": [
+            { "id": "a", "text": "Llevarse bien con los demás" },
+            { "id": "b", "text": "Amar al prójimo" },
+            { "id": "c", "text": "Manifestar aprecio por la gente" },
+            { "id": "d", "text": "Todas" }
+          ],
+          "correct_answer": "d",
+          "explanation": "Las tres descripciones son manifestaciones válidas de buenas relaciones humanas: convivencia armoniosa, respeto al prójimo y aprecio genuino por la gente. La docente las plantea como expresiones distintas de la misma idea de fondo: vivir bien con otros.",
+          "source": "materias/relaciones-humanas/2026-05-14_ser-social-comunicacion.md"
+        },
+        {
+          "id": "rh-hr-006",
+          "question": "Importancia de las Relaciones Humanas. Señale lo correcto",
+          "options": [
+            { "id": "a", "text": "Con ellas podemos prevenir y destacar conflictos propios y colectivos" },
+            { "id": "b", "text": "Con ellas podemos superar conflictos individuales y colectivos" },
+            { "id": "c", "text": "Con ellas podemos prevenir y superar conflictos individuales y colectivos" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Las relaciones humanas sanas sirven para los dos verbos: prevenir (anticiparse a un conflicto) y superar (resolver el conflicto cuando ya ocurrió). La opción a usa 'destacar' en lugar de 'superar' (probablemente error de redacción) y la b solo menciona uno de los dos verbos.",
+          "source": "materias/relaciones-humanas/2026-05-19_relaciones-humanas-y-conflictos.md"
+        },
+        {
+          "id": "rh-hr-007",
+          "question": "Señale los tipos de Relaciones Humanas",
+          "options": [
+            { "id": "a", "text": "Relaciones primarias y secundarias" },
+            { "id": "b", "text": "Relaciones personales y secundarias" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Primarias son las que tienen vínculo afectivo (familia, amigos cercanos) y secundarias son las transaccionales (médico, comercio, trabajo). La opción b confunde 'primarias' con 'personales', que no es la categoría que enseñó la docente.",
+          "source": "materias/relaciones-humanas/2026-05-19_relaciones-humanas-y-conflictos.md"
+        },
+        {
+          "id": "rh-hr-008",
+          "question": "Señale lo correcto: factores positivos en las Relaciones Humanas",
+          "options": [
+            { "id": "a", "text": "Comprensión" },
+            { "id": "b", "text": "Respeto" },
+            { "id": "c", "text": "Cortesía" },
+            { "id": "d", "text": "Todas" }
+          ],
+          "correct_answer": "d",
+          "explanation": "Los tres son factores positivos según la docente, junto con la cooperación, la comunicación clara y el uso correcto de las palabras. Cualquier opción aislada es incompleta.",
+          "source": "materias/relaciones-humanas/2026-05-19_relaciones-humanas-y-conflictos.md"
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Comunicación — tipos, elementos y niveles",
+      "description": "Tipos de comunicación, elementos (canal, código, retroalimentación) y niveles de comunicación.",
+      "questions": [
+        {
+          "id": "rh-cm-001",
+          "question": "¿Cuáles son los tipos de comunicación?",
+          "options": [
+            { "id": "a", "text": "Oral, Escrita y No verbal" },
+            { "id": "b", "text": "Oral, Escrita y verbal" },
+            { "id": "c", "text": "Mímica, Escrita y no verbal" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los tres tipos son oral (hablada), escrita (texto) y no verbal (gestos, postura, expresiones). La opción b repite 'oral' como 'verbal' (son sinónimos) y la c sustituye 'oral' por 'mímica' (la mímica es parte de la comunicación no verbal, no un tipo aparte).",
+          "source": "materias/relaciones-humanas/2026-05-19_tipos-niveles-comunicacion.md"
+        },
+        {
+          "id": "rh-cm-002",
+          "question": "Elementos de la comunicación. Es la vía por la que circulan los mensajes:",
+          "options": [
+            { "id": "a", "text": "Emisor" },
+            { "id": "b", "text": "Canal" },
+            { "id": "c", "text": "Código" },
+            { "id": "d", "text": "Receptor" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El canal es el medio físico por el que viaja el mensaje: aire (cara a cara), ondas electromagnéticas (radio, celular), papel impreso, internet. El emisor envía, el receptor recibe y el código es el sistema de signos (idioma) usado.",
+          "source": "materias/relaciones-humanas/2026-05-19_elementos-comunicacion.md"
+        },
+        {
+          "id": "rh-cm-003",
+          "question": "Niveles de comunicación, señale lo correcto",
+          "options": [
+            { "id": "a", "text": "Nivel exterior" },
+            { "id": "b", "text": "Nivel de roles" },
+            { "id": "c", "text": "Nivel de interior" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La docente identifica tres niveles: neutro (superficial), de roles y funciones, y de personalidad. El 'mundo exterior' y el 'mundo interior' son partes del nivel de personalidad, no niveles por sí mismos. Por eso 'Nivel de roles' es el único que corresponde a un nivel propio.",
+          "source": "raw/transcripciones-mejoradas/2026-05-21_relaciones-humanas_comunicacion-valores.md"
+        },
+        {
+          "id": "rh-cm-004",
+          "question": "¿Qué es un Nivel de roles?",
+          "options": [
+            { "id": "a", "text": "Caracterizado por los papeles que desempeñamos diariamente" },
+            { "id": "b", "text": "Comunicaciones superficiales, apariencias o simulación" },
+            { "id": "c", "text": "De acuerdo con los roles desempeñamos nuestras funciones" }
+          ],
+          "correct_answer": "a",
+          "explanation": "El nivel de roles describe la comunicación que se da según el papel que desempeñamos (papá, jefe, profesor, hijo). La opción b describe el nivel neutro (superficial). La opción c es una consecuencia del nivel de roles pero no su definición.",
+          "source": "raw/transcripciones-mejoradas/2026-05-21_relaciones-humanas_comunicacion-valores.md"
+        },
+        {
+          "id": "rh-cm-005",
+          "question": "¿Qué es la retroalimentación?",
+          "options": [
+            { "id": "a", "text": "Es el conjunto de signos y normas propias de una lengua" },
+            { "id": "b", "text": "Es la parte en la que se hace saber que el mensaje fue recibido" },
+            { "id": "c", "text": "Es la vía por la que circulan los mensajes" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La retroalimentación es la respuesta del receptor que confirma que el mensaje fue recibido y entendido: una pregunta, un gesto de asentimiento, una respuesta. La opción a describe el código (idioma) y la c describe el canal.",
+          "source": "materias/relaciones-humanas/2026-05-19_elementos-comunicacion.md"
+        }
+      ]
+    },
+    {
+      "id": "values-foundations",
+      "name": "Valores — definición, etimología e importancia",
+      "description": "Qué son los valores, origen de la palabra (valere) e importancia en la vida y la convivencia.",
+      "questions": [
+        {
+          "id": "rh-vf-001",
+          "question": "¿Qué son los valores?",
+          "options": [
+            { "id": "a", "text": "Son los principios por los que se rige una persona, un grupo o una sociedad" },
+            { "id": "b", "text": "Son conceptos abstractos, pero no se manifiestan en cualidades y actitudes de las personas" },
+            { "id": "c", "text": "Permiten poner el comportamiento en función de realizarnos como personas" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Esa es la definición exacta que dio la docente. La opción b es falsa: los valores sí son abstractos, pero precisamente se manifiestan en cualidades y actitudes (cómo tratas a otros, cómo conduces, cómo decides). La opción c es parcialmente cierta pero no es la definición.",
+          "source": "materias/relaciones-humanas/2026-05-21_valores-humanos.md"
+        },
+        {
+          "id": "rh-vf-002",
+          "question": "Verdadero o falso: La palabra valores viene del latín 'valere' lo que significa 'ser fuerte'",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Verdadero. La docente subrayó que no se trata de fuerza física, sino de la valentía de vivir de acuerdo a tus convicciones aunque nadie esté mirando: hacer lo correcto cuando lo incorrecto sería más fácil.",
+          "source": "materias/relaciones-humanas/2026-05-21_valores-humanos.md"
+        },
+        {
+          "id": "rh-vf-003",
+          "question": "Señale lo correcto. Importancia de los valores",
+          "options": [
+            { "id": "a", "text": "Ayudan al individuo a conducirse en la vida con un criterio social basado en su sistema de creencias" },
+            { "id": "b", "text": "Ayuda a una sana convivencia entre los miembros de una sociedad, entorno familiar, escolar, laboral o país" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La docente cierra la sección de importancia con la idea de la convivencia sana y armoniosa en todos los ámbitos (hogar, sociedad, país). La opción a usa 'criterio social' en lugar de 'criterio moral' que es lo que dijo originalmente, por eso la opción b es la formulación más fiel al concepto enseñado.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        }
+      ]
+    },
+    {
+      "id": "values-types",
+      "name": "Tipos de valores",
+      "description": "Valores personales, materiales, éticos, morales y sociales.",
+      "questions": [
+        {
+          "id": "rh-vt-001",
+          "question": "¿Qué son los valores personales?",
+          "options": [
+            { "id": "a", "text": "Son normas inmersas en una familia, y que permiten relacionarse entre sí" },
+            { "id": "b", "text": "Son los pilares fundamentales establecidos por sí mismo para vivir" },
+            { "id": "c", "text": "Son principios que se enfocan en el comportamiento de cada individuo dentro de una sociedad" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los valores personales son los pilares que cada persona define para sí misma; varían de persona a persona y toman fuerza según lo que se esté viviendo (ejemplo: la fidelidad cobra peso cuando se atraviesa una infidelidad). La opción a describe valores familiares y la c describe valores socioculturales.",
+          "source": "materias/relaciones-humanas/2026-05-26_tipos-valores.md"
+        },
+        {
+          "id": "rh-vt-002",
+          "question": "¿Qué son los valores materiales?",
+          "options": [
+            { "id": "a", "text": "Son patrones de comportamiento que a través de su práctica permiten que exista una conexión con Dios" },
+            { "id": "b", "text": "Permiten a un individuo la estabilidad, relacionándose a las necesidades básicas existentes" },
+            { "id": "c", "text": "Son aquellos valores definidos por una determinada organización inmersos en su política empresarial" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los valores materiales permiten la permanencia y estabilidad del individuo: comida, salud, vestimenta, vivienda, estudio. La docente fue enfática: la estabilidad económica colabora con la salud mental. La opción a describe valores espirituales y la c describe valores organizacionales.",
+          "source": "materias/relaciones-humanas/2026-05-26_tipos-valores.md"
+        },
+        {
+          "id": "rh-vt-003",
+          "question": "¿Qué son los valores Éticos?",
+          "options": [
+            { "id": "a", "text": "Son patrones de mando que buscan regular el comportamiento de las personas" },
+            { "id": "b", "text": "Son patrones de pensamientos que buscan regular el comportamiento de las personas" },
+            { "id": "c", "text": "Son patrones de conducta que buscan regular el comportamiento de las personas" }
+          ],
+          "correct_answer": "c",
+          "explanation": "La palabra clave es 'conducta'. Los valores éticos son patrones de conducta que regulan el comportamiento en una ocupación: lo que se espera de un estudiante, un profesional o un conductor. Las opciones a ('mando') y b ('pensamientos') sustituyen 'conducta' por términos que no encajan.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-vt-004",
+          "question": "¿Qué son los valores Morales?",
+          "options": [
+            { "id": "a", "text": "Son los que perfeccionan al hombre en lo más íntimo de su ser, mayor calidad como persona" },
+            { "id": "b", "text": "Son aquellos propagados por la familia, de una descendencia a otra" },
+            { "id": "c", "text": "Son inmodificables con el pasar de los años" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los valores morales apuntan a perfeccionar al ser humano en lo más íntimo: elegir hacer el bien aún cuando nadie está viendo. La opción b describe valores familiares y la c es falsa (la docente aclaró que los valores morales sí son modificables con el tiempo).",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-vt-005",
+          "question": "¿Qué son los valores Sociales?",
+          "options": [
+            { "id": "a", "text": "Son los códigos de comportamiento que cada sociedad impone, a partir de leyes, usos y costumbres" },
+            { "id": "b", "text": "Sirven para convivir de forma respetuosa y en sintonía entre todos los miembros que componen la familia" },
+            { "id": "c", "text": "Garantizan el orden, la convivencia y además fomentar la estabilidad entre los amigos" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los valores sociales son los códigos que cada sociedad impone basados en sus leyes, usos y costumbres. Garantizan la convivencia y estabilidad en toda la sociedad, no solo en la familia (opción b) ni solo entre amigos (opción c).",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        }
+      ]
+    },
+    {
+      "id": "driver-virtues",
+      "name": "Deberes del conductor y virtudes básicas",
+      "description": "Deberes éticos del conductor, respeto y responsabilidad.",
+      "questions": [
+        {
+          "id": "rh-dv-001",
+          "question": "Señale lo correcto. Deberes de los conductores",
+          "options": [
+            { "id": "a", "text": "Usar el vehículo de manera prudente" },
+            { "id": "b", "text": "Respetar señales de tránsito" },
+            { "id": "c", "text": "Ser responsable de la conducción" },
+            { "id": "d", "text": "Todas" }
+          ],
+          "correct_answer": "d",
+          "explanation": "La docente lista varios deberes éticos del conductor: asegurar el buen funcionamiento del vehículo, usarlo con prudencia, no conducir bajo alcohol, estar atento siempre y respetar las señales. Las tres opciones son deberes válidos, por eso la respuesta es 'Todas'.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-dv-002",
+          "question": "¿Qué es el respeto?",
+          "options": [
+            { "id": "a", "text": "Aceptar y comprender tal y como son los demás" },
+            { "id": "b", "text": "Meditación o reflexión. Pensar, repasar" },
+            { "id": "c", "text": "Inclinación a hacer el bien" }
+          ],
+          "correct_answer": "a",
+          "explanation": "El respeto es aceptar y comprender al otro tal como es, sin pretender que cambie para acomodarse a lo que uno espera. La opción b describe la reflexión y la c describe la bondad o benevolencia, que son virtudes distintas.",
+          "source": "materias/relaciones-humanas/2026-05-19_relaciones-humanas-y-conflictos.md"
+        },
+        {
+          "id": "rh-dv-003",
+          "question": "¿Qué es la responsabilidad?",
+          "options": [
+            { "id": "a", "text": "Aceptación de la diversidad" },
+            { "id": "b", "text": "Responder y dar cuenta de nuestros actos. Madurez" },
+            { "id": "c", "text": "Hacer las cosas, no desear hacerlas" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La responsabilidad es responder y dar cuenta de los propios actos: signo de madurez y de respeto hacia uno mismo y los demás. La opción a describe la tolerancia y la c describe la disciplina o la voluntad, virtudes distintas.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        }
+      ]
+    },
+    {
+      "id": "empathy-and-antivalues",
+      "name": "Empatía y antivalores",
+      "description": "Definición de empatía, sus componentes, antivalores y anti-igualdad.",
+      "questions": [
+        {
+          "id": "rh-ea-001",
+          "question": "¿Qué es la empatía?",
+          "options": [
+            { "id": "a", "text": "Es la intención de comprender los sentimientos y emociones, intentando experimentar de forma objetiva y racional lo que siente otro individuo" },
+            { "id": "b", "text": "Es la intención de intuir los sentimientos y emociones, intentando experimentar de forma fría lo que siente otro individuo" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Empatía es comprender (no intuir) lo que el otro siente, desde mi realidad, de forma objetiva y racional (no fría). La opción b cambia 'comprender' por 'intuir' y 'objetiva' por 'fría', dos sustituciones que distorsionan el sentido: la empatía no es desconexión emocional, es comprensión cuidadosa.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-ea-002",
+          "question": "Componentes de la empatía",
+          "options": [
+            { "id": "a", "text": "Saber responder" },
+            { "id": "b", "text": "Interpretar las señales no verbales" },
+            { "id": "c", "text": "Mostrar comprensión" },
+            { "id": "d", "text": "Prestar ayuda emocional siempre" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La docente lista cuatro factores: saber escuchar (no responder), interpretar señales no verbales, mostrar comprensión (no críticas) y prestar ayuda solo si es necesario (no siempre). La opción a sustituye 'escuchar' por 'responder' (el mensaje central de la docente es justo lo opuesto) y la d agrega 'siempre' cuando la ayuda debe ofrecerse solo si se necesita. La opción c también es válida; ambas b y c son factores que la docente menciona explícitamente.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-ea-003",
+          "question": "¿Qué son los antivalores?",
+          "options": [
+            { "id": "a", "text": "Son aquellas conductas o actitudes que son dañinas y suelen manifestarse dentro de la sociedad" },
+            { "id": "b", "text": "Son aquellas conductas de los seres humanos que son negativas y suelen manifestar dentro de la familia" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los antivalores son conductas dañinas que van en contra de lo que la sociedad espera de la persona. La opción b limita su manifestación a la familia, lo cual es incorrecto: los antivalores aparecen en toda relación social, no solo en el hogar.",
+          "source": "materias/relaciones-humanas/2026-05-26_tipos-valores.md"
+        },
+        {
+          "id": "rh-ea-004",
+          "question": "¿Qué es la anti igualdad?",
+          "options": [
+            { "id": "a", "text": "Llevan al sujeto a la autodestrucción, como es el caso del abuso de sustancias o autolesionarse" },
+            { "id": "b", "text": "Separación oral de agrupaciones de una sociedad" },
+            { "id": "c", "text": "Responsable de la separación entre el sujeto y las demás personas, el individuo priorice su propio bienestar" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La anti-igualdad o desigualdad es la separación social entre grupos o agrupaciones de una sociedad (probable errata: 'oral' por 'social'). La opción a describe la autodestrucción y la c describe el egoísmo o individualismo, antivalores distintos.",
+          "source": "materias/relaciones-humanas/2026-05-26_tipos-valores.md"
+        }
+      ]
+    },
+    {
+      "id": "coexistence-norms",
+      "name": "Normas de convivencia y buenos modales",
+      "description": "Definición de normas de convivencia, normas de obligado cumplimiento y buenos modales.",
+      "questions": [
+        {
+          "id": "rh-cn-001",
+          "question": "¿Qué son las normas de convivencia?",
+          "options": [
+            { "id": "a", "text": "Son pautas de conducta que determinan, comparten, para alcanzar un objetivo común, el bienestar" },
+            { "id": "b", "text": "Quienes aceptan alguna o todas las normas entran en conflicto con alguna parte de la organización social" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las normas de convivencia son pautas de conducta compartidas por una sociedad con el objetivo común del bienestar. La opción b está invertida: quien entra en conflicto con la sociedad no es quien acepta las normas, sino quien NO las acepta.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-cn-002",
+          "question": "Normas de convivencia. Las de obligado cumplimiento son:",
+          "options": [
+            { "id": "a", "text": "Son aquellas cuyo incumplimiento puede perjudicar a otra, como por ejemplo robar y matar" },
+            { "id": "b", "text": "No escritas ni castigadas por la ley, como las normas de educación o urbanismo" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las de obligado cumplimiento son las que tienen consecuencias legales si se incumplen, porque perjudican directamente a otras personas (robar, matar). La opción b describe las normas sociales no obligatorias (cortesía, urbanidad), cuyo incumplimiento genera reproche social pero no sanción legal.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        },
+        {
+          "id": "rh-cn-003",
+          "question": "Señale algunos buenos modales",
+          "options": [
+            { "id": "a", "text": "Evite las malas palabras" },
+            { "id": "b", "text": "Demuestre su desacuerdo con respeto" },
+            { "id": "c", "text": "No tome lo que no le pertenece" },
+            { "id": "d", "text": "Todas" }
+          ],
+          "correct_answer": "d",
+          "explanation": "Los tres son buenos modales básicos: cuidar el lenguaje, expresar desacuerdo sin agresión y respetar la propiedad ajena. Son manifestaciones cotidianas de valores como el respeto y la honestidad.",
+          "source": "materias/relaciones-humanas/2026-05-26_clasificacion-valores-empatia.md"
+        }
+      ]
+    }
+  ]
+}
