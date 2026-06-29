@@ -1,0 +1,458 @@
+{
+  "subject": {
+    "id": "ingles",
+    "name": "Inglés",
+    "teacher": "Docente del Sindicato"
+  },
+  "exam": {
+    "title": "English Questionnaire — Cuestionario de Examen de Inglés",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "greetings-and-gestures",
+      "name": "Greetings, Farewells and Gestures Around the World",
+      "description": "Common greetings and farewells in English, and typical gestures used in different cultures around the world.",
+      "questions": [
+        {
+          "id": "ing-gg-001",
+          "question": "What do you usually say when you meet someone in the morning?",
+          "options": [
+            { "id": "a", "text": "Goodbye" },
+            { "id": "b", "text": "Good morning" },
+            { "id": "c", "text": "Good night" },
+            { "id": "d", "text": "See you later" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Good morning» se usa para saludar por la mañana, normalmente antes del mediodía. «Goodbye» y «See you later» son despedidas; «Good night» se usa al final del día o al despedirse de noche.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-002",
+          "question": "Which expression is used to say goodbye?",
+          "options": [
+            { "id": "a", "text": "Hello" },
+            { "id": "b", "text": "Hi" },
+            { "id": "c", "text": "Bye" },
+            { "id": "d", "text": "Good afternoon" }
+          ],
+          "correct_answer": "c",
+          "explanation": "«Bye» es la forma corta e informal de «Goodbye» (adiós). «Hello», «Hi» y «Good afternoon» son saludos, no despedidas.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-003",
+          "question": "What do people commonly do when greeting someone in the United States?",
+          "options": [
+            { "id": "a", "text": "Bow" },
+            { "id": "b", "text": "Shake hands" },
+            { "id": "c", "text": "Touch noses" },
+            { "id": "d", "text": "Clap their hands" }
+          ],
+          "correct_answer": "b",
+          "explanation": "En Estados Unidos lo más común al saludar es estrechar la mano («shake hands»). La reverencia («bow») es típica de Japón; el saludo nariz con nariz («touch noses») es maorí.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-004",
+          "question": "Which gesture is common in Japan?",
+          "options": [
+            { "id": "a", "text": "Hugging" },
+            { "id": "b", "text": "Bowing" },
+            { "id": "c", "text": "Waving both hands" },
+            { "id": "d", "text": "Kissing on the cheek" }
+          ],
+          "correct_answer": "b",
+          "explanation": "En Japón el saludo tradicional es la reverencia («bowing»). La profundidad y duración del gesto cambia según el grado de respeto que se quiere mostrar.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-005",
+          "question": "In Thailand, people often greet others by ______.",
+          "options": [
+            { "id": "a", "text": "touching noses" },
+            { "id": "b", "text": "shaking hands" },
+            { "id": "c", "text": "putting their hands together and bowing slightly" },
+            { "id": "d", "text": "clapping" }
+          ],
+          "correct_answer": "c",
+          "explanation": "En Tailandia el saludo tradicional se llama «wai»: se juntan las palmas de las manos frente al pecho y se hace una leve reverencia con la cabeza.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-006",
+          "question": "Which expression means you will meet the person again?",
+          "options": [
+            { "id": "a", "text": "Nice to meet you" },
+            { "id": "b", "text": "See you later" },
+            { "id": "c", "text": "Hello" },
+            { "id": "d", "text": "Good afternoon" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«See you later» implica que se volverán a ver más tarde. «Nice to meet you» se usa al conocer a alguien por primera vez; «Hello» y «Good afternoon» son saludos genéricos.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-gg-007",
+          "question": "Which gesture is a common way to say hello from a distance?",
+          "options": [
+            { "id": "a", "text": "Waving" },
+            { "id": "b", "text": "Bowing" },
+            { "id": "c", "text": "Hugging" },
+            { "id": "d", "text": "Touching noses" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Saludar con la mano («waving») es el gesto universal para decir hola o adiós desde la distancia, sin contacto físico.",
+          "source": "english-questionnaire.pdf"
+        }
+      ]
+    },
+    {
+      "id": "verb-to-be-and-pronouns",
+      "name": "Verb To Be, Third Person Singular and Personal Pronouns",
+      "description": "Conjugation of the verb 'to be' (am / is / are), the third-person singular -s ending and the personal pronouns (I, you, he, she, it, we, they).",
+      "questions": [
+        {
+          "id": "ing-vp-001",
+          "question": "Choose the correct form of the verb to be: «Maria ___ a doctor.»",
+          "options": [
+            { "id": "a", "text": "am" },
+            { "id": "b", "text": "are" },
+            { "id": "c", "text": "is" },
+            { "id": "d", "text": "be" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Con la tercera persona del singular (he / she / it) se usa «is». María es una sola persona femenina, por lo tanto «Maria is a doctor».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-002",
+          "question": "Choose the correct personal pronoun: «John is my friend. ___ is very funny.»",
+          "options": [
+            { "id": "a", "text": "He" },
+            { "id": "b", "text": "She" },
+            { "id": "c", "text": "It" },
+            { "id": "d", "text": "They" }
+          ],
+          "correct_answer": "a",
+          "explanation": "John es un nombre masculino singular, por eso se reemplaza con el pronombre «He» (él).",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-003",
+          "question": "Choose the correct form of the verb: «My mother ___ English every day.»",
+          "options": [
+            { "id": "a", "text": "teach" },
+            { "id": "b", "text": "teaches" },
+            { "id": "c", "text": "teaching" },
+            { "id": "d", "text": "taught" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«My mother» es tercera persona del singular (she). En presente simple, el verbo lleva la terminación -s/-es: «teaches».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-004",
+          "question": "Choose the correct personal pronoun: «Anna and I are students. ___ are in Class A.»",
+          "options": [
+            { "id": "a", "text": "He" },
+            { "id": "b", "text": "She" },
+            { "id": "c", "text": "We" },
+            { "id": "d", "text": "They" }
+          ],
+          "correct_answer": "c",
+          "explanation": "«Anna and I» incluye al hablante (I), por eso el pronombre correcto es «We» (nosotros/nosotras). Si no estuviera el «I», sería «They».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-005",
+          "question": "Choose the correct form of the verb to be: «They ___ happy.»",
+          "options": [
+            { "id": "a", "text": "am" },
+            { "id": "b", "text": "is" },
+            { "id": "c", "text": "are" },
+            { "id": "d", "text": "be" }
+          ],
+          "correct_answer": "c",
+          "explanation": "«They» (ellos/ellas) es plural, así que el verbo to be se conjuga como «are»: «They are happy».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-006",
+          "question": "Choose the correct answer: «My brother likes soccer. He ___ soccer every weekend.»",
+          "options": [
+            { "id": "a", "text": "play" },
+            { "id": "b", "text": "plays" },
+            { "id": "c", "text": "playing" },
+            { "id": "d", "text": "played" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«He» es tercera persona del singular, así que en presente simple el verbo «play» toma la -s: «He plays soccer every weekend».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-007",
+          "question": "Choose the correct personal pronoun: «My sister is a nurse. ___ works in a hospital.»",
+          "options": [
+            { "id": "a", "text": "He" },
+            { "id": "b", "text": "It" },
+            { "id": "c", "text": "She" },
+            { "id": "d", "text": "They" }
+          ],
+          "correct_answer": "c",
+          "explanation": "«My sister» es femenino singular, así que el pronombre es «She» (ella). «It» se usa para cosas o animales sin género personal.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-008",
+          "question": "Choose the correct form of the verb to be: «I ___ from Ecuador.»",
+          "options": [
+            { "id": "a", "text": "am" },
+            { "id": "b", "text": "is" },
+            { "id": "c", "text": "are" },
+            { "id": "d", "text": "be" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Con el pronombre «I» (yo), el verbo to be se conjuga siempre como «am»: «I am from Ecuador».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-009",
+          "question": "Choose the correct form of the verb: «The dog ___ very fast.»",
+          "options": [
+            { "id": "a", "text": "run" },
+            { "id": "b", "text": "runs" },
+            { "id": "c", "text": "running" },
+            { "id": "d", "text": "ran" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«The dog» es tercera persona del singular (it). En presente simple el verbo lleva -s: «The dog runs very fast».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-vp-010",
+          "question": "Choose the correct personal pronoun: «Pedro and Luis are friends. ___ are classmates.»",
+          "options": [
+            { "id": "a", "text": "We" },
+            { "id": "b", "text": "You" },
+            { "id": "c", "text": "They" },
+            { "id": "d", "text": "He" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Cuando hablamos de dos o más personas y no estamos incluidos nosotros mismos, usamos «They» (ellos): «They are classmates».",
+          "source": "english-questionnaire.pdf"
+        }
+      ]
+    },
+    {
+      "id": "articles-a-an-the",
+      "name": "Articles: A — An — The",
+      "description": "Correct use of the indefinite articles (a, an) and the definite article (the) in English sentences.",
+      "questions": [
+        {
+          "id": "ing-ar-001",
+          "question": "Choose the correct article: «I have ___ apple in my bag.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Apple» empieza con sonido vocálico, así que se usa «an»: «an apple».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-002",
+          "question": "Choose the correct article: «She is ___ teacher at my school.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "a",
+          "explanation": "«Teacher» empieza con sonido consonántico, así que se usa el artículo indefinido «a»: «a teacher».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-003",
+          "question": "Choose the correct article: «Can you close ___ door, please?»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Hablamos de una puerta específica que los dos conocemos (la del lugar donde estamos), así que usamos el artículo definido «the»: «close the door».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-004",
+          "question": "Choose the correct article: «My father bought ___ umbrella yesterday.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Umbrella» comienza con sonido vocálico /ʌ/, así que se usa «an»: «an umbrella».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-005",
+          "question": "Choose the correct article: «___ sun is very hot today.»",
+          "options": [
+            { "id": "a", "text": "A" },
+            { "id": "b", "text": "An" },
+            { "id": "c", "text": "The" },
+            { "id": "d", "text": "No article" }
+          ],
+          "correct_answer": "c",
+          "explanation": "El sol es único, por eso se usa el artículo definido «The»: «The sun is very hot today». Los objetos únicos en el mundo (the sun, the moon, the Earth) llevan «the».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-006",
+          "question": "Choose the correct article: «I saw ___ dog in the park.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "a",
+          "explanation": "«Dog» empieza con consonante y se menciona por primera vez, sin saber cuál perro: artículo indefinido «a». «A dog».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-007",
+          "question": "Choose the correct article: «She is eating ___ orange.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Orange» empieza con sonido vocálico, así que el artículo correcto es «an»: «an orange».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-008",
+          "question": "Choose the correct article: «We went to ___ beach last weekend.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Cuando se habla de la playa en general como destino (the beach, the park, the cinema), se usa el artículo definido «the»: «We went to the beach».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-009",
+          "question": "Choose the correct article: «He wants to be ___ engineer.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Engineer» empieza con sonido vocálico /ˈɛn/, así que se usa «an»: «an engineer».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-ar-010",
+          "question": "Choose the correct article: «There is ___ cat under the table.»",
+          "options": [
+            { "id": "a", "text": "a" },
+            { "id": "b", "text": "an" },
+            { "id": "c", "text": "the" },
+            { "id": "d", "text": "no article" }
+          ],
+          "correct_answer": "a",
+          "explanation": "«Cat» empieza con consonante y se introduce por primera vez sin especificar cuál, así que se usa «a»: «There is a cat under the table».",
+          "source": "english-questionnaire.pdf"
+        }
+      ]
+    },
+    {
+      "id": "jobs-in-ecuador",
+      "name": "Jobs in Ecuador",
+      "description": "Common jobs and professions in Ecuador, including their tasks and characteristic regions.",
+      "questions": [
+        {
+          "id": "ing-jb-001",
+          "question": "What does a farmer do?",
+          "options": [
+            { "id": "a", "text": "Repairs cars" },
+            { "id": "b", "text": "Produces crops such as bananas and rice" },
+            { "id": "c", "text": "Catches fish" },
+            { "id": "d", "text": "Designs buildings" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Un «farmer» (agricultor) cultiva la tierra y produce cosechas como banano, arroz y café. Quien arregla autos es un «mechanic»; quien pesca, un «fisherman»; quien diseña edificios, un «architect».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-jb-002",
+          "question": "In which provinces are fishermen commonly found?",
+          "options": [
+            { "id": "a", "text": "Pichincha and Azuay" },
+            { "id": "b", "text": "Guayas and El Oro" },
+            { "id": "c", "text": "Manabí, Esmeraldas and Santa Elena" },
+            { "id": "d", "text": "Loja and Azuay" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Los pescadores en Ecuador se concentran en las provincias costeras con tradición pesquera: Manabí, Esmeraldas y Santa Elena. Pichincha, Azuay y Loja son provincias de la Sierra, sin costa.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-jb-003",
+          "question": "Who assists doctors and cares for patients?",
+          "options": [
+            { "id": "a", "text": "Dentist" },
+            { "id": "b", "text": "Teacher" },
+            { "id": "c", "text": "Nurse" },
+            { "id": "d", "text": "Engineer" }
+          ],
+          "correct_answer": "c",
+          "explanation": "El profesional que asiste al médico y cuida a los pacientes en el hospital es el «nurse» (enfermero/a). El «dentist» se especializa en dientes; el «teacher» enseña y el «engineer» diseña proyectos técnicos.",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-jb-004",
+          "question": "What does a software developer create?",
+          "options": [
+            { "id": "a", "text": "Buildings and structures" },
+            { "id": "b", "text": "Computer programs and applications" },
+            { "id": "c", "text": "Roads and bridges" },
+            { "id": "d", "text": "Paintings and sculptures" }
+          ],
+          "correct_answer": "b",
+          "explanation": "Un «software developer» (desarrollador de software) crea programas y aplicaciones de computadora. Los edificios los hace un «architect», las carreteras un «civil engineer» y las pinturas un «artist».",
+          "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-jb-005",
+          "question": "Which job responds to fires and emergencies?",
+          "options": [
+            { "id": "a", "text": "Police Officer" },
+            { "id": "b", "text": "Firefighter" },
+            { "id": "c", "text": "Mechanic" },
+            { "id": "d", "text": "Pilot" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El «firefighter» (bombero) responde a incendios y emergencias. El «police officer» se encarga del orden público; el «mechanic» repara vehículos y el «pilot» conduce aeronaves.",
+          "source": "english-questionnaire.pdf"
+        }
+      ]
+    }
+  ]
+}

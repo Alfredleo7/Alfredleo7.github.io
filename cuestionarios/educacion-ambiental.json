@@ -1,0 +1,469 @@
+{
+  "subject": {
+    "id": "educacion-ambiental",
+    "name": "Educación Ambiental",
+    "teacher": "Docente del Sindicato"
+  },
+  "exam": {
+    "title": "Cuestionario de Examen — Educación Ambiental (repaso del docente)",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "conceptos-fundamentales",
+      "name": "Conceptos fundamentales",
+      "description": "Definiciones de educación ambiental, contaminación, reciclaje y los propósitos del cuidado del medio ambiente.",
+      "questions": [
+        {
+          "id": "ea-cf-001",
+          "question": "¿Qué es educación ambiental?",
+          "options": [
+            { "id": "a", "text": "Proceso permanente de carácter interdisciplinario destinado a la formación de una ciudadanía que reconozca valores, aclare conceptos y desarrolle las habilidades y actitudes necesarias para una convivencia armónica entre los seres humanos, su cultura y su medio físico circundante." },
+            { "id": "b", "text": "Es el entorno condicionado a la forma de vida de sus habitantes." },
+            { "id": "c", "text": "El medio ambiente es un sistema natural donde existen plantas, animales y otras especies vegetales." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La educación ambiental es un proceso interdisciplinario y permanente que busca formar ciudadanos conscientes de su relación con el entorno, capaces de actuar de forma armónica con su medio físico y cultural.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cf-002",
+          "question": "¿Qué es la contaminación?",
+          "options": [
+            { "id": "a", "text": "Tirar basura en el piso." },
+            { "id": "b", "text": "Depende de determinados factores que afectan distintamente a cada ambiente." },
+            { "id": "c", "text": "Es la presencia o incorporación al ambiente de sustancias o elementos tóxicos perjudiciales para todos los seres vivos." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La contaminación es la incorporación de sustancias o elementos tóxicos al ambiente que resultan perjudiciales para los seres vivos. Va más allá de un acto puntual como tirar basura.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cf-003",
+          "question": "¿Qué significa reciclar?",
+          "options": [
+            { "id": "a", "text": "Contaminar el ambiente." },
+            { "id": "b", "text": "Botar la basura sin clasificarla." },
+            { "id": "c", "text": "Aprovechar los residuos sólidos para transformarlos en materia prima y fabricar nuevos productos." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Reciclar consiste en recuperar residuos sólidos para convertirlos en materia prima que sirva para fabricar nuevos productos, reduciendo el consumo de recursos vírgenes.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cf-004",
+          "question": "Uno de los propósitos de la educación ambiental es:",
+          "options": [
+            { "id": "a", "text": "Informar sobre el estado del clima." },
+            { "id": "b", "text": "Analizar la flora y la fauna local." },
+            { "id": "c", "text": "Generar un cambio de actitud frente al medio ambiente." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El propósito central de la educación ambiental es generar un cambio de actitud y conducta en las personas para que cuiden y respeten el medio ambiente.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        }
+      ]
+    },
+    {
+      "id": "contaminacion-tipos-y-efectos",
+      "name": "Contaminación: tipos, causas y efectos",
+      "description": "Causas y efectos de la contaminación del aire, suelo, agua y acústica; tipos de erosión y el smog.",
+      "questions": [
+        {
+          "id": "ea-co-001",
+          "question": "Los principales efectos de la lluvia ácida son:",
+          "options": [
+            { "id": "a", "text": "Destrucción de la capa de ozono y daño a las plantas recién nacidas." },
+            { "id": "b", "text": "Ayuda al crecimiento de las especies." },
+            { "id": "c", "text": "Se usa como fertilizante natural del suelo." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La lluvia ácida deteriora la capa de ozono, daña la vegetación joven, acidifica suelos y cuerpos de agua, y corroe edificaciones y monumentos.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-002",
+          "question": "¿Cuáles son las principales enfermedades o efectos negativos de la contaminación del aire?",
+          "options": [
+            { "id": "a", "text": "Enfermedades respiratorias, neumonía, cardiovasculares y cáncer de pulmón; también afecta al crecimiento de los fetos." },
+            { "id": "b", "text": "Únicamente enfermedades digestivas." },
+            { "id": "c", "text": "Solo enfermedades del sistema nervioso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La contaminación atmosférica está vinculada a enfermedades respiratorias (asma, neumonía, EPOC), cardiovasculares, cáncer de pulmón y efectos en el desarrollo fetal.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-003",
+          "question": "Señale dos causas de la contaminación del suelo:",
+          "options": [
+            { "id": "a", "text": "Basura y plaguicidas." },
+            { "id": "b", "text": "Erosión y deforestación." },
+            { "id": "c", "text": "Expansión humana y compactación." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El suelo se contamina principalmente por la acumulación de basura y por el uso de plaguicidas y otros agroquímicos. Erosión y deforestación lo degradan, pero no son estrictamente contaminación química.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-004",
+          "question": "El desgaste del suelo por acción del hombre se denomina:",
+          "options": [
+            { "id": "a", "text": "Erosión hídrica." },
+            { "id": "b", "text": "Erosión antropogénica." },
+            { "id": "c", "text": "Erosión eólica." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La erosión antropogénica es la causada por la actividad humana: tala, sobrepastoreo, agricultura intensiva, urbanización, etc.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-005",
+          "question": "El desgaste del suelo por acción del agua se denomina:",
+          "options": [
+            { "id": "a", "text": "Erosión hídrica (o hidráulica)." },
+            { "id": "b", "text": "Erosión antropogénica." },
+            { "id": "c", "text": "Erosión eólica." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La erosión hídrica o hidráulica es el desgaste del suelo causado por el agua (lluvias, escorrentía, ríos). En el cuestionario oficial aparece también como «el desgaste del suelo por acción del agua».",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-006",
+          "question": "El desgaste del suelo por acción del viento se denomina:",
+          "options": [
+            { "id": "a", "text": "Erosión hídrica." },
+            { "id": "b", "text": "Erosión antropogénica." },
+            { "id": "c", "text": "Erosión eólica." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La erosión eólica es el arrastre y desgaste del suelo causado por el viento, frecuente en zonas áridas y sin cobertura vegetal.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-007",
+          "question": "Efectos negativos de la contaminación acústica en las personas:",
+          "options": [
+            { "id": "a", "text": "Estrés, hipertensión, distracción al conducir, falta de sueño y pérdida auditiva." },
+            { "id": "b", "text": "Únicamente sordera temporal sin otros efectos." },
+            { "id": "c", "text": "Mejora la concentración y el ánimo." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El ruido excesivo genera estrés, hipertensión, dificultades para dormir, pérdida auditiva y, en conductores, distracción peligrosa al volante.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-008",
+          "question": "¿Qué es el smog?",
+          "options": [
+            { "id": "a", "text": "Son cenizas emitidas por los volcanes." },
+            { "id": "b", "text": "Es la formación de una nube gris en el cielo debido a los gases de monóxido de azufre y dióxido de carbono." },
+            { "id": "c", "text": "Únicamente provoca cambios de clima a escala global." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El smog es la nube grisácea que se forma sobre ciudades por la combinación de gases (monóxido de azufre, dióxido de carbono) provenientes de vehículos e industrias. Es muy frecuente en metrópolis como Ciudad de México.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-009",
+          "question": "¿Qué son los gases de efecto invernadero?",
+          "options": [
+            { "id": "a", "text": "Los utilizados en invernaderos para fumigar las plantas." },
+            { "id": "b", "text": "Los gases que provocan el calentamiento del planeta y, por tanto, el cambio climático." },
+            { "id": "c", "text": "Los utilizados en las regiones cálidas para enfriar la tierra." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Son los gases que retienen el calor en la atmósfera y producen el calentamiento global. Los más comunes son el dióxido de carbono, monóxido de carbono, hidrocarburos, óxidos de nitrógeno, óxidos de azufre, ozono y vapor de agua.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-co-010",
+          "question": "La contaminación agrícola del suelo se produce por:",
+          "options": [
+            { "id": "a", "text": "Utilización de aguas de pozo para riego de cultivos." },
+            { "id": "b", "text": "Utilización de fertilizantes, plaguicidas y herbicidas." },
+            { "id": "c", "text": "Utilización de compuestos orgánicos en proceso de biodegradación." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los agroquímicos —fungicidas, insecticidas, herbicidas, plaguicidas y fertilizantes— son la principal causa de contaminación agrícola del suelo y de las aguas subterráneas.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cambio-climatico-y-energias",
+      "name": "Cambio climático, atmósfera y energías",
+      "description": "Calentamiento global, efecto invernadero, energías renovables y actividades con mayor impacto ambiental.",
+      "questions": [
+        {
+          "id": "ea-cc-001",
+          "question": "Concepto de calentamiento global:",
+          "options": [
+            { "id": "a", "text": "Aumento observado en los últimos siglos de la temperatura media del sistema climático de la Tierra y sus efectos relacionados." },
+            { "id": "b", "text": "El derretimiento del hielo de los polos." },
+            { "id": "c", "text": "El daño de la capa de ozono." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El calentamiento global es el aumento sostenido de la temperatura media del sistema climático terrestre. El derretimiento polar y los efectos sobre la biosfera son consecuencias, no la definición.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cc-002",
+          "question": "Concepto de efecto invernadero (mecanismo):",
+          "options": [
+            { "id": "a", "text": "Subida de la temperatura de la atmósfera por la concentración de gases, principalmente dióxido de carbono." },
+            { "id": "b", "text": "El dióxido de carbono y otros gases permiten la entrada de los rayos solares, pero impiden que la mayor parte del calor escape al espacio; sin este fenómeno la Tierra sería demasiado fría para ser habitable." },
+            { "id": "c", "text": "Causa contaminación del ambiente especialmente en los polos." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La docente describió el mecanismo: los gases permiten la entrada de la radiación solar pero impiden la salida del calor. Sin este efecto, la Tierra sería demasiado fría para ser habitable; el problema actual es su intensificación por la actividad humana.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cc-003",
+          "question": "Las principales energías renovables son:",
+          "options": [
+            { "id": "a", "text": "Energía hídrica (hidráulica), eólica, biomasa, maremotriz y geotérmica (térmica)." },
+            { "id": "b", "text": "Petróleo, gas natural y carbón mineral." },
+            { "id": "c", "text": "Únicamente la energía solar y la nuclear." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las renovables más utilizadas son la hídrica, eólica, solar, biomasa, maremotriz y geotérmica. La nuclear, aunque es de bajas emisiones, no es recomendable por el riesgo de accidentes (ej. Fukushima, 2011).",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-cc-004",
+          "question": "¿Cuáles son las actividades con más incidencia ambiental?",
+          "options": [
+            { "id": "a", "text": "Actividades mineras, cuerpo automotor y actividades petroleras." },
+            { "id": "b", "text": "Únicamente la producción agrícola." },
+            { "id": "c", "text": "Únicamente la industria textil." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las actividades mineras, el transporte motorizado (cuerpo automotor) y la industria petrolera son las que más contaminación generan a nivel global y nacional.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        }
+      ]
+    },
+    {
+      "id": "acuerdos-internacionales-y-biodiversidad",
+      "name": "Acuerdos internacionales y biodiversidad",
+      "description": "Protocolo de Kioto, Acuerdo de Montreal, áreas protegidas, deforestación y reforestación.",
+      "questions": [
+        {
+          "id": "ea-ai-001",
+          "question": "¿Cuál es el objetivo del Protocolo de Kioto?",
+          "options": [
+            { "id": "a", "text": "Reducir la emisión de gases de efecto invernadero y evitar el cambio climático antropogénico." },
+            { "id": "b", "text": "Cuidar e incentivar el cuidado de las especies de fauna en peligro de extinción a nivel mundial." },
+            { "id": "c", "text": "Promover el uso de energía nuclear en todos los países." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Protocolo de Kioto (1997) buscaba que los países industrializados redujeran sus emisiones de gases de efecto invernadero. La opción b) corresponde al propósito de la WWF (símbolo del panda), no al Protocolo de Kioto.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-ai-002",
+          "question": "¿Cuál es el objetivo del Acuerdo de Montreal?",
+          "options": [
+            { "id": "a", "text": "Reducir aproximadamente un 5% la producción de gases que dañan la capa de ozono." },
+            { "id": "b", "text": "Promover el comercio internacional de combustibles fósiles." },
+            { "id": "c", "text": "Prohibir totalmente la actividad pesquera en aguas internacionales." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Acuerdo (Protocolo) de Montreal de 1987 es un tratado internacional para reducir la producción de sustancias que dañan la capa de ozono, principalmente los CFC.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-ai-003",
+          "question": "Sobre la propuesta Yasuní-ITT, ¿cuál es la respuesta correcta?",
+          "options": [
+            { "id": "a", "text": "La propuesta inicial fue la explotación del 0,001% del territorio para obtener recursos petroleros." },
+            { "id": "b", "text": "La propuesta inicial fue la NO explotación de los recursos a cambio de una remuneración económica por parte de los países industrializados." },
+            { "id": "c", "text": "La propuesta inicial fue la campaña «La Mano Negra de Chevron»." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La propuesta Yasuní-ITT planteaba dejar bajo tierra el petróleo del bloque ITT en el Parque Nacional Yasuní, a cambio de que la comunidad internacional aportara compensación económica al Ecuador. Las otras situaciones también ocurrieron, pero la propuesta inicial es la (b).",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-ai-004",
+          "question": "Para la preservación de la biodiversidad se han nombrado ciertas áreas geográficas. ¿Cuáles son?",
+          "options": [
+            { "id": "a", "text": "Parques nacionales, reservas de biósfera, santuarios de ballenas y reserva marina." },
+            { "id": "b", "text": "Ecosistemas, archipiélagos, selva y estribaciones." },
+            { "id": "c", "text": "Únicamente parques temáticos y zoológicos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las áreas protegidas para conservar la biodiversidad incluyen parques nacionales, reservas de biósfera, santuarios de ballenas y reservas marinas. Ecosistemas y archipiélagos son categorías geográficas, no figuras legales de protección.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-ai-005",
+          "question": "¿Cuáles son las causas de la deforestación?",
+          "options": [
+            { "id": "a", "text": "Para mejorar la economía de la población, para la expansión de la frontera agrícola y por el crecimiento demográfico (las tres)." },
+            { "id": "b", "text": "Únicamente por desastres naturales como huracanes." },
+            { "id": "c", "text": "Únicamente por incendios forestales fortuitos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La deforestación responde a múltiples causas combinadas: presión económica sobre los bosques, expansión de la frontera agrícola y ganadera, y crecimiento demográfico que demanda más espacio y recursos.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-ai-006",
+          "question": "¿Cuáles son los beneficios de la reforestación?",
+          "options": [
+            { "id": "a", "text": "Aumenta la producción de oxígeno y de agua, contrarresta los efectos del cambio climático, funciona como barrera contra el viento y evita la erosión (todos)." },
+            { "id": "b", "text": "Únicamente mejora la apariencia visual del paisaje." },
+            { "id": "c", "text": "Disminuye la producción de oxígeno." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Reforestar produce múltiples beneficios simultáneos: mayor oxígeno y agua, mitigación del cambio climático, protección contra el viento y la erosión, además de hábitat para la fauna.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        }
+      ]
+    },
+    {
+      "id": "casos-ecuador-y-residuos",
+      "name": "Casos en Ecuador y gestión de residuos",
+      "description": "Casos ambientales emblemáticos en Ecuador y el mundo, gestión de residuos y conceptos extra.",
+      "questions": [
+        {
+          "id": "ea-er-001",
+          "question": "¿Por qué se le llama «la Chernóbil de la Amazonía» al Oriente ecuatoriano?",
+          "options": [
+            { "id": "a", "text": "Por el derrame causado por el Exxon Valdez en 1989." },
+            { "id": "b", "text": "Por el derrame de crudo causado por la Texaco entre los años 1972 y 1992." },
+            { "id": "c", "text": "Por el derrame de crudo causado en el Yasuní." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Entre 1972 y 1992 la petrolera Texaco operó en la Amazonía ecuatoriana dejando enormes derrames de crudo y piscinas tóxicas, lo que ha sido comparado con el desastre nuclear de Chernóbil por su impacto a largo plazo.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-002",
+          "question": "¿Cuál es el objetivo principal del relleno sanitario de Pichacay?",
+          "options": [
+            { "id": "a", "text": "Enterrar la basura para evitar la contaminación." },
+            { "id": "b", "text": "Reducir la presencia de roedores en la basura expuesta a la intemperie." },
+            { "id": "c", "text": "Control y tratamiento de los desechos sólidos y tratamiento de los gases de efecto invernadero (gas metano, con el que se genera electricidad para la parroquia de Santa Ana)." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El relleno sanitario de Pichacay (Cuenca) no solo confina los desechos sólidos: además captura el gas metano que generan y lo convierte en electricidad para la parroquia de Santa Ana, reduciendo el impacto ambiental.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-003",
+          "question": "Describa el proceso de la Planta de Tratamiento de Aguas Residuales (PTAR) de Cuenca:",
+          "options": [
+            { "id": "a", "text": "Llegada del agua → lagunas aireadas (se inyecta oxígeno con aireadores) → lagunas facultativas (algas y microorganismos disuelven la masa biológica) → lagunas de maduración (limpieza por fotosíntesis de algas) → salida del agua." },
+            { "id": "b", "text": "El agua entra, se filtra una sola vez con cloro y sale lista para consumo humano." },
+            { "id": "c", "text": "El agua se almacena indefinidamente sin tratamiento alguno." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La PTAR de Cuenca trata las aguas residuales en etapas: aireación, descomposición biológica facultativa y maduración por fotosíntesis. El agua resultante no es 100% libre de contaminación; sirve para riego y usos agrícolas, no para ingerir sin potabilizar.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-004",
+          "question": "Las llamadas «tres erres» de la gestión de residuos son:",
+          "options": [
+            { "id": "a", "text": "Rebuscar, recuperar y reutilizar." },
+            { "id": "b", "text": "Reducir, reutilizar y reciclar." },
+            { "id": "c", "text": "Reducir, remediar y reutilizar." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Las tres erres son Reducir (consumir menos), Reutilizar (dar segunda vida a los objetos) y Reciclar (transformar residuos en nuevos productos), en ese orden de prioridad.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-005",
+          "question": "Los problemas ambientales de la ciudad de Linfen (China) son causados por:",
+          "options": [
+            { "id": "a", "text": "Industria del carbón y sobrepoblación." },
+            { "id": "b", "text": "Explosión de un reactor nuclear." },
+            { "id": "c", "text": "Industria textil y curtimbres." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Linfen es una ciudad china históricamente afectada por la actividad de la industria carbonífera y por la alta densidad poblacional, lo que la convirtió en una de las urbes más contaminadas del mundo.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-006",
+          "question": "Los problemas ambientales de la ciudad de Ranipet (India) son causados por:",
+          "options": [
+            { "id": "a", "text": "Industria del carbón." },
+            { "id": "b", "text": "Industria textil y la cultura/tradiciones (curtimbres)." },
+            { "id": "c", "text": "Explosión nuclear." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Ranipet, en India, sufre por la contaminación de la industria textil y de las curtimbres tradicionales, cuyos químicos terminan en suelos y aguas.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-007",
+          "question": "Los problemas ambientales de la ciudad de Chernóbil (Ucrania) son causados por:",
+          "options": [
+            { "id": "a", "text": "Industria del plomo." },
+            { "id": "b", "text": "Industria textil." },
+            { "id": "c", "text": "Explosión del reactor nuclear, lo que produjo radiación." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El accidente nuclear de Chernóbil en 1986 liberó radiación al ambiente, contaminando vastas zonas y obligando a evacuaciones permanentes. Es uno de los peores desastres nucleares de la historia.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-008",
+          "question": "Los problemas ambientales de la ciudad de La Oroya (Perú) son causados por:",
+          "options": [
+            { "id": "a", "text": "Industria del plomo." },
+            { "id": "b", "text": "Sobrepoblación." },
+            { "id": "c", "text": "Industria del cacao." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Oroya, en los Andes peruanos, está marcada por la contaminación por metales pesados, especialmente plomo, derivada de la fundición metalúrgica que funciona en la ciudad.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-009",
+          "question": "¿Qué es la desertificación?",
+          "options": [
+            { "id": "a", "text": "Proceso final de degradación de un suelo fértil que pierde total o parcialmente su capacidad de producción." },
+            { "id": "b", "text": "El crecimiento descontrolado de un desierto turístico." },
+            { "id": "c", "text": "La aparición de oasis en zonas húmedas." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La desertificación es el proceso de degradación de un suelo fértil que, por causas naturales o humanas (deforestación, sobreexplotación), pierde su capacidad de producir.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-010",
+          "question": "¿Cuál es el origen de la contaminación atmosférica?",
+          "options": [
+            { "id": "a", "text": "Industrias, domicilios, actividades comerciales, agropecuarias y vehiculares." },
+            { "id": "b", "text": "Únicamente las erupciones volcánicas." },
+            { "id": "c", "text": "Únicamente los vehículos eléctricos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La contaminación atmosférica tiene múltiples orígenes: industrias, hogares (calefacción, cocción), comercios, actividades agropecuarias (quema, ganado) y, sobre todo, los vehículos motorizados.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        },
+        {
+          "id": "ea-er-011",
+          "question": "Sobre el plástico:",
+          "options": [
+            { "id": "a", "text": "Es derivado del petróleo y el gas; es altamente contaminante; su simbología indica el tipo y uso del material." },
+            { "id": "b", "text": "Es un material biodegradable en menos de un mes." },
+            { "id": "c", "text": "Únicamente proviene de fuentes vegetales." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El plástico es un derivado del petróleo y del gas natural. Su producción y disposición final son altamente contaminantes; el símbolo numerado dentro del triángulo de reciclaje indica el tipo de polímero y su uso recomendado.",
+          "source": "cuestionario-educacion-ambiental.pdf"
+        }
+      ]
+    }
+  ]
+}

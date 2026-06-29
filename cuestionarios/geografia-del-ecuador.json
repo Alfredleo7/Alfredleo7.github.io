@@ -1,0 +1,996 @@
+{
+  "subject": {
+    "id": "geografia-del-ecuador",
+    "name": "Geografía del Ecuador",
+    "teacher": "Dr. Luis Barros T."
+  },
+  "exam": {
+    "title": "Cuestionario de Examen — Geografía del Ecuador (Primer Crédito)",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "conceptos-basicos",
+      "name": "Conceptos básicos de geografía",
+      "description": "Definición de geografía, sus ramas y los accidentes geográficos naturales y artificiales.",
+      "questions": [
+        {
+          "id": "geo-cb-001",
+          "question": "¿Cuál es la definición correcta de Geografía?",
+          "options": [
+            { "id": "a", "text": "Disciplina que trata del estudio, la descripción o de la representación gráfica de la Tierra." },
+            { "id": "b", "text": "Ciencia que estudia exclusivamente los océanos y los mares." },
+            { "id": "c", "text": "Disciplina que se ocupa únicamente de los climas y las estaciones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Geografía es la disciplina que estudia, describe y representa gráficamente la Tierra en su conjunto: relieve, climas, hidrografía, población y actividad humana.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-002",
+          "question": "Geografía es:",
+          "options": [
+            { "id": "a", "text": "Estudio y descripción de la tierra." },
+            { "id": "b", "text": "Estudio de las vías." },
+            { "id": "c", "text": "Estudio de cultura." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La raíz griega geo-grafía significa literalmente «descripción de la tierra». Su objeto es el estudio de la superficie terrestre y todo lo que en ella ocurre.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-003",
+          "question": "La geografía se divide en:",
+          "options": [
+            { "id": "a", "text": "Deportiva, ambiental." },
+            { "id": "b", "text": "Cultural, social." },
+            { "id": "c", "text": "Política, económica, humana." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Las grandes ramas tradicionales de la geografía humana son la política (estudia Estados y fronteras), la económica (estudia producción y mercados) y la humana (estudia la distribución de la población).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-004",
+          "question": "La Geografía Política es una rama de la Geografía Humana porque estudia:",
+          "options": [
+            { "id": "a", "text": "La distribución y organización de los seres humanos y de los Estados en la superficie terrestre." },
+            { "id": "b", "text": "La relación entre sociedades humanas y la desigual distribución de la población sobre la superficie terrestre." },
+            { "id": "c", "text": "El relieve y los climas de las distintas regiones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La geografía política se ocupa de cómo se organizan los Estados, sus fronteras, capitales y la distribución del poder político sobre el territorio.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-005",
+          "question": "¿Qué estudia la geografía humana?",
+          "options": [
+            { "id": "a", "text": "Las condiciones del mercado según la distribución geográfica de productores y consumidores." },
+            { "id": "b", "text": "La distribución de la población y la actividad humana sobre el territorio." },
+            { "id": "c", "text": "Únicamente los recursos minerales y los suelos." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La geografía humana estudia cómo se distribuye y organiza la población humana sobre el territorio: ciudades, migraciones, cultura y trabajo. La opción a) describe a la geografía económica.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-006",
+          "question": "Los accidentes geográficos naturales son:",
+          "options": [
+            { "id": "a", "text": "Puentes, montañas, ríos, carreteras y mares." },
+            { "id": "b", "text": "Montañas, islas, volcanes, lagos y cascadas." },
+            { "id": "c", "text": "Parques, plazas, caminos, aeropuertos y volcanes." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los accidentes naturales son los formados por la naturaleza sin intervención humana (montañas, islas, volcanes, lagos, cascadas). Puentes, carreteras y parques son accidentes artificiales.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-007",
+          "question": "¿Qué son las montañas?",
+          "options": [
+            { "id": "a", "text": "Gran elevación natural del terreno que a menudo presenta uno o varios picos en su parte superior." },
+            { "id": "b", "text": "Eminencia del terreno que en general no supera los 100 metros desde la base hasta la cima." },
+            { "id": "c", "text": "Una depresión de la superficie terrestre entre dos vertientes." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las montañas son grandes elevaciones naturales con uno o varios picos. La opción b) describe a las colinas y la c) a los valles.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-008",
+          "question": "¿Qué es el mar?",
+          "options": [
+            { "id": "a", "text": "Extensión de agua dulce que cubre la mayor parte de la superficie de la tierra." },
+            { "id": "b", "text": "Superficie de agua estancada separada por los continentes." },
+            { "id": "c", "text": "Extensión de agua salada inferior a un océano en tamaño y posee ecosistemas, mareas y corrientes." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El mar es una masa de agua salada de menor tamaño que un océano. Tiene ecosistemas propios y experimenta mareas y corrientes.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-cb-009",
+          "question": "¿Cuáles de los siguientes son accidentes geográficos artificiales?",
+          "options": [
+            { "id": "a", "text": "Islas, golfos y llanuras." },
+            { "id": "b", "text": "Carreteras, puentes y cultivos." },
+            { "id": "c", "text": "Mares, ríos y montañas." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los accidentes artificiales son los construidos o modificados por el ser humano: carreteras, puentes, cultivos, ciudades. Islas, golfos, llanuras, mares y ríos son naturales.",
+          "source": "cuestionario-primer-credito.pdf"
+        }
+      ]
+    },
+    {
+      "id": "orientacion-y-mapas",
+      "name": "Orientación, GPS y tipos de mapas",
+      "description": "Métodos de orientación, puntos cardinales, latitud y longitud, y tipos de mapas (físico, político, turístico, hidrológico).",
+      "questions": [
+        {
+          "id": "geo-or-001",
+          "question": "¿Cuáles son los principales métodos tradicionales de orientación sin brújula?",
+          "options": [
+            { "id": "a", "text": "GPS, satélites y mapas digitales." },
+            { "id": "b", "text": "Método del palo, orientación por el sol y orientación con las estrellas." },
+            { "id": "c", "text": "Únicamente las señales de tránsito y los carteles viales." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Sin brújula, los métodos tradicionales son el método del palo (que usa la sombra del sol), la orientación por el sol (sale por el este y se oculta por el oeste) y la orientación nocturna por las estrellas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-002",
+          "question": "¿Qué significan las siglas GPS?",
+          "options": [
+            { "id": "a", "text": "Sistema Global de Posición (Global Positioning System)." },
+            { "id": "b", "text": "Guía de Pilotaje Satelital." },
+            { "id": "c", "text": "Sistema Geográfico Privado." }
+          ],
+          "correct_answer": "a",
+          "explanation": "GPS son las siglas en inglés de Global Positioning System, traducido como Sistema Global de Posición o Sistema de Posicionamiento Global.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-003",
+          "question": "¿Es correcto afirmar que el GPS es un sistema de radionavegación moderno que ayuda a ubicar con exactitud cualquier punto de la superficie terrestre?",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El GPS es un sistema de radionavegación basado en satélites que proporciona la ubicación exacta (latitud, longitud y altitud) de cualquier punto en la Tierra.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-004",
+          "question": "¿Cuáles son los principales puntos cardinales?",
+          "options": [
+            { "id": "a", "text": "Norte, sur, este, oeste." },
+            { "id": "b", "text": "Noreste, sureste, norte, sur." },
+            { "id": "c", "text": "Noroeste, suroeste, este, oeste." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los cuatro puntos cardinales principales son Norte (N), Sur (S), Este (E) y Oeste (O). Los demás son puntos cardinales intermedios (noreste, sureste, noroeste, suroeste).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-005",
+          "question": "¿Qué es la latitud?",
+          "options": [
+            { "id": "a", "text": "Distancia angular entre la línea ecuatorial y un punto determinado." },
+            { "id": "b", "text": "Distancia medida en kilómetros desde el meridiano de Greenwich." },
+            { "id": "c", "text": "Distancia medida a partir del nivel del mar en metros." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La latitud es la distancia angular (medida en grados) desde la línea del ecuador hasta un punto, hacia el norte o hacia el sur. Va de 0° (ecuador) a 90° (polos).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-006",
+          "question": "¿Qué son las líneas de longitud (meridianos)?",
+          "options": [
+            { "id": "a", "text": "Líneas imaginarias que corren de norte a sur y marcan la posición este-oeste de un punto." },
+            { "id": "b", "text": "Líneas que dividen la Tierra en hemisferio norte y hemisferio sur." },
+            { "id": "c", "text": "Líneas que solo aparecen sobre los polos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los meridianos o líneas de longitud van de polo a polo (norte-sur) e indican qué tan al este o al oeste se encuentra un punto respecto al meridiano de Greenwich (0°).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-007",
+          "question": "¿Qué son los paralelos?",
+          "options": [
+            { "id": "a", "text": "Líneas imaginarias que corren de forma horizontal en la superficie terrestre." },
+            { "id": "b", "text": "Líneas que conectan el polo norte con el polo sur." },
+            { "id": "c", "text": "Sinónimo exacto de meridianos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los paralelos son círculos imaginarios horizontales (paralelos al ecuador). Indican la latitud. El paralelo 0° es la línea ecuatorial.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-008",
+          "question": "¿Qué define la Línea Equinoccial o Ecuador?",
+          "options": [
+            { "id": "a", "text": "Divide al planeta Tierra en hemisferio norte y hemisferio sur." },
+            { "id": "b", "text": "Marca la frontera entre Asia y Europa." },
+            { "id": "c", "text": "Indica el punto más alto de la atmósfera terrestre." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Línea Equinoccial o Ecuador es el paralelo 0° y divide la Tierra en dos hemisferios: norte y sur. El Ecuador (país) atraviesa esta línea, de ahí su nombre.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-009",
+          "question": "¿Es correcto afirmar que un mapa es una representación geográfica de la Tierra (o parte de ella) sobre una superficie plana, esférica, etc., de acuerdo con su escala?",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Un mapa es siempre una representación de la realidad a una escala determinada (por ejemplo 1:50.000). Puede dibujarse sobre superficie plana (mapas de papel) o esférica (globo terráqueo).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-010",
+          "question": "¿Qué nos indica el mapa urbano?",
+          "options": [
+            { "id": "a", "text": "La información detallada sobre los límites de las provincias." },
+            { "id": "b", "text": "Los detalles de las calles, servicios e información turística de una ciudad o sector." },
+            { "id": "c", "text": "El relieve de una superficie terrestre." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El mapa urbano se enfoca en una ciudad o un sector de ella, mostrando calles, plazas, servicios públicos y puntos de interés. No muestra límites provinciales ni relieve.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-011",
+          "question": "¿Qué representa un mapa físico?",
+          "options": [
+            { "id": "a", "text": "El relieve de una superficie terrestre sobre y bajo el nivel del mar." },
+            { "id": "b", "text": "Los límites políticos entre países y provincias." },
+            { "id": "c", "text": "Únicamente las atracciones turísticas de una región." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El mapa físico muestra las características naturales del territorio: montañas, valles, ríos, profundidades marinas. Usa colores y curvas de nivel para indicar altitudes.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-012",
+          "question": "¿Qué muestra un mapa político?",
+          "options": [
+            { "id": "a", "text": "Los límites políticamente establecidos de los países, así como nombres de provincias, cantones y ciudades." },
+            { "id": "b", "text": "La distribución de los ríos y lagos." },
+            { "id": "c", "text": "Únicamente las capitales del mundo." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El mapa político divide el territorio según fronteras establecidas (países, provincias, cantones) y suele rotular ciudades y capitales.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-or-013",
+          "question": "¿En qué se centra un mapa hidrológico?",
+          "options": [
+            { "id": "a", "text": "En representar ríos, lagos, mares y los yacimientos de aguas subterráneas." },
+            { "id": "b", "text": "En las altitudes de las montañas." },
+            { "id": "c", "text": "En las temperaturas medias del clima." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El mapa hidrológico muestra todas las masas de agua del territorio: ríos, lagos, mares, lagunas y los acuíferos o yacimientos de agua subterránea.",
+          "source": "cuestionario-primer-credito.pdf"
+        }
+      ]
+    },
+    {
+      "id": "simbolos-gobierno-y-fechas-civicas",
+      "name": "Símbolos patrios, gobierno y fechas cívicas",
+      "description": "Símbolos nacionales del Ecuador, las funciones del Estado, las provincias del país y las fechas cívicas más importantes.",
+      "questions": [
+        {
+          "id": "geo-se-001",
+          "question": "¿Qué significa el término 'pluricultural'?",
+          "options": [
+            { "id": "a", "text": "Aquello que se caracteriza por albergar o reflejar una sola cultura." },
+            { "id": "b", "text": "Aquello que se caracteriza por albergar o reflejar múltiples culturas dentro de un mismo territorio." },
+            { "id": "c", "text": "Únicamente la cultura occidental dominante." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Pluricultural describe a una sociedad que reconoce y convive con varias culturas. El Ecuador es un país pluricultural por la presencia de pueblos indígenas, mestizos, afroecuatorianos, montubios y otros.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-002",
+          "question": "Los símbolos patrios del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Presidente, el Estado y la Bandera." },
+            { "id": "b", "text": "Bandera, Escudo e Himno Nacional." },
+            { "id": "c", "text": "Escudo, Identidad y Folklore." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los tres símbolos patrios oficiales del Ecuador son la Bandera Nacional (amarillo, azul y rojo), el Escudo de Armas y el Himno Nacional.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-003",
+          "question": "¿Por cuántas provincias está compuesto el Ecuador?",
+          "options": [
+            { "id": "a", "text": "21 provincias." },
+            { "id": "b", "text": "23 provincias." },
+            { "id": "c", "text": "24 provincias." },
+            { "id": "d", "text": "25 provincias." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El Ecuador está dividido en 24 provincias. La más reciente, Santa Elena, fue creada en 2007 separándose del Guayas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-004",
+          "question": "¿Quién ejerce la Función Ejecutiva en el Ecuador?",
+          "options": [
+            { "id": "a", "text": "La Asamblea Nacional." },
+            { "id": "b", "text": "El presidente de la República." },
+            { "id": "c", "text": "La Corte Constitucional." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La Función Ejecutiva la encabeza el presidente de la República, quien es jefe del Estado y de gobierno. Es elegido por sufragio universal cada cuatro años.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-005",
+          "question": "¿Cuál es el rol principal de la Función Legislativa?",
+          "options": [
+            { "id": "a", "text": "Administrar la justicia." },
+            { "id": "b", "text": "Dictar, crear y derogar leyes." },
+            { "id": "c", "text": "Garantizar el sufragio." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La Función Legislativa, representada por la Asamblea Nacional, se encarga de crear, modificar y derogar las leyes que rigen al país.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-006",
+          "question": "¿Cuál es el rol de la Función Electoral?",
+          "options": [
+            { "id": "a", "text": "Garantizar el ejercicio de los derechos políticos que se expresan a través del sufragio." },
+            { "id": "b", "text": "Dictar y modificar leyes." },
+            { "id": "c", "text": "Resolver conflictos entre cantones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Función Electoral organiza, vigila y garantiza procesos electorales transparentes para que la ciudadanía pueda ejercer sus derechos políticos.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-007",
+          "question": "¿Cuál es la principal atribución de la Función Judicial?",
+          "options": [
+            { "id": "a", "text": "Crear leyes." },
+            { "id": "b", "text": "Administrar la justicia." },
+            { "id": "c", "text": "Elegir al presidente de la República." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La Función Judicial administra justicia en el Ecuador a través de jueces, cortes y tribunales. Resuelve conflictos aplicando la ley.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-008",
+          "question": "Los ecuatorianos celebramos el día de la Bandera Nacional el:",
+          "options": [
+            { "id": "a", "text": "26 de septiembre." },
+            { "id": "b", "text": "26 de noviembre." },
+            { "id": "c", "text": "31 de octubre." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Día de la Bandera Nacional del Ecuador se celebra cada 26 de septiembre, en conmemoración de su adopción oficial en 1860.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-009",
+          "question": "¿Cuál es la capital del Ecuador?",
+          "options": [
+            { "id": "a", "text": "Guayaquil." },
+            { "id": "b", "text": "Quito." },
+            { "id": "c", "text": "Cuenca." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Quito es la capital del Ecuador desde la época colonial y sede de los poderes del Estado. Fue declarada Patrimonio Cultural de la Humanidad por la UNESCO en 1978.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-010",
+          "question": "¿Cuál es el idioma oficial del Ecuador?",
+          "options": [
+            { "id": "a", "text": "Inglés." },
+            { "id": "b", "text": "Kichwa exclusivamente." },
+            { "id": "c", "text": "Español, junto con el kichwa y el shuar como idiomas oficiales de relación intercultural." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El español es el idioma oficial del Ecuador. La Constitución reconoce además al kichwa y al shuar como idiomas oficiales de relación intercultural.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-011",
+          "question": "¿Qué fecha cívica se conmemora el 27 de febrero?",
+          "options": [
+            { "id": "a", "text": "Día de la Bandera Nacional." },
+            { "id": "b", "text": "Batalla de Tarqui y Día del Civismo." },
+            { "id": "c", "text": "Independencia de Cuenca." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El 27 de febrero se recuerda la Batalla de Tarqui (1829), donde Ecuador derrotó a las tropas peruanas. Es también el Día del Civismo y la Unidad Nacional.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-012",
+          "question": "¿Qué fecha cívica se celebra el 24 de mayo?",
+          "options": [
+            { "id": "a", "text": "Batalla de Pichincha." },
+            { "id": "b", "text": "Batalla de Tarqui." },
+            { "id": "c", "text": "Día del Escudo Nacional." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El 24 de mayo se conmemora la Batalla de Pichincha de 1822, en la que Antonio José de Sucre selló la independencia de Quito de la corona española.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-013",
+          "question": "¿Qué se celebra el 3 de noviembre?",
+          "options": [
+            { "id": "a", "text": "Independencia de Cuenca." },
+            { "id": "b", "text": "Independencia de Guayaquil." },
+            { "id": "c", "text": "Batalla de Pichincha." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El 3 de noviembre de 1820 se proclamó la Independencia de Cuenca del dominio español. Es una de las fechas cívicas más importantes del país.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-014",
+          "question": "¿Qué fecha cívica se celebra el 31 de octubre?",
+          "options": [
+            { "id": "a", "text": "Día de la Bandera Nacional." },
+            { "id": "b", "text": "Día del Escudo Nacional." },
+            { "id": "c", "text": "Día de la Independencia." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El 31 de octubre se celebra el Día del Escudo Nacional del Ecuador, en conmemoración de su adopción oficial en 1900.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-015",
+          "question": "¿Cuántas provincias tiene la región Costa?",
+          "options": [
+            { "id": "a", "text": "5 provincias." },
+            { "id": "b", "text": "7 provincias." },
+            { "id": "c", "text": "10 provincias." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La región Costa cuenta con 7 provincias: Esmeraldas, Manabí, Santo Domingo de los Tsáchilas, Los Ríos, Guayas, Santa Elena y El Oro.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-016",
+          "question": "¿Cuántas provincias tiene la región Sierra?",
+          "options": [
+            { "id": "a", "text": "7 provincias." },
+            { "id": "b", "text": "10 provincias." },
+            { "id": "c", "text": "12 provincias." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La región Sierra está conformada por 10 provincias: Carchi, Imbabura, Pichincha, Cotopaxi, Tungurahua, Bolívar, Chimborazo, Cañar, Azuay y Loja.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-017",
+          "question": "¿Cuántas provincias tiene la región Oriente (Amazónica)?",
+          "options": [
+            { "id": "a", "text": "4 provincias." },
+            { "id": "b", "text": "6 provincias." },
+            { "id": "c", "text": "8 provincias." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La región Oriente o Amazónica tiene 6 provincias: Sucumbíos, Orellana, Napo, Pastaza, Morona Santiago y Zamora Chinchipe.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-se-018",
+          "question": "¿Cuántas provincias conforman la región Insular?",
+          "options": [
+            { "id": "a", "text": "1 provincia." },
+            { "id": "b", "text": "2 provincias." },
+            { "id": "c", "text": "4 provincias." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La región Insular consta de 1 sola provincia: Galápagos, conformada por el archipiélago del mismo nombre en el océano Pacífico.",
+          "source": "cuestionario-primer-credito.pdf"
+        }
+      ]
+    },
+    {
+      "id": "regiones-etnias-gastronomia",
+      "name": "Regiones, etnias y gastronomía",
+      "description": "Pueblos y nacionalidades de cada región del Ecuador y los platos típicos representativos.",
+      "questions": [
+        {
+          "id": "geo-rc-001",
+          "question": "¿Qué etnia habita principalmente en la región Oriente (Amazonía)?",
+          "options": [
+            { "id": "a", "text": "Saraguros." },
+            { "id": "b", "text": "Chachis o cayapas." },
+            { "id": "c", "text": "Shuar." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Los Shuar son una de las nacionalidades indígenas más numerosas de la Amazonía ecuatoriana, distribuidos principalmente en Morona Santiago, Zamora Chinchipe y Pastaza.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-002",
+          "question": "¿En qué región habitan tradicionalmente los Chachis (cayapas)?",
+          "options": [
+            { "id": "a", "text": "Costa." },
+            { "id": "b", "text": "Sierra." },
+            { "id": "c", "text": "Oriente." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Los Chachis o cayapas habitan en la región Costa, principalmente en la provincia de Esmeraldas, en las riberas de los ríos Cayapas, Onzole y Santiago.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-003",
+          "question": "¿En qué región habitan los Saraguros?",
+          "options": [
+            { "id": "a", "text": "Costa." },
+            { "id": "b", "text": "Sierra." },
+            { "id": "c", "text": "Oriente." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los Saraguros viven en la Sierra sur del Ecuador, principalmente en el cantón Saraguro (provincia de Loja). Conservan su vestimenta negra característica.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-004",
+          "question": "Las etnias que corresponden a la región Sierra del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Awá, Caranquis, Cholos y Secoya." },
+            { "id": "b", "text": "Saraguro, Shuar y Paltas." },
+            { "id": "c", "text": "Caranquis, Saraguro y Paltas." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Caranquis, Saraguros y Paltas son pueblos indígenas asentados históricamente en la Sierra. Los Shuar habitan el Oriente, no la Sierra.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-005",
+          "question": "Las etnias que corresponden a la región Costa del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Awá, Chibuleo y Huaorani." },
+            { "id": "b", "text": "Awá, Huancavilca y Afroecuatorianos." },
+            { "id": "c", "text": "Salasaka, Afroecuatorianos y Cofanes." }
+          ],
+          "correct_answer": "b",
+          "explanation": "En la Costa habitan los Awá (Esmeraldas/Carchi), los Huancavilca (Santa Elena/Guayas) y el pueblo Afroecuatoriano, particularmente concentrado en Esmeraldas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-006",
+          "question": "Las etnias que corresponden a la región Amazónica del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Cañarís, Palta, Montubios y Huaorani." },
+            { "id": "b", "text": "Cofanes, Huancavilca, Caranquis y Afroecuatorianos." },
+            { "id": "c", "text": "Huaorani, Secoyas, Shuar y Cofanes." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La Amazonía ecuatoriana alberga a las nacionalidades Huaorani, Secoya, Shuar, Cofán, Achuar, Siona, Andoa, Zápara y Kichwa amazónica.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-007",
+          "question": "Las comidas típicas de la región Costa del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Encebollados, bolón de verde, locro de papas y mote pillo." },
+            { "id": "b", "text": "Encebollados, bolón de verde, ceviches, corvina frita y arroz con menestra." },
+            { "id": "c", "text": "Ceviche de palmito, ceviches, corvina frita y cuy asado." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los platos costeños típicos incluyen encebollado, bolón de verde, ceviches, corvina frita y arroz con menestra. El locro y el mote pillo son serranos; el cuy asado también.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-008",
+          "question": "Las comidas típicas de la región Sierra del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Encebollados, bolón de verde, ceviches, corvina frita y cuy asado." },
+            { "id": "b", "text": "Ceviche de palmito, fritada, llapingachos, seco de guanta y caldo de gallina." },
+            { "id": "c", "text": "Mote pillo, cuy asado, fritada, caldo de gallina, llapingachos y locro de papas." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La gastronomía serrana se caracteriza por el uso del maíz (mote pillo), la papa (locro, llapingachos), el cerdo (fritada) y el cuy. El caldo de gallina criolla es plato emblemático.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-rc-009",
+          "question": "Las comidas típicas de la región Amazónica del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Ceviche de palmito, chontacuro, té de guayusa y seco de guanta." },
+            { "id": "b", "text": "Encebollado, ceviche de palmito, chontacuro y llapingachos." },
+            { "id": "c", "text": "Chontacuro, té de guayusa, fritada y caldo de gallina." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Amazonía ofrece platos como ceviche de palmito, chontacuro (gusano del chontaduro), té de guayusa y carnes silvestres como el seco de guanta.",
+          "source": "cuestionario-primer-credito.pdf"
+        }
+      ]
+    },
+    {
+      "id": "turismo-y-geografia-fisica",
+      "name": "Turismo, provincias y geografía física",
+      "description": "Lugares turísticos por región, capitales provinciales, playas, parques nacionales y geografía física del Ecuador.",
+      "questions": [
+        {
+          "id": "geo-tg-001",
+          "question": "¿Cuáles de los siguientes son lugares turísticos de la región Costa?",
+          "options": [
+            { "id": "a", "text": "Mompiche y Atacames." },
+            { "id": "b", "text": "Papallacta y Parque Yasuní." },
+            { "id": "c", "text": "Camino del Inca y Cueva de los Tayos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Mompiche y Atacames son playas turísticas en Esmeraldas (Costa). Papallacta está en Napo (Sierra/Oriente), el Yasuní está en la Amazonía, y Cueva de los Tayos también es amazónica.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-002",
+          "question": "Los lugares turísticos representativos de la región Sierra son:",
+          "options": [
+            { "id": "a", "text": "Jambelí, Parque Yasuní, Centro Histórico de Cuenca y Parque Nacional Sangay." },
+            { "id": "b", "text": "Atacames, Parque Nacional el Cajas, Papallacta y Cueva de los Tayos." },
+            { "id": "c", "text": "Centro Histórico de Cuenca, Centro Histórico de Quito y Laguna de Quilotoa." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Los Centros Históricos de Quito y Cuenca son Patrimonio de la Humanidad, y la Laguna de Quilotoa (Cotopaxi) es un cráter volcánico en plena Sierra.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-003",
+          "question": "¿En qué provincia se encuentran las playas Jambelí y Bajo Alto?",
+          "options": [
+            { "id": "a", "text": "El Oro." },
+            { "id": "b", "text": "Esmeraldas." },
+            { "id": "c", "text": "Manabí." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Jambelí (isla) y Bajo Alto son playas de la provincia de El Oro, en el sur de la Costa ecuatoriana, frente al Golfo de Guayaquil.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-004",
+          "question": "¿A qué provincia pertenecen las playas Atacames y Mompiche?",
+          "options": [
+            { "id": "a", "text": "Manabí." },
+            { "id": "b", "text": "Esmeraldas." },
+            { "id": "c", "text": "Santa Elena." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Atacames y Mompiche son playas turísticas de Esmeraldas, conocidas por su arena oscura y oleaje moderado. Mompiche es destino de surf.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-005",
+          "question": "¿En qué provincia están Montañita, Salinas y la Chocolatera?",
+          "options": [
+            { "id": "a", "text": "El Oro." },
+            { "id": "b", "text": "Manabí." },
+            { "id": "c", "text": "Santa Elena." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Montañita, Salinas y La Chocolatera (el punto más occidental del Ecuador continental) están en la provincia de Santa Elena.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-006",
+          "question": "¿Cuáles son ríos importantes de la región Amazónica del Ecuador?",
+          "options": [
+            { "id": "a", "text": "Chone, Carchi y Tomebamba." },
+            { "id": "b", "text": "Pastaza, Napo, Santiago y Coca." },
+            { "id": "c", "text": "Machángara, Yanuncay y Guayllabamba." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El Oriente ecuatoriano cuenta con grandes ríos amazónicos: Napo, Pastaza, Coca, Santiago, Aguarico y Curaray, todos afluentes del río Amazonas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-007",
+          "question": "Ecuador continental presenta 3 regiones naturales (Costa, Sierra y Oriente) porque de norte a sur lo atraviesa:",
+          "options": [
+            { "id": "a", "text": "La Cordillera del Himalaya." },
+            { "id": "b", "text": "La Cordillera de los Andes." },
+            { "id": "c", "text": "La Línea Equinoccial o Ecuador." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La Cordillera de los Andes recorre el país de norte a sur dividiendo el territorio en tres regiones naturales: Costa (occidental), Sierra (andina) y Oriente (amazónica).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-008",
+          "question": "La tradición de la Mama Negra se celebra en:",
+          "options": [
+            { "id": "a", "text": "Guayaquil." },
+            { "id": "b", "text": "Puyo." },
+            { "id": "c", "text": "Latacunga." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La Mama Negra es una fiesta tradicional de Latacunga (Cotopaxi). Se celebra dos veces al año, en septiembre (religiosa) y en noviembre (cívica).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-009",
+          "question": "¿Cuál es la capital de la provincia de Morona Santiago?",
+          "options": [
+            { "id": "a", "text": "Tena." },
+            { "id": "b", "text": "Macas." },
+            { "id": "c", "text": "Puyo." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Macas es la capital de la provincia amazónica de Morona Santiago.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-010",
+          "question": "¿Cuál es la capital de la provincia de Napo?",
+          "options": [
+            { "id": "a", "text": "Tena." },
+            { "id": "b", "text": "Coca." },
+            { "id": "c", "text": "Macas." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Tena es la capital de la provincia de Napo, ubicada en la Amazonía norte del Ecuador.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-011",
+          "question": "¿Cuál es la capital de la provincia de Orellana?",
+          "options": [
+            { "id": "a", "text": "Macas." },
+            { "id": "b", "text": "Puerto Francisco de Orellana (Coca)." },
+            { "id": "c", "text": "Puyo." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Puerto Francisco de Orellana, conocido popularmente como El Coca, es la capital de la provincia de Orellana, en la Amazonía.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-012",
+          "question": "¿Cuál es la capital de la provincia de Sucumbíos?",
+          "options": [
+            { "id": "a", "text": "Nueva Loja (Lago Agrio)." },
+            { "id": "b", "text": "Zamora." },
+            { "id": "c", "text": "Puyo." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Nueva Loja, también llamada Lago Agrio, es la capital de la provincia de Sucumbíos en el extremo nororiental del país.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-013",
+          "question": "¿Cuál es un atractivo turístico representativo de la Sierra ecuatoriana?",
+          "options": [
+            { "id": "a", "text": "El Centro Histórico de Quito." },
+            { "id": "b", "text": "La Reserva Faunística Cuyabeno." },
+            { "id": "c", "text": "Las Islas Galápagos." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Centro Histórico de Quito está en la Sierra y es el más grande y mejor conservado de América Latina. Cuyabeno es amazónico y Galápagos pertenece a la región Insular.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-014",
+          "question": "El Parque Nacional Yasuní se encuentra en las provincias de:",
+          "options": [
+            { "id": "a", "text": "Orellana y Napo." },
+            { "id": "b", "text": "Napo y Sucumbíos." },
+            { "id": "c", "text": "Pastaza y Orellana." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El Parque Nacional Yasuní abarca territorios de Pastaza y Orellana. Es una de las áreas con mayor biodiversidad del planeta y Reserva de Biósfera de la UNESCO.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-015",
+          "question": "La estación científica localizada en Galápagos se denomina:",
+          "options": [
+            { "id": "a", "text": "Pedro Vicente Maldonado." },
+            { "id": "b", "text": "San Francisco." },
+            { "id": "c", "text": "Charles Darwin." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La Estación Científica Charles Darwin, en Santa Cruz (Galápagos), investiga y conserva la flora y fauna del archipiélago desde 1964.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-016",
+          "question": "La organización que declaró a las Islas Galápagos como Patrimonio Natural de la Humanidad en 1978 fue:",
+          "options": [
+            { "id": "a", "text": "ONU." },
+            { "id": "b", "text": "UNESCO." },
+            { "id": "c", "text": "OEA." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La UNESCO (Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura) declaró a las Islas Galápagos Patrimonio Natural de la Humanidad en 1978, siendo el primer sitio en recibir esa distinción.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-017",
+          "question": "¿Cuál es una reserva ecológica representativa de la región Amazónica del Ecuador?",
+          "options": [
+            { "id": "a", "text": "Reserva Faunística Cuyabeno." },
+            { "id": "b", "text": "Reserva Ecológica Cotacachi-Cayapas." },
+            { "id": "c", "text": "Parque Nacional Cajas." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Cuyabeno (Sucumbíos) es una reserva amazónica con gran biodiversidad. Cotacachi-Cayapas combina Sierra y Costa, y el Cajas está en plena Sierra (Azuay).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-018",
+          "question": "¿Dónde se ubica el Parque Nacional Cajas?",
+          "options": [
+            { "id": "a", "text": "Imbabura." },
+            { "id": "b", "text": "Cuenca - Azuay." },
+            { "id": "c", "text": "Azogues - Cañar." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El Parque Nacional Cajas está a unos 30 km de Cuenca, en la provincia del Azuay. Es famoso por sus más de 200 lagunas de origen glaciar.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-019",
+          "question": "¿En qué provincia se encuentra la Laguna de San Pablo?",
+          "options": [
+            { "id": "a", "text": "Imbabura." },
+            { "id": "b", "text": "Azuay." },
+            { "id": "c", "text": "Cañar." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La Laguna de San Pablo está al pie del volcán Imbabura, en la provincia de Imbabura. Es uno de los espejos de agua más visitados de la Sierra norte.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-020",
+          "question": "¿En qué provincia está ubicado el Cerro Cojitambo?",
+          "options": [
+            { "id": "a", "text": "Imbabura." },
+            { "id": "b", "text": "Azuay." },
+            { "id": "c", "text": "Cañar." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El Cerro Cojitambo está en Azogues, provincia de Cañar. Es un destino popular para la escalada en roca en el austro ecuatoriano.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-021",
+          "question": "¿Cuál es la capital de la provincia del Guayas?",
+          "options": [
+            { "id": "a", "text": "Guayaquil." },
+            { "id": "b", "text": "Manta." },
+            { "id": "c", "text": "Salinas." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Guayaquil, el principal puerto del Ecuador, es la capital de la provincia del Guayas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-022",
+          "question": "¿Cuál es la capital de la provincia de Bolívar?",
+          "options": [
+            { "id": "a", "text": "Babahoyo." },
+            { "id": "b", "text": "Guaranda." },
+            { "id": "c", "text": "Riobamba." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Guaranda es la capital de la provincia de Bolívar, ubicada en la Sierra central del Ecuador.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-023",
+          "question": "¿Cuál es la capital de la provincia de Imbabura?",
+          "options": [
+            { "id": "a", "text": "Otavalo." },
+            { "id": "b", "text": "Ibarra." },
+            { "id": "c", "text": "Cotacachi." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Ibarra, conocida como «la ciudad blanca», es la capital de la provincia de Imbabura en la Sierra norte del Ecuador.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-024",
+          "question": "¿Cuál es la capital de la provincia de Galápagos?",
+          "options": [
+            { "id": "a", "text": "Puerto Ayora." },
+            { "id": "b", "text": "Puerto Baquerizo Moreno." },
+            { "id": "c", "text": "Puerto Villamil." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Puerto Baquerizo Moreno, en la isla San Cristóbal, es la capital de la provincia de Galápagos.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-025",
+          "question": "Las provincias de la Sierra son:",
+          "options": [
+            { "id": "a", "text": "Pichincha, Los Ríos, Napo." },
+            { "id": "b", "text": "Guayas, Carchi, Orellana." },
+            { "id": "c", "text": "Loja, Azuay, Cañar." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Loja, Azuay y Cañar son tres provincias serranas del austro. Los Ríos y Guayas son costeñas; Napo y Orellana son amazónicas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-026",
+          "question": "Las provincias de la Costa son:",
+          "options": [
+            { "id": "a", "text": "Loja, Azuay, Cañar." },
+            { "id": "b", "text": "El Oro, Esmeraldas, Manabí." },
+            { "id": "c", "text": "Orellana, Pastaza, Morona Santiago." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El Oro, Esmeraldas y Manabí son tres de las siete provincias de la región Costa. Loja, Azuay y Cañar son serranas; Orellana, Pastaza y Morona Santiago son amazónicas.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-027",
+          "question": "Las regiones del Ecuador son:",
+          "options": [
+            { "id": "a", "text": "Costa, Playas y Sierra." },
+            { "id": "b", "text": "Golfo de Guayaquil, La Trinitaria y Oriente." },
+            { "id": "c", "text": "Costa, Sierra, Oriente y Región Insular." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El Ecuador se divide en cuatro regiones naturales: Costa (litoral), Sierra (andina), Oriente (amazónica) y Región Insular (Galápagos).",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-028",
+          "question": "La capital de la provincia de Pastaza es:",
+          "options": [
+            { "id": "a", "text": "El Oro." },
+            { "id": "b", "text": "Zamora." },
+            { "id": "c", "text": "Puyo." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Puyo es la capital de la provincia amazónica de Pastaza, en el centro del Oriente ecuatoriano.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-029",
+          "question": "Los árboles más altos del Ecuador se encuentran en la región:",
+          "options": [
+            { "id": "a", "text": "Costa." },
+            { "id": "b", "text": "Oriente." },
+            { "id": "c", "text": "Sierra." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La Amazonía (Oriente) alberga los árboles más altos del Ecuador, como el ceibo amazónico y el chuncho, gracias a la alta humedad y biodiversidad del bosque tropical.",
+          "source": "cuestionario-primer-credito.pdf"
+        },
+        {
+          "id": "geo-tg-030",
+          "question": "La elevación más alta del Ecuador es:",
+          "options": [
+            { "id": "a", "text": "Cotopaxi." },
+            { "id": "b", "text": "Tungurahua." },
+            { "id": "c", "text": "Chimborazo." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El Chimborazo (6.263 m s.n.m.) es la montaña más alta del Ecuador. Por estar muy cerca de la línea ecuatorial, su cumbre es el punto de la superficie terrestre más alejado del centro de la Tierra.",
+          "source": "cuestionario-primer-credito.pdf"
+        }
+      ]
+    }
+  ]
+}
