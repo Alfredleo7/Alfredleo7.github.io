@@ -1,0 +1,644 @@
+{
+  "subject": {
+    "id": "atencion-al-cliente",
+    "name": "Atención al Cliente",
+    "teacher": "Ec. Pablo Alemán C."
+  },
+  "exam": {
+    "title": "Aporte de: Atención al Cliente",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "fundamentos-del-servicio",
+      "name": "Fundamentos del servicio y la atención",
+      "description": "Qué es el servicio, la atención y la calidad, y por qué son importantes para el conductor profesional.",
+      "questions": [
+        {
+          "id": "ac-fs-001",
+          "question": "¿Cuál de estos elementos es el más importante en el servicio de transporte?",
+          "options": [
+            { "id": "a", "text": "La comodidad al viajar." },
+            { "id": "b", "text": "La música de fondo." },
+            { "id": "c", "text": "La seguridad integral." }
+          ],
+          "correct_answer": "c",
+          "explanation": "En el servicio de transporte, la seguridad integral del pasajero es el elemento prioritario por encima de comodidades secundarias como la música o el confort.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-002",
+          "question": "Acto que muestra que está atento al bienestar o seguridad de una persona es:",
+          "options": [
+            { "id": "a", "text": "Servicio." },
+            { "id": "b", "text": "Usuario." },
+            { "id": "c", "text": "Atención." },
+            { "id": "d", "text": "Calidad." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La atención es precisamente el acto de estar pendiente del bienestar y la seguridad de la otra persona.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-003",
+          "question": "La importancia de brindar un buen servicio radica en:",
+          "options": [
+            { "id": "a", "text": "La competencia." },
+            { "id": "b", "text": "Los usuarios exigentes." },
+            { "id": "c", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Brindar un buen servicio es clave para diferenciarse frente a la competencia: un mercado competitivo exige un servicio de calidad para retener y atraer usuarios.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-004",
+          "question": "Las personas compran lo que usted vende porque:",
+          "options": [
+            { "id": "a", "text": "Porque les gusta cómo lo hace." },
+            { "id": "b", "text": "Porque quiere obtener un beneficio." },
+            { "id": "c", "text": "Porque es más económico." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Las personas compran un servicio o producto porque esperan obtener un beneficio de él, ya sea comodidad, seguridad, ahorro de tiempo, etc.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-005",
+          "question": "La mejora del servicio se la hace:",
+          "options": [
+            { "id": "a", "text": "Cuando existen quejas sobre el servicio." },
+            { "id": "b", "text": "De forma continua." },
+            { "id": "c", "text": "Mínimo una vez al año." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La mejora del servicio debe ser un proceso continuo, no algo reactivo a quejas puntuales ni limitado a una revisión anual.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-006",
+          "question": "Brindar un servicio de calidad significa:",
+          "options": [
+            { "id": "a", "text": "Brindar un servicio rápido y a bajo precio." },
+            { "id": "b", "text": "Ofrecer gran variedad para poder cerrar la venta." },
+            { "id": "c", "text": "Dar un servicio que satisfaga los gustos y preferencias." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La calidad en el servicio se mide por qué tan bien se satisfacen los gustos y preferencias reales del cliente, no solo por rapidez, precio o variedad.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-007",
+          "question": "El nivel del servicio lo califica:",
+          "options": [
+            { "id": "a", "text": "Las autoridades competentes." },
+            { "id": "b", "text": "El cliente." },
+            { "id": "c", "text": "El jefe del área de servicio." },
+            { "id": "d", "text": "Todas las anteriores." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Es el cliente quien, a través de su experiencia, determina si el nivel del servicio recibido fue bueno o malo.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-008",
+          "question": "El usuario de un servicio se graba:",
+          "options": [
+            { "id": "a", "text": "Los momentos de la verdad normales." },
+            { "id": "b", "text": "Los momentos de la verdad en el que superamos sus expectativas." },
+            { "id": "c", "text": "Todas las anteriores." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Lo que queda grabado en la memoria del usuario son los momentos de la verdad donde el servicio superó sus expectativas, no los momentos ordinarios.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-009",
+          "question": "Un servicio de mala calidad nos proyecta a tener:",
+          "options": [
+            { "id": "a", "text": "Una PEG + 10." },
+            { "id": "b", "text": "Una PEG – 11." },
+            { "id": "c", "text": "Una PEG -9." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Un servicio de mala calidad genera un impacto negativo amplificado en la percepción y el boca a boca (PEG negativo), afectando la reputación más allá del cliente directamente afectado.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-010",
+          "question": "La primera etapa del servicio es:",
+          "options": [
+            { "id": "a", "text": "Prestación del servicio." },
+            { "id": "b", "text": "Pago por el servicio." },
+            { "id": "c", "text": "Recepción al cliente." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Todo servicio comienza con la recepción al cliente: es el primer contacto que marca la pauta de la experiencia completa.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-011",
+          "question": "La fijación o acuerdo del precio se recomienda hacer:",
+          "options": [
+            { "id": "a", "text": "Durante el servicio." },
+            { "id": "b", "text": "Antes de ejecutar el servicio." },
+            { "id": "c", "text": "Al finalizar el servicio." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El precio debe acordarse antes de ejecutar el servicio para evitar malentendidos, reclamos o desacuerdos posteriores.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-fs-012",
+          "question": "Las quejas son:",
+          "options": [
+            { "id": "a", "text": "Oportunidades para mejorar." },
+            { "id": "b", "text": "Inconvenientes para la empresa." },
+            { "id": "c", "text": "Debilidades de la institución." },
+            { "id": "d", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las quejas, bien gestionadas, son una fuente valiosa de información para identificar puntos débiles y mejorar el servicio.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        }
+      ]
+    },
+    {
+      "id": "habilidades-sociales-y-comunicacion",
+      "name": "Habilidades sociales y comunicación",
+      "description": "Qué son las habilidades sociales, cómo mejorar la comunicación, y la importancia de la escucha activa y las preguntas.",
+      "questions": [
+        {
+          "id": "ac-hc-001",
+          "question": "Las habilidades sociales son:",
+          "options": [
+            { "id": "a", "text": "Destrezas interpersonales para poder relacionarnos." },
+            { "id": "b", "text": "Capacidades para hablar en público." },
+            { "id": "c", "text": "Competencias para dirigir grupos sociales." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las habilidades sociales son destrezas interpersonales que nos permiten relacionarnos efectivamente con otras personas, no se limitan a hablar en público ni a liderar grupos.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-002",
+          "question": "Las habilidades sociales tienen que ver con:",
+          "options": [
+            { "id": "a", "text": "La capacidad para captar bien las emociones y sentimientos de las personas." },
+            { "id": "b", "text": "Capacidad de traducir las conductas de los otros con un significado real." },
+            { "id": "c", "text": "Todas las anteriores." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Captar bien las emociones y sentimientos de los demás es la base de las habilidades sociales; permite responder de forma adecuada en cada interacción.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-003",
+          "question": "Al no lograr desarrollar bien nuestras habilidades sociales podemos:",
+          "options": [
+            { "id": "a", "text": "Tener dificultad para practicar deportes." },
+            { "id": "b", "text": "Lastimar a personas sin considerar el daño que hacemos." },
+            { "id": "c", "text": "No sucede nada." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Unas habilidades sociales poco desarrolladas pueden llevarnos a lastimar a otras personas sin darnos cuenta del daño causado.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-004",
+          "question": "Entre algunas de las habilidades sociales que debemos manejar, tenemos:",
+          "options": [
+            { "id": "a", "text": "Conducir callado, y considerar que lo que el cliente diga no es problema." },
+            { "id": "b", "text": "Saber ganar en los temas de conversación con el cliente e imponer mi criterio." },
+            { "id": "c", "text": "Escuchar activamente, iniciar y mantener conversaciones, empatizar con los demás." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Las habilidades sociales clave incluyen escuchar activamente, saber iniciar y sostener conversaciones, y empatizar con los demás; no imponer el propio criterio ni ignorar al cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-005",
+          "question": "Una buena comunicación se logra mediante:",
+          "options": [
+            { "id": "a", "text": "Un lenguaje verbal seguro y sencillo." },
+            { "id": "b", "text": "Un lenguaje comprensible." },
+            { "id": "c", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Un lenguaje verbal seguro y sencillo transmite confianza y facilita la comprensión del mensaje por parte del cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-006",
+          "question": "La comunicación se mejora:",
+          "options": [
+            { "id": "a", "text": "Con buenas preguntas y contacto visual." },
+            { "id": "b", "text": "Gesticulando bien y escuchando." },
+            { "id": "c", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Hacer buenas preguntas y mantener contacto visual son claves para mejorar la calidad de la comunicación con el cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-007",
+          "question": "Tener comprensión es:",
+          "options": [
+            { "id": "a", "text": "Saber sonreír y hablar con el cliente." },
+            { "id": "b", "text": "Tratar de entender detalladamente el requerimiento del cliente." },
+            { "id": "c", "text": "Saludar comedidamente y mantener una actitud alegre." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Comprender es entender a fondo lo que el cliente realmente necesita, más allá de gestos amables o cortesías superficiales.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-008",
+          "question": "Por Accesibilidad se entiende:",
+          "options": [
+            { "id": "a", "text": "Ser empáticos y eficientes." },
+            { "id": "b", "text": "Tener facilidades de comunicación múltiples." },
+            { "id": "c", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La accesibilidad se refiere a contar con múltiples canales o facilidades de comunicación para que el cliente pueda contactarse fácilmente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-009",
+          "question": "La Comunicación interpersonal la entendemos como:",
+          "options": [
+            { "id": "a", "text": "Dar una información que todos van a entender de igual forma." },
+            { "id": "b", "text": "Poner en común cualquier tipo de información." },
+            { "id": "c", "text": "Ninguna de las anteriores." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La comunicación interpersonal consiste en poner en común cualquier tipo de información entre dos o más personas, sin que esto implique que todos la interpreten de igual forma.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-010",
+          "question": "La Comunicación permite:",
+          "options": [
+            { "id": "a", "text": "Llevar una vida ordenada y sin problemas." },
+            { "id": "b", "text": "Que la sociedad respete reglamentos." },
+            { "id": "c", "text": "La interacción entre las personas para lograr distintos propósitos." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La función esencial de la comunicación es permitir la interacción entre personas para alcanzar distintos propósitos, no garantizar una vida sin problemas ni el respeto a reglamentos.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-011",
+          "question": "La escucha activa es:",
+          "options": [
+            { "id": "a", "text": "La disposición de oír al cliente sus quejas." },
+            { "id": "b", "text": "La disposición física, psíquica y afectiva hacia el cliente." },
+            { "id": "c", "text": "La disposición física para que el cliente no se enoje." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La escucha activa implica una disposición completa (física, psíquica y afectiva) hacia el cliente, no solo oír pasivamente sus quejas.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-012",
+          "question": "Porqué es importante hacer buenas preguntas?",
+          "options": [
+            { "id": "a", "text": "Porque me hace ver importante." },
+            { "id": "b", "text": "Porque me permite obtener información valiosa." },
+            { "id": "c", "text": "Para tener de qué conversar." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Hacer buenas preguntas nos permite obtener información valiosa que ayuda a entender y resolver mejor las necesidades del cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-013",
+          "question": "Las preguntas cerradas nos ayudan a:",
+          "options": [
+            { "id": "a", "text": "Obtener información específica." },
+            { "id": "b", "text": "Perder tiempo con el cliente." },
+            { "id": "c", "text": "Obtener información más amplia." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Las preguntas cerradas (sí/no o de opción limitada) sirven para obtener información específica y puntual.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-014",
+          "question": "Las preguntas abiertas nos permiten:",
+          "options": [
+            { "id": "a", "text": "Obtener respuestas puntuales." },
+            { "id": "b", "text": "Obtener respuestas más detalladas." },
+            { "id": "c", "text": "Ninguna de las opciones." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Las preguntas abiertas invitan al cliente a explayarse, obteniendo respuestas más detalladas y ricas en información.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-hc-015",
+          "question": "Las preguntas de control son muy importantes porque:",
+          "options": [
+            { "id": "a", "text": "Nos permiten dar opciones." },
+            { "id": "b", "text": "Dan mucha información." },
+            { "id": "c", "text": "Sirven para comprobar los requerimientos." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Las preguntas de control se usan para verificar y confirmar que se ha comprendido correctamente el requerimiento del cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        }
+      ]
+    },
+    {
+      "id": "tipos-de-usuarios",
+      "name": "Tipos de usuarios y cómo tratarlos",
+      "description": "Perfiles de usuarios difíciles (grosero, polémico, sabelotodo, desconfiado, impulsivo) y las estrategias recomendadas para cada uno.",
+      "questions": [
+        {
+          "id": "ac-tu-001",
+          "question": "El cliente grosero es:",
+          "options": [
+            { "id": "a", "text": "Necesita disminuir al otro." },
+            { "id": "b", "text": "Es brusco." },
+            { "id": "c", "text": "Es grosero." },
+            { "id": "d", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "d",
+          "explanation": "El cliente grosero combina la necesidad de disminuir al otro, un trato brusco y una actitud grosera en general; las tres características coexisten.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-002",
+          "question": "El cliente polémico:",
+          "options": [
+            { "id": "a", "text": "Busca discusión y es ofensivo." },
+            { "id": "b", "text": "Es ofensivo y no discute." },
+            { "id": "c", "text": "Busca discusión, pero no es ofensivo." },
+            { "id": "d", "text": "Es detallista." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El cliente polémico busca discutir y confrontar ideas, pero no necesariamente es ofensivo en su trato.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-003",
+          "question": "Al usuario Polémico es recomendable:",
+          "options": [
+            { "id": "a", "text": "Atenderlo en poco tiempo." },
+            { "id": "b", "text": "Que perciba que se le presta atención." },
+            { "id": "c", "text": "Liderar la conversación." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Con el usuario polémico, es clave que perciba que se le presta atención genuina, evitando que la discusión escale.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-004",
+          "question": "El usuario Sabelotodo se caracteriza por:",
+          "options": [
+            { "id": "a", "text": "Hablar mucho y no concretar." },
+            { "id": "b", "text": "Su actitud de superioridad y conocimiento." },
+            { "id": "c", "text": "No decide pronto." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El usuario sabelotodo se distingue por una actitud de superioridad, mostrando que cree saber más que el propio prestador del servicio.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-005",
+          "question": "Al usuario Sabelotodo se debe:",
+          "options": [
+            { "id": "a", "text": "Escucharlo con actitud serena y asesorar sin que se ofenda." },
+            { "id": "b", "text": "Escucharlo y tratar de corregirlo." },
+            { "id": "c", "text": "Liderar la conversación y cerrar la venta." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Con el sabelotodo conviene mantener una actitud serena, escuchar y asesorar con tacto para no herir su ego ni generar conflicto.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-006",
+          "question": "Al usuario grosero es recomendable:",
+          "options": [
+            { "id": "a", "text": "Eludir su grosería y ser corteses." },
+            { "id": "b", "text": "Argumentar sin hacer caso de sus provocaciones." },
+            { "id": "c", "text": "Todas las anteriores." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Frente al usuario grosero, lo recomendable es argumentar con calma sin caer en sus provocaciones, manteniendo el control de la situación.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-007",
+          "question": "Al usuario desconfiado y al impulsivo debemos:",
+          "options": [
+            { "id": "a", "text": "Darles mucho tiempo." },
+            { "id": "b", "text": "Asesorarles en base a buenas preguntas." },
+            { "id": "c", "text": "Solo dejar que decidan ellos." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Con usuarios desconfiados o impulsivos, la mejor estrategia es asesorarles con buenas preguntas que les ayuden a aclarar sus dudas y decidir con más seguridad.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-tu-008",
+          "question": "A los distintos tipos de usuarios deberíamos:",
+          "options": [
+            { "id": "a", "text": "Escucharlos atentamente y no interrumpir." },
+            { "id": "b", "text": "Coger detalles y dar una solución adecuada." },
+            { "id": "c", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Independientemente del tipo de usuario, siempre conviene escuchar atentamente sin interrumpir y captar los detalles para ofrecer una solución adecuada.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ventas-y-neuroventas",
+      "name": "Ventas, neuroventas e inteligencia emocional",
+      "description": "El componente emocional en las decisiones de compra, las neuroventas, y la inteligencia emocional aplicada a la atención al cliente.",
+      "questions": [
+        {
+          "id": "ac-vn-001",
+          "question": "Un buen vendedor:",
+          "options": [
+            { "id": "a", "text": "Se enfoca en convencer y hacer ventas." },
+            { "id": "b", "text": "Hace sus ventas en base a falsa información." },
+            { "id": "c", "text": "Ofrece soluciones en base a las necesidades del cliente." },
+            { "id": "d", "text": "No dice toda la verdad." }
+          ],
+          "correct_answer": "c",
+          "explanation": "El buen vendedor se enfoca en ofrecer soluciones reales a las necesidades del cliente, no en convencer a toda costa ni en usar información falsa.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-002",
+          "question": "El porcentaje mayor de las ventas está comprobado que son:",
+          "options": [
+            { "id": "a", "text": "El 80% de carácter racional." },
+            { "id": "b", "text": "El 20% de carácter emocional." },
+            { "id": "c", "text": "El 80% de carácter emocional." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Se ha comprobado que la mayoría de las decisiones de compra (alrededor del 80%) están determinadas por factores emocionales, más que racionales.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-003",
+          "question": "Se entiende por neuroventas a:",
+          "options": [
+            { "id": "a", "text": "Entender las compras como la capacidad económica del sujeto." },
+            { "id": "b", "text": "Comprender la psicología de la gente detrás de las decisiones de compra." },
+            { "id": "c", "text": "Ninguna de las opciones." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Las neuroventas se enfocan en comprender los procesos psicológicos y neurológicos que están detrás de las decisiones de compra, más allá de la capacidad económica.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-004",
+          "question": "Las personas nos van a cancelar un valor económico por:",
+          "options": [
+            { "id": "a", "text": "Porque soy un chofer y me necesitan para trasladarse." },
+            { "id": "b", "text": "Porque soy un profesional del transporte." },
+            { "id": "c", "text": "Porque no hay más conductores y soy su única opción." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Se paga por el valor de un servicio profesional; el conductor debe posicionarse como un profesional del transporte, no simplemente como alguien disponible por falta de opciones.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-005",
+          "question": "La inteligencia emocional hace referencia a que:",
+          "options": [
+            { "id": "a", "text": "Nos ayuda al manejo de nuestros impulsos y el establecimiento de relaciones sólidas." },
+            { "id": "b", "text": "Nos permite tener la capacidad de reconocer, comprender y gestionar las emociones propias." },
+            { "id": "c", "text": "Nos permite tomar decisiones más acertadas." },
+            { "id": "d", "text": "Todas las opciones." }
+          ],
+          "correct_answer": "d",
+          "explanation": "La inteligencia emocional abarca el manejo de impulsos, el reconocimiento y gestión de las propias emociones, y la toma de decisiones más acertadas; las tres son facetas de un mismo concepto.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-006",
+          "question": "¿Qué es la actitud?",
+          "options": [
+            { "id": "a", "text": "Ser firme con mi forma de proceder sin importar lo que piensen los demás." },
+            { "id": "b", "text": "Mi forma de ser y que las demás personas deben respetar." },
+            { "id": "c", "text": "La disposición mental y emocional que adopto hacia un objeto, persona, idea o situación." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La actitud es la disposición mental y emocional que adoptamos frente a algo o alguien; no es simplemente imponer la propia forma de ser sin considerar al otro.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-vn-007",
+          "question": "¿Qué es tener una actitud positiva en la atención al cliente?",
+          "options": [
+            { "id": "a", "text": "Es no dejar que el cliente tome la iniciativa en la comunicación y tratar de cerrar la venta sin perder el tiempo." },
+            { "id": "b", "text": "Es mantener la calma al interactuar con los clientes, comprenderlos y gestionar las emociones y el estrés en la atención." },
+            { "id": "c", "text": "Ninguna de las opciones." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Una actitud positiva implica mantener la calma, comprender al cliente y gestionar bien las propias emociones y el estrés durante la atención.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        }
+      ]
+    },
+    {
+      "id": "imagen-profesional-y-manejo-de-conflictos",
+      "name": "Imagen profesional y manejo de conflictos",
+      "description": "La imagen del chofer profesional, la primera impresión, y frases clave sobre cómo manejar la calma y la discusión con el cliente.",
+      "questions": [
+        {
+          "id": "ac-ip-001",
+          "question": "El Chofer profesional se distingue por:",
+          "options": [
+            { "id": "a", "text": "La excelente ejecución integral del servicio." },
+            { "id": "b", "text": "La imagen que presenta su vehículo y él mismo." },
+            { "id": "c", "text": "La excelente actitud entre sus compañeros." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Lo que distingue al chofer profesional es la excelente ejecución integral de su servicio, más allá de la imagen o la relación con compañeros.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-002",
+          "question": "La primera impresión se la hace en los primeros:",
+          "options": [
+            { "id": "a", "text": "10 segundos." },
+            { "id": "b", "text": "5 segundos." },
+            { "id": "c", "text": "7 segundos." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Diversos estudios de atención al cliente sitúan la formación de la primera impresión en los primeros 5 segundos de contacto.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-003",
+          "question": "La imagen personal se considera como:",
+          "options": [
+            { "id": "a", "text": "Un complemento del servicio." },
+            { "id": "b", "text": "Un adicional del servicio." },
+            { "id": "c", "text": "Parte del servicio." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La imagen personal no es un complemento opcional, sino parte integral del servicio que se ofrece al cliente.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-004",
+          "question": "La Capacidad de respuesta se fundamenta en:",
+          "options": [
+            { "id": "a", "text": "La capacidad del conductor para maniobrar." },
+            { "id": "b", "text": "La capacidad del conductor para ejecutar un servicio fiable." },
+            { "id": "c", "text": "La capacidad del conductor para dar un buen servicio." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La capacidad de respuesta se fundamenta en poder ejecutar un servicio fiable y consistente, más allá de la habilidad de maniobra o una noción general de «buen servicio».",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-005",
+          "question": "En la relación conductor–usuario, el componente creativo es:",
+          "options": [
+            { "id": "a", "text": "El conocimiento que construye." },
+            { "id": "b", "text": "Su forma única y personal de ejecutar un servicio fiable." },
+            { "id": "c", "text": "Las destrezas de comunicación que utiliza." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El componente creativo es la forma única y personal en que cada conductor ejecuta un servicio fiable, su sello particular.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-006",
+          "question": "La frase «la mujer del César no solo debe ser, sino parecer» hace referencia a:",
+          "options": [
+            { "id": "a", "text": "No importa lo que diga la gente, yo visto como sea." },
+            { "id": "b", "text": "Mi imagen no tiene por qué molestar a nadie ni influye para la empresa." },
+            { "id": "c", "text": "Soy un conductor profesional, debo parecer un conductor profesional." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La frase clásica alude a que no basta con ser profesional, también hay que parecerlo: la imagen proyectada importa tanto como la competencia real.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        },
+        {
+          "id": "ac-ip-007",
+          "question": "La frase «el que se pica pierde» hace referencia a:",
+          "options": [
+            { "id": "a", "text": "Que en una discusión debo dejar claro que mi punto de vista es el que debe prevalecer." },
+            { "id": "b", "text": "Que en una discusión el objetivo es descontrolar a la otra persona y así imponer mi criterio." },
+            { "id": "c", "text": "Que en una discusión debo conservar la calma y resolver las diferencias en base a la razón." }
+          ],
+          "correct_answer": "c",
+          "explanation": "«El que se pica pierde» significa que quien pierde la calma en una discusión pierde también el control de la situación; conviene mantener la serenidad y razonar.",
+          "source": "aporte-atencion-al-cliente.pdf"
+        }
+      ]
+    }
+  ]
+}

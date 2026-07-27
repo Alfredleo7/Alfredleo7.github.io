@@ -451,6 +451,355 @@
           "correct_answer": "b",
           "explanation": "El «firefighter» (bombero) responde a incendios y emergencias. El «police officer» se encarga del orden público; el «mechanic» repara vehículos y el «pilot» conduce aeronaves.",
           "source": "english-questionnaire.pdf"
+        },
+        {
+          "id": "ing-jb-006",
+          "question": "Artisan — which definition best matches this word?",
+          "options": [
+            { "id": "a", "text": "Warm clothing" },
+            { "id": "b", "text": "Make things by hand" },
+            { "id": "c", "text": "Land near the ocean" }
+          ],
+          "correct_answer": "b",
+          "explanation": "An «artisan» is a person who makes things by hand, often using traditional skills. «Warm clothing» and «land near the ocean» describe unrelated concepts.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-007",
+          "question": "Coast — which definition best matches this word?",
+          "options": [
+            { "id": "a", "text": "Land near the ocean" },
+            { "id": "b", "text": "Warm clothing" },
+            { "id": "c", "text": "Help tourists" }
+          ],
+          "correct_answer": "a",
+          "explanation": "The «coast» is the land that is near or borders the ocean. «Warm clothing» and «help tourists» are unrelated to this term.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-008",
+          "question": "\"I am a tropical forest with many animals.\" What am I?",
+          "options": [
+            { "id": "a", "text": "Artisan" },
+            { "id": "b", "text": "Sweater" },
+            { "id": "c", "text": "Rainforest" }
+          ],
+          "correct_answer": "c",
+          "explanation": "A «rainforest» is a tropical forest with abundant plant and animal life, matching the description exactly.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-009",
+          "question": "\"I make bread every morning.\" Who am I?",
+          "options": [
+            { "id": "a", "text": "Baker" },
+            { "id": "b", "text": "Fisherman" },
+            { "id": "c", "text": "Farmer" }
+          ],
+          "correct_answer": "a",
+          "explanation": "A «baker» makes bread and other baked goods, typically early in the morning. A fisherman catches fish and a farmer works the land.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-010",
+          "question": "A farmer usually works on a ______.",
+          "options": [
+            { "id": "a", "text": "hospital" },
+            { "id": "b", "text": "farm" },
+            { "id": "c", "text": "bank" },
+            { "id": "d", "text": "school" }
+          ],
+          "correct_answer": "b",
+          "explanation": "A «farmer» works on a «farm», cultivating crops or raising animals.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-011",
+          "question": "A teacher works in a ______.",
+          "options": [
+            { "id": "a", "text": "school" },
+            { "id": "b", "text": "supermarket" },
+            { "id": "c", "text": "factory" },
+            { "id": "d", "text": "airport" }
+          ],
+          "correct_answer": "a",
+          "explanation": "A «teacher» works in a «school», where they teach students.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-012",
+          "question": "Which job helps sick people?",
+          "options": [
+            { "id": "a", "text": "Chef" },
+            { "id": "b", "text": "Farmer" },
+            { "id": "c", "text": "Nurse" },
+            { "id": "d", "text": "Mechanic" }
+          ],
+          "correct_answer": "c",
+          "explanation": "A «nurse» cares for and helps sick people, usually working alongside doctors in a hospital or clinic.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-013",
+          "question": "Which job is common in the Galápagos Islands because of tourism?",
+          "options": [
+            { "id": "a", "text": "Tour guide" },
+            { "id": "b", "text": "Pilot" },
+            { "id": "c", "text": "Dentist" },
+            { "id": "d", "text": "Lawyer" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Due to the strong tourism industry in the Galápagos Islands, «tour guide» is a very common job there.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-014",
+          "question": "A fisherman usually works ______.",
+          "options": [
+            { "id": "a", "text": "in an office" },
+            { "id": "b", "text": "on the sea" },
+            { "id": "c", "text": "in a hospital" },
+            { "id": "d", "text": "in a library" }
+          ],
+          "correct_answer": "b",
+          "explanation": "A «fisherman» works «on the sea», catching fish from boats.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-jb-015",
+          "question": "Which province is well known for banana production, where many people work in agriculture?",
+          "options": [
+            { "id": "a", "text": "El Oro" },
+            { "id": "b", "text": "Pichincha" },
+            { "id": "c", "text": "Bolívar" },
+            { "id": "d", "text": "Napo" }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Oro is one of Ecuador's leading banana-producing provinces, and agriculture employs many people there.",
+          "source": "vocabulary-worksheet.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ecuador-geography-in-english",
+      "name": "Ecuador Geography in English",
+      "description": "Basic facts about Ecuador's capital city, provinces, natural regions, and famous landmarks, asked and answered in English.",
+      "questions": [
+        {
+          "id": "ing-eg-001",
+          "question": "What is the capital city of Ecuador?",
+          "options": [
+            { "id": "a", "text": "Guayaquil" },
+            { "id": "b", "text": "Quito" },
+            { "id": "c", "text": "Cuenca" },
+            { "id": "d", "text": "Loja" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Quito» is the capital city of Ecuador.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-002",
+          "question": "Which province is Cuenca in?",
+          "options": [
+            { "id": "a", "text": "Azuay" },
+            { "id": "b", "text": "Manabí" },
+            { "id": "c", "text": "Chimborazo" },
+            { "id": "d", "text": "Esmeraldas" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Cuenca is the capital city of «Azuay» province.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-003",
+          "question": "Which city is the capital of Guayas Province?",
+          "options": [
+            { "id": "a", "text": "Manta" },
+            { "id": "b", "text": "Guayaquil" },
+            { "id": "c", "text": "Ambato" },
+            { "id": "d", "text": "Ibarra" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Guayaquil» is the capital of Guayas Province, and the largest city in Ecuador.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-004",
+          "question": "Which region is Napo Province in?",
+          "options": [
+            { "id": "a", "text": "Coast" },
+            { "id": "b", "text": "Highlands" },
+            { "id": "c", "text": "Amazon" },
+            { "id": "d", "text": "Insular" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Napo Province is located in the «Amazon» region of Ecuador.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-005",
+          "question": "Which province is famous for the Cotopaxi Volcano?",
+          "options": [
+            { "id": "a", "text": "Cotopaxi" },
+            { "id": "b", "text": "Carchi" },
+            { "id": "c", "text": "El Oro" },
+            { "id": "d", "text": "Loja" }
+          ],
+          "correct_answer": "a",
+          "explanation": "The Cotopaxi Volcano is located in «Cotopaxi» Province, which is named after it.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-006",
+          "question": "The Galápagos Islands belong to which region of Ecuador?",
+          "options": [
+            { "id": "a", "text": "Coast" },
+            { "id": "b", "text": "Highlands" },
+            { "id": "c", "text": "Amazon" },
+            { "id": "d", "text": "Insular" }
+          ],
+          "correct_answer": "d",
+          "explanation": "The Galápagos Islands make up Ecuador's «Insular» region.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-007",
+          "question": "Which city is the capital of Azuay Province?",
+          "options": [
+            { "id": "a", "text": "Loja" },
+            { "id": "b", "text": "Cuenca" },
+            { "id": "c", "text": "Tena" },
+            { "id": "d", "text": "Machala" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Cuenca» is the capital city of Azuay Province.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-eg-008",
+          "question": "Ecuador has ______ natural regions.",
+          "options": [
+            { "id": "a", "text": "Two" },
+            { "id": "b", "text": "Three" },
+            { "id": "c", "text": "Four" },
+            { "id": "d", "text": "Five" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Ecuador has «Four» natural regions: Coast, Highlands, Amazon and Insular (Galápagos).",
+          "source": "vocabulary-worksheet.pdf"
+        }
+      ]
+    },
+    {
+      "id": "present-simple-routines",
+      "name": "Present Simple: Daily Routines",
+      "description": "Using the present simple tense to talk about daily routines and habits, with correct third-person singular verb forms.",
+      "questions": [
+        {
+          "id": "ing-ps-001",
+          "question": "What time do you usually get up?",
+          "options": [
+            { "id": "a", "text": "I usually get up at 7:00 a.m." },
+            { "id": "b", "text": "I got up yesterday." },
+            { "id": "c", "text": "I am getting up now." },
+            { "id": "d", "text": "I will get up tomorrow." }
+          ],
+          "correct_answer": "a",
+          "explanation": "A question about a habitual action («usually») is answered in the present simple: «I usually get up at 7:00 a.m.». The other options use past, present continuous and future tenses.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-ps-002",
+          "question": "She ______ breakfast at 7:30 every day.",
+          "options": [
+            { "id": "a", "text": "have" },
+            { "id": "b", "text": "has" },
+            { "id": "c", "text": "having" },
+            { "id": "d", "text": "had" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«She» is third person singular, so the verb «have» becomes «has» in the present simple.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-ps-003",
+          "question": "She ______ the piano every day.",
+          "options": [
+            { "id": "a", "text": "play" },
+            { "id": "b", "text": "plays" },
+            { "id": "c", "text": "playing" }
+          ],
+          "correct_answer": "b",
+          "explanation": "With «she» (third person singular) in the present simple, the verb takes an -s ending: «plays».",
+          "source": "vocabulary-worksheet.pdf"
+        }
+      ]
+    },
+    {
+      "id": "prepositions-of-place",
+      "name": "Prepositions of Place",
+      "description": "Common prepositions used to describe the location of places in a town or city: next to, between, across from, near.",
+      "questions": [
+        {
+          "id": "ing-pp-001",
+          "question": "People swim at the ___________________",
+          "options": [
+            { "id": "a", "text": "market" },
+            { "id": "b", "text": "square" },
+            { "id": "c", "text": "beach" }
+          ],
+          "correct_answer": "c",
+          "explanation": "People swim at the «beach». A «market» is for shopping and a «square» is a public open space, neither used for swimming.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-pp-002",
+          "question": "The bank is ______ the supermarket.",
+          "options": [
+            { "id": "a", "text": "next to" },
+            { "id": "b", "text": "between" },
+            { "id": "c", "text": "across from" }
+          ],
+          "correct_answer": "a",
+          "explanation": "«Next to» describes two places that are directly beside each other, the most natural reading when only one reference point is given.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-pp-003",
+          "question": "The library is ______ the school and the park.",
+          "options": [
+            { "id": "a", "text": "next to" },
+            { "id": "b", "text": "between" },
+            { "id": "c", "text": "near" }
+          ],
+          "correct_answer": "b",
+          "explanation": "«Between» is used when a place is located in the middle of two other reference points, here the school and the park.",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-pp-004",
+          "question": "The hospital is ______ the police station. You need to cross the street.",
+          "options": [
+            { "id": "a", "text": "near" },
+            { "id": "b", "text": "in front of" },
+            { "id": "c", "text": "across from" }
+          ],
+          "correct_answer": "c",
+          "explanation": "«Across from» is used when two places face each other on opposite sides of a street, matching the clue «you need to cross the street».",
+          "source": "vocabulary-worksheet.pdf"
+        },
+        {
+          "id": "ing-pp-005",
+          "question": "The bus stop is ______ the shopping mall. It is only a two-minute walk.",
+          "options": [
+            { "id": "a", "text": "near" },
+            { "id": "b", "text": "far from" },
+            { "id": "c", "text": "between" }
+          ],
+          "correct_answer": "a",
+          "explanation": "«Near» fits with the clue «only a two-minute walk», indicating the two places are close together.",
+          "source": "vocabulary-worksheet.pdf"
         }
       ]
     }

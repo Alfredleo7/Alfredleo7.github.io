@@ -1,0 +1,370 @@
+{
+  "subject": {
+    "id": "psicologia-aplicada-a-la-conduccion",
+    "name": "Psicología Aplicada a la Conducción",
+    "teacher": "Docente del Sindicato"
+  },
+  "exam": {
+    "title": "Cuestionario de Psicología Aplicada a la Conducción",
+    "parallel": "I",
+    "license": "Profesional Tipo C"
+  },
+  "sections": [
+    {
+      "id": "fundamentos-de-la-psicologia",
+      "name": "Fundamentos de la psicología",
+      "description": "Definición de la psicología como ciencia, su origen histórico, y los conceptos básicos de sensación, percepción y actitud.",
+      "questions": [
+        {
+          "id": "psi-fp-001",
+          "question": "La psicología es la ciencia que estudia los procesos mentales, sensaciones, percepciones y comportamiento del ser humano, en relación con el ambiente físico y social.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Esta es la definición correcta y completa de la psicología como ciencia.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-fp-002",
+          "question": "La psicología como ciencia nace en el año:",
+          "options": [
+            { "id": "a", "text": "1879." },
+            { "id": "b", "text": "1890." },
+            { "id": "c", "text": "1770." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La psicología nace como ciencia en 1879, con la fundación del primer laboratorio de psicología experimental por Wilhelm Wundt.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-fp-003",
+          "question": "¿Cuál es el concepto de sensación?",
+          "options": [
+            { "id": "a", "text": "Información que llega a nosotros a través de los órganos de los sentidos." },
+            { "id": "b", "text": "Proceso mediante el cual el cerebro organiza, interpreta y dota de significado a los datos sensoriales que recibe." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La sensación es la información captada directamente por los órganos de los sentidos. La opción b describe a la percepción, que organiza e interpreta esa información.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-fp-004",
+          "question": "¿Cuál es el concepto de actitud?",
+          "options": [
+            { "id": "a", "text": "Capacidad, talento, habilidad o destreza que tiene una persona para realizar una tarea o desempeñar una función de manera eficiente." },
+            { "id": "b", "text": "Disposición o forma de responder de una persona ante determinadas situaciones." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La actitud es la disposición o forma de responder ante situaciones. La opción a describe en realidad a la aptitud (con «p»), un concepto distinto.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-fp-005",
+          "question": "¿A qué concepto corresponde el siguiente enunciado? «Proceso psicológico complejo mediante el cual el cerebro organiza, interpreta y otorga significado a los datos sensoriales que recibimos del entorno.»",
+          "options": [
+            { "id": "a", "text": "Atención." },
+            { "id": "b", "text": "Actitud." },
+            { "id": "c", "text": "Ninguna de las anteriores." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Este enunciado describe a la percepción, concepto que no está entre las opciones a y b, por lo que la respuesta correcta es «ninguna de las anteriores».",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-fp-006",
+          "question": "¿A qué concepto corresponde el siguiente enunciado? «Respuesta inmediata de los órganos sensoriales ante un estímulo.»",
+          "options": [
+            { "id": "a", "text": "Percepción." },
+            { "id": "b", "text": "Sensación." },
+            { "id": "c", "text": "Atención." }
+          ],
+          "correct_answer": "b",
+          "explanation": "La sensación es precisamente la respuesta inmediata de los órganos sensoriales ante un estímulo, previa a cualquier interpretación cerebral.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        }
+      ]
+    },
+    {
+      "id": "percepcion-conceptos-y-tipos",
+      "name": "Percepción: conceptos y tipos",
+      "description": "La perspectiva lineal, la percepción social, y las percepciones de espacio bidimensional y tridimensional aplicadas a situaciones de conducción.",
+      "questions": [
+        {
+          "id": "psi-pc-001",
+          "question": "La Perspectiva Lineal hace referencia a que las líneas paralelas parecen converger a medida que se alejan hacia un punto de fuga en el horizonte.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Esta es la definición correcta de la perspectiva lineal, un principio visual clave para juzgar distancias en la vía.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-002",
+          "question": "¿A qué concepto corresponde el siguiente enunciado? «Capacidad cognitiva y sensorial para interpretar el entorno en tres dimensiones: profundidad, volumen y distancia.»",
+          "options": [
+            { "id": "a", "text": "Percepción auditiva." },
+            { "id": "b", "text": "Perspectiva lineal." },
+            { "id": "c", "text": "Percepción de espacio tridimensional." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La percepción de espacio tridimensional permite interpretar profundidad, volumen y distancia del entorno.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-003",
+          "question": "¿A qué concepto corresponde el siguiente enunciado? «Interpretación que hacemos de las intenciones de otros actores viales.»",
+          "options": [
+            { "id": "a", "text": "Percepción de espacio bidimensional." },
+            { "id": "b", "text": "Percepción háptica." },
+            { "id": "c", "text": "Percepción social." }
+          ],
+          "correct_answer": "c",
+          "explanation": "La percepción social es la interpretación de las intenciones de otros actores viales, como peatones u otros conductores.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-004",
+          "question": "La percepción de espacio bidimensional (2D) hace referencia a la capacidad de interpretar formas y proporciones únicamente en una superficie plana, con largo y ancho.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Esta es la definición correcta de la percepción de espacio bidimensional: interpretar formas y proporciones en una superficie plana, sin profundidad.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-005",
+          "question": "¿A qué tipo de percepción corresponde el siguiente ejemplo? «Cuando estás tras un vehículo en una carretera de doble sentido y evalúas si tienes el espacio suficiente para cambiar de carril y rebasarlo de forma segura, tu cerebro tiene que estimar a qué distancia exacta viene el vehículo en sentido contrario y cuánto espacio ocupa el auto que deseas pasar.»",
+          "options": [
+            { "id": "a", "text": "Percepción social." },
+            { "id": "b", "text": "Percepción bidimensional." },
+            { "id": "c", "text": "Percepción tridimensional." }
+          ],
+          "correct_answer": "c",
+          "explanation": "Estimar distancias y espacios exactos para rebasar requiere percepción de espacio tridimensional, ya que involucra profundidad y volumen.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-006",
+          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Se enciende en el panel de instrumentos el testigo rojo que indica que una puerta está mal cerrada o que falta aceite.»",
+          "options": [
+            { "id": "a", "text": "Percepción 2D." },
+            { "id": "b", "text": "Percepción 3D." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El panel de instrumentos es una superficie plana; interpretar sus testigos no requiere estimar profundidad ni distancia, por lo que es percepción 2D.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-007",
+          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Vas por una vía de doble sentido y tienes enfrente a un camión lento. Debes decidir si te da el espacio y el tiempo para pasarlo viendo al carro que viene en sentido contrario.»",
+          "options": [
+            { "id": "a", "text": "Percepción 2D." },
+            { "id": "b", "text": "Percepción 3D." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Evaluar espacio y tiempo para rebasar un vehículo requiere estimar distancia y profundidad, por lo que es percepción 3D.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pc-008",
+          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Observas la línea amarilla doble continua que divide los carriles en una carretera.»",
+          "options": [
+            { "id": "a", "text": "Percepción 2D." },
+            { "id": "b", "text": "Percepción 3D." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La línea divisoria es una marca plana sobre el pavimento; observarla no requiere estimar profundidad, por lo que es percepción 2D.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        }
+      ]
+    },
+    {
+      "id": "atencion-tipos-y-ejemplos",
+      "name": "Atención: tipos y ejemplos",
+      "description": "Los tipos de atención (selectiva, sostenida, dividida) y su aplicación en situaciones de conducción real.",
+      "questions": [
+        {
+          "id": "psi-at-001",
+          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Realizas un viaje de transporte que dura toda la mañana, manteniendo la concentración en todo momento.»",
+          "options": [
+            { "id": "a", "text": "Atención selectiva." },
+            { "id": "b", "text": "Atención sostenida." },
+            { "id": "c", "text": "Atención dividida." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Mantener la concentración durante un período prolongado corresponde a la atención sostenida.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-002",
+          "question": "Durante el proceso psicológico del procesamiento de información, primero va la percepción y luego la sensación.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El orden correcto es al revés: primero va la sensación (captación del estímulo) y luego la percepción (interpretación de ese estímulo).",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-003",
+          "question": "El siguiente ejemplo corresponde a una atención sostenida: «Proceso que tiene lugar a nivel cognitivo y que permite orientarnos hacia aquellos estímulos que son relevantes, ignorando los que no lo son, para actuar en consecuencia.»",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Este enunciado describe a la atención selectiva, no a la sostenida: se trata de filtrar estímulos relevantes e ignorar los irrelevantes.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-004",
+          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Al acercarte a un cruce muy transitado, ignoras los carteles publicitarios y vitrinas para centrarte solo en los vehículos que se aproximan.»",
+          "options": [
+            { "id": "a", "text": "Atención selectiva." },
+            { "id": "b", "text": "Atención sostenida." },
+            { "id": "c", "text": "Atención dividida." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Ignorar estímulos irrelevantes (carteles, vitrinas) para centrarse solo en lo relevante (vehículos) es atención selectiva.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-005",
+          "question": "El siguiente concepto corresponde a una atención selectiva: «Mantener la atención ininterrumpida en un tiempo prolongado con el fin de evitar errores antes de que lleguen a cometerse.»",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Mantener la atención de forma ininterrumpida por un tiempo prolongado corresponde a la atención sostenida, no a la selectiva.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-006",
+          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Al acercarte a un cruce muy transitado, ignoras los carteles publicitarios y vitrinas para centrarte solo en los vehículos que se aproximan.»",
+          "options": [
+            { "id": "a", "text": "Atención selectiva." },
+            { "id": "b", "text": "Atención sostenida." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Centrarse únicamente en los vehículos que se aproximan, filtrando otros estímulos, es un caso de atención selectiva.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-at-007",
+          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Conduces por una carretera interurbana durante 2 horas, manteniendo siempre la vista en el camino y controlando la velocidad sin descuidarte.»",
+          "options": [
+            { "id": "a", "text": "Atención selectiva." },
+            { "id": "b", "text": "Atención sostenida." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Mantener el enfoque de forma continua durante un período extenso (2 horas) es un ejemplo clásico de atención sostenida.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        }
+      ]
+    },
+    {
+      "id": "psicologia-aplicada-al-conductor",
+      "name": "Psicología aplicada al conductor",
+      "description": "Percepción propioceptiva, los pilares de la conducción, factores personales, la falsa seguridad, y la dimensión individual vs. social de la conducta al volante.",
+      "questions": [
+        {
+          "id": "psi-pd-001",
+          "question": "La Percepción Propioceptiva hace referencia al sentido que permite al cerebro conocer la posición, ubicación y movimientos del cuerpo.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La propiocepción es el sentido que informa al cerebro sobre la posición y el movimiento del propio cuerpo, esencial para maniobrar un vehículo.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-002",
+          "question": "Señale los principios básicos de la conducción:",
+          "options": [
+            { "id": "a", "text": "Pilar técnico." },
+            { "id": "b", "text": "Pilar social y emocional." },
+            { "id": "c", "text": "Pilar normativo." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Los pilares básicos de la conducción son el pilar psicotécnico, el pilar social-emocional y el pilar normativo. La opción «pilar técnico» no es correcta: el nombre exacto es «psicotécnico», no «técnico».",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-003",
+          "question": "Señale los principios básicos de la conducción:",
+          "options": [
+            { "id": "a", "text": "Pilar técnico." },
+            { "id": "b", "text": "Pilar normativo." }
+          ],
+          "correct_answer": "b",
+          "explanation": "El pilar normativo es uno de los tres pilares básicos de la conducción (junto al psicotécnico y al social-emocional). «Pilar técnico» no es un nombre correcto.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-004",
+          "question": "Los factores personales que influyen en la conducción son la edad, la experiencia, la personalidad y el estado físico.",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Estos son, efectivamente, los principales factores personales que influyen en la conducción.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-005",
+          "question": "«La Falsa Seguridad» hace referencia al exceso de confianza que tiene el conductor: «Yo manejo bien, nunca me va a pasar nada.»",
+          "options": [
+            { "id": "a", "text": "Verdadero." },
+            { "id": "b", "text": "Falso." }
+          ],
+          "correct_answer": "a",
+          "explanation": "La falsa seguridad es precisamente ese exceso de confianza que lleva a subestimar los riesgos de la conducción.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-006",
+          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Siento miedo o inseguridad al pasar por puentes angostos.»",
+          "options": [
+            { "id": "a", "text": "Dimensión individual." },
+            { "id": "b", "text": "Dimensión social." }
+          ],
+          "correct_answer": "a",
+          "explanation": "El miedo o la inseguridad ante un puente angosto son una respuesta emocional interna y personal, propia de la dimensión individual.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-007",
+          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Cedo el paso a las ambulancias y vehículos de emergencia.»",
+          "options": [
+            { "id": "a", "text": "Dimensión individual." },
+            { "id": "b", "text": "Dimensión social." }
+          ],
+          "correct_answer": "b",
+          "explanation": "Ceder el paso a vehículos de emergencia es una conducta orientada hacia los demás y hacia el bienestar colectivo, propia de la dimensión social.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        },
+        {
+          "id": "psi-pd-008",
+          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Me distraigo pensando en mis problemas personales, y esto provocó un accidente de tránsito.»",
+          "options": [
+            { "id": "a", "text": "Dimensión individual." },
+            { "id": "b", "text": "Dimensión social." }
+          ],
+          "correct_answer": "a",
+          "explanation": "Aunque el accidente afecta a terceros, el origen de la distracción es un estado interno y personal, por lo que corresponde a la dimensión individual.",
+          "source": "cuestionario-psicologia-conduccion.pdf"
+        }
+      ]
+    }
+  ]
+}
