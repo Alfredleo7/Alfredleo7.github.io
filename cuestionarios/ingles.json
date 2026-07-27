@@ -5,801 +5,670 @@
     "teacher": "Docente del Sindicato"
   },
   "exam": {
-    "title": "English Questionnaire — Cuestionario de Examen de Inglés",
+    "title": "English Questionnaire — Geography, Jobs and Daily Life",
     "parallel": "I",
     "license": "Profesional Tipo C"
   },
   "sections": [
     {
-      "id": "greetings-and-gestures",
-      "name": "Greetings, Farewells and Gestures Around the World",
-      "description": "Common greetings and farewells in English, and typical gestures used in different cultures around the world.",
+      "id": "ecuador-geography",
+      "name": "Ecuador Geography",
+      "description": "Basic geography of Ecuador.",
       "questions": [
         {
-          "id": "ing-gg-001",
-          "question": "What do you usually say when you meet someone in the morning?",
-          "options": [
-            { "id": "a", "text": "Goodbye" },
-            { "id": "b", "text": "Good morning" },
-            { "id": "c", "text": "Good night" },
-            { "id": "d", "text": "See you later" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«Good morning» se usa para saludar por la mañana, normalmente antes del mediodía. «Goodbye» y «See you later» son despedidas; «Good night» se usa al final del día o al despedirse de noche.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-002",
-          "question": "Which expression is used to say goodbye?",
-          "options": [
-            { "id": "a", "text": "Hello" },
-            { "id": "b", "text": "Hi" },
-            { "id": "c", "text": "Bye" },
-            { "id": "d", "text": "Good afternoon" }
-          ],
-          "correct_answer": "c",
-          "explanation": "«Bye» es la forma corta e informal de «Goodbye» (adiós). «Hello», «Hi» y «Good afternoon» son saludos, no despedidas.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-003",
-          "question": "What do people commonly do when greeting someone in the United States?",
-          "options": [
-            { "id": "a", "text": "Bow" },
-            { "id": "b", "text": "Shake hands" },
-            { "id": "c", "text": "Touch noses" },
-            { "id": "d", "text": "Clap their hands" }
-          ],
-          "correct_answer": "b",
-          "explanation": "En Estados Unidos lo más común al saludar es estrechar la mano («shake hands»). La reverencia («bow») es típica de Japón; el saludo nariz con nariz («touch noses») es maorí.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-004",
-          "question": "Which gesture is common in Japan?",
-          "options": [
-            { "id": "a", "text": "Hugging" },
-            { "id": "b", "text": "Bowing" },
-            { "id": "c", "text": "Waving both hands" },
-            { "id": "d", "text": "Kissing on the cheek" }
-          ],
-          "correct_answer": "b",
-          "explanation": "En Japón el saludo tradicional es la reverencia («bowing»). La profundidad y duración del gesto cambia según el grado de respeto que se quiere mostrar.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-005",
-          "question": "In Thailand, people often greet others by ______.",
-          "options": [
-            { "id": "a", "text": "touching noses" },
-            { "id": "b", "text": "shaking hands" },
-            { "id": "c", "text": "putting their hands together and bowing slightly" },
-            { "id": "d", "text": "clapping" }
-          ],
-          "correct_answer": "c",
-          "explanation": "En Tailandia el saludo tradicional se llama «wai»: se juntan las palmas de las manos frente al pecho y se hace una leve reverencia con la cabeza.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-006",
-          "question": "Which expression means you will meet the person again?",
-          "options": [
-            { "id": "a", "text": "Nice to meet you" },
-            { "id": "b", "text": "See you later" },
-            { "id": "c", "text": "Hello" },
-            { "id": "d", "text": "Good afternoon" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«See you later» implica que se volverán a ver más tarde. «Nice to meet you» se usa al conocer a alguien por primera vez; «Hello» y «Good afternoon» son saludos genéricos.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-gg-007",
-          "question": "Which gesture is a common way to say hello from a distance?",
-          "options": [
-            { "id": "a", "text": "Waving" },
-            { "id": "b", "text": "Bowing" },
-            { "id": "c", "text": "Hugging" },
-            { "id": "d", "text": "Touching noses" }
-          ],
-          "correct_answer": "a",
-          "explanation": "Saludar con la mano («waving») es el gesto universal para decir hola o adiós desde la distancia, sin contacto físico.",
-          "source": "english-questionnaire.pdf"
-        }
-      ]
-    },
-    {
-      "id": "verb-to-be-and-pronouns",
-      "name": "Verb To Be, Third Person Singular and Personal Pronouns",
-      "description": "Conjugation of the verb 'to be' (am / is / are), the third-person singular -s ending and the personal pronouns (I, you, he, she, it, we, they).",
-      "questions": [
-        {
-          "id": "ing-vp-001",
-          "question": "Choose the correct form of the verb to be: «Maria ___ a doctor.»",
-          "options": [
-            { "id": "a", "text": "am" },
-            { "id": "b", "text": "are" },
-            { "id": "c", "text": "is" },
-            { "id": "d", "text": "be" }
-          ],
-          "correct_answer": "c",
-          "explanation": "Con la tercera persona del singular (he / she / it) se usa «is». María es una sola persona femenina, por lo tanto «Maria is a doctor».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-002",
-          "question": "Choose the correct personal pronoun: «John is my friend. ___ is very funny.»",
-          "options": [
-            { "id": "a", "text": "He" },
-            { "id": "b", "text": "She" },
-            { "id": "c", "text": "It" },
-            { "id": "d", "text": "They" }
-          ],
-          "correct_answer": "a",
-          "explanation": "John es un nombre masculino singular, por eso se reemplaza con el pronombre «He» (él).",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-003",
-          "question": "Choose the correct form of the verb: «My mother ___ English every day.»",
-          "options": [
-            { "id": "a", "text": "teach" },
-            { "id": "b", "text": "teaches" },
-            { "id": "c", "text": "teaching" },
-            { "id": "d", "text": "taught" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«My mother» es tercera persona del singular (she). En presente simple, el verbo lleva la terminación -s/-es: «teaches».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-004",
-          "question": "Choose the correct personal pronoun: «Anna and I are students. ___ are in Class A.»",
-          "options": [
-            { "id": "a", "text": "He" },
-            { "id": "b", "text": "She" },
-            { "id": "c", "text": "We" },
-            { "id": "d", "text": "They" }
-          ],
-          "correct_answer": "c",
-          "explanation": "«Anna and I» incluye al hablante (I), por eso el pronombre correcto es «We» (nosotros/nosotras). Si no estuviera el «I», sería «They».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-005",
-          "question": "Choose the correct form of the verb to be: «They ___ happy.»",
-          "options": [
-            { "id": "a", "text": "am" },
-            { "id": "b", "text": "is" },
-            { "id": "c", "text": "are" },
-            { "id": "d", "text": "be" }
-          ],
-          "correct_answer": "c",
-          "explanation": "«They» (ellos/ellas) es plural, así que el verbo to be se conjuga como «are»: «They are happy».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-006",
-          "question": "Choose the correct answer: «My brother likes soccer. He ___ soccer every weekend.»",
-          "options": [
-            { "id": "a", "text": "play" },
-            { "id": "b", "text": "plays" },
-            { "id": "c", "text": "playing" },
-            { "id": "d", "text": "played" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«He» es tercera persona del singular, así que en presente simple el verbo «play» toma la -s: «He plays soccer every weekend».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-007",
-          "question": "Choose the correct personal pronoun: «My sister is a nurse. ___ works in a hospital.»",
-          "options": [
-            { "id": "a", "text": "He" },
-            { "id": "b", "text": "It" },
-            { "id": "c", "text": "She" },
-            { "id": "d", "text": "They" }
-          ],
-          "correct_answer": "c",
-          "explanation": "«My sister» es femenino singular, así que el pronombre es «She» (ella). «It» se usa para cosas o animales sin género personal.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-008",
-          "question": "Choose the correct form of the verb to be: «I ___ from Ecuador.»",
-          "options": [
-            { "id": "a", "text": "am" },
-            { "id": "b", "text": "is" },
-            { "id": "c", "text": "are" },
-            { "id": "d", "text": "be" }
-          ],
-          "correct_answer": "a",
-          "explanation": "Con el pronombre «I» (yo), el verbo to be se conjuga siempre como «am»: «I am from Ecuador».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-009",
-          "question": "Choose the correct form of the verb: «The dog ___ very fast.»",
-          "options": [
-            { "id": "a", "text": "run" },
-            { "id": "b", "text": "runs" },
-            { "id": "c", "text": "running" },
-            { "id": "d", "text": "ran" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«The dog» es tercera persona del singular (it). En presente simple el verbo lleva -s: «The dog runs very fast».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-vp-010",
-          "question": "Choose the correct personal pronoun: «Pedro and Luis are friends. ___ are classmates.»",
-          "options": [
-            { "id": "a", "text": "We" },
-            { "id": "b", "text": "You" },
-            { "id": "c", "text": "They" },
-            { "id": "d", "text": "He" }
-          ],
-          "correct_answer": "c",
-          "explanation": "Cuando hablamos de dos o más personas y no estamos incluidos nosotros mismos, usamos «They» (ellos): «They are classmates».",
-          "source": "english-questionnaire.pdf"
-        }
-      ]
-    },
-    {
-      "id": "articles-a-an-the",
-      "name": "Articles: A — An — The",
-      "description": "Correct use of the indefinite articles (a, an) and the definite article (the) in English sentences.",
-      "questions": [
-        {
-          "id": "ing-ar-001",
-          "question": "Choose the correct article: «I have ___ apple in my bag.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«Apple» empieza con sonido vocálico, así que se usa «an»: «an apple».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-002",
-          "question": "Choose the correct article: «She is ___ teacher at my school.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "a",
-          "explanation": "«Teacher» empieza con sonido consonántico, así que se usa el artículo indefinido «a»: «a teacher».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-003",
-          "question": "Choose the correct article: «Can you close ___ door, please?»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "c",
-          "explanation": "Hablamos de una puerta específica que los dos conocemos (la del lugar donde estamos), así que usamos el artículo definido «the»: «close the door».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-004",
-          "question": "Choose the correct article: «My father bought ___ umbrella yesterday.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«Umbrella» comienza con sonido vocálico /ʌ/, así que se usa «an»: «an umbrella».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-005",
-          "question": "Choose the correct article: «___ sun is very hot today.»",
-          "options": [
-            { "id": "a", "text": "A" },
-            { "id": "b", "text": "An" },
-            { "id": "c", "text": "The" },
-            { "id": "d", "text": "No article" }
-          ],
-          "correct_answer": "c",
-          "explanation": "El sol es único, por eso se usa el artículo definido «The»: «The sun is very hot today». Los objetos únicos en el mundo (the sun, the moon, the Earth) llevan «the».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-006",
-          "question": "Choose the correct article: «I saw ___ dog in the park.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "a",
-          "explanation": "«Dog» empieza con consonante y se menciona por primera vez, sin saber cuál perro: artículo indefinido «a». «A dog».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-007",
-          "question": "Choose the correct article: «She is eating ___ orange.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«Orange» empieza con sonido vocálico, así que el artículo correcto es «an»: «an orange».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-008",
-          "question": "Choose the correct article: «We went to ___ beach last weekend.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "c",
-          "explanation": "Cuando se habla de la playa en general como destino (the beach, the park, the cinema), se usa el artículo definido «the»: «We went to the beach».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-009",
-          "question": "Choose the correct article: «He wants to be ___ engineer.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "b",
-          "explanation": "«Engineer» empieza con sonido vocálico /ˈɛn/, así que se usa «an»: «an engineer».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-ar-010",
-          "question": "Choose the correct article: «There is ___ cat under the table.»",
-          "options": [
-            { "id": "a", "text": "a" },
-            { "id": "b", "text": "an" },
-            { "id": "c", "text": "the" },
-            { "id": "d", "text": "no article" }
-          ],
-          "correct_answer": "a",
-          "explanation": "«Cat» empieza con consonante y se introduce por primera vez sin especificar cuál, así que se usa «a»: «There is a cat under the table».",
-          "source": "english-questionnaire.pdf"
-        }
-      ]
-    },
-    {
-      "id": "jobs-in-ecuador",
-      "name": "Jobs in Ecuador",
-      "description": "Common jobs and professions in Ecuador, including their tasks and characteristic regions.",
-      "questions": [
-        {
-          "id": "ing-jb-001",
-          "question": "What does a farmer do?",
-          "options": [
-            { "id": "a", "text": "Repairs cars" },
-            { "id": "b", "text": "Produces crops such as bananas and rice" },
-            { "id": "c", "text": "Catches fish" },
-            { "id": "d", "text": "Designs buildings" }
-          ],
-          "correct_answer": "b",
-          "explanation": "Un «farmer» (agricultor) cultiva la tierra y produce cosechas como banano, arroz y café. Quien arregla autos es un «mechanic»; quien pesca, un «fisherman»; quien diseña edificios, un «architect».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-jb-002",
-          "question": "In which provinces are fishermen commonly found?",
-          "options": [
-            { "id": "a", "text": "Pichincha and Azuay" },
-            { "id": "b", "text": "Guayas and El Oro" },
-            { "id": "c", "text": "Manabí, Esmeraldas and Santa Elena" },
-            { "id": "d", "text": "Loja and Azuay" }
-          ],
-          "correct_answer": "c",
-          "explanation": "Los pescadores en Ecuador se concentran en las provincias costeras con tradición pesquera: Manabí, Esmeraldas y Santa Elena. Pichincha, Azuay y Loja son provincias de la Sierra, sin costa.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-jb-003",
-          "question": "Who assists doctors and cares for patients?",
-          "options": [
-            { "id": "a", "text": "Dentist" },
-            { "id": "b", "text": "Teacher" },
-            { "id": "c", "text": "Nurse" },
-            { "id": "d", "text": "Engineer" }
-          ],
-          "correct_answer": "c",
-          "explanation": "El profesional que asiste al médico y cuida a los pacientes en el hospital es el «nurse» (enfermero/a). El «dentist» se especializa en dientes; el «teacher» enseña y el «engineer» diseña proyectos técnicos.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-jb-004",
-          "question": "What does a software developer create?",
-          "options": [
-            { "id": "a", "text": "Buildings and structures" },
-            { "id": "b", "text": "Computer programs and applications" },
-            { "id": "c", "text": "Roads and bridges" },
-            { "id": "d", "text": "Paintings and sculptures" }
-          ],
-          "correct_answer": "b",
-          "explanation": "Un «software developer» (desarrollador de software) crea programas y aplicaciones de computadora. Los edificios los hace un «architect», las carreteras un «civil engineer» y las pinturas un «artist».",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-jb-005",
-          "question": "Which job responds to fires and emergencies?",
-          "options": [
-            { "id": "a", "text": "Police Officer" },
-            { "id": "b", "text": "Firefighter" },
-            { "id": "c", "text": "Mechanic" },
-            { "id": "d", "text": "Pilot" }
-          ],
-          "correct_answer": "b",
-          "explanation": "El «firefighter» (bombero) responde a incendios y emergencias. El «police officer» se encarga del orden público; el «mechanic» repara vehículos y el «pilot» conduce aeronaves.",
-          "source": "english-questionnaire.pdf"
-        },
-        {
-          "id": "ing-jb-006",
-          "question": "Artisan — which definition best matches this word?",
-          "options": [
-            { "id": "a", "text": "Warm clothing" },
-            { "id": "b", "text": "Make things by hand" },
-            { "id": "c", "text": "Land near the ocean" }
-          ],
-          "correct_answer": "b",
-          "explanation": "An «artisan» is a person who makes things by hand, often using traditional skills. «Warm clothing» and «land near the ocean» describe unrelated concepts.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-007",
-          "question": "Coast — which definition best matches this word?",
-          "options": [
-            { "id": "a", "text": "Land near the ocean" },
-            { "id": "b", "text": "Warm clothing" },
-            { "id": "c", "text": "Help tourists" }
-          ],
-          "correct_answer": "a",
-          "explanation": "The «coast» is the land that is near or borders the ocean. «Warm clothing» and «help tourists» are unrelated to this term.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-008",
-          "question": "\"I am a tropical forest with many animals.\" What am I?",
-          "options": [
-            { "id": "a", "text": "Artisan" },
-            { "id": "b", "text": "Sweater" },
-            { "id": "c", "text": "Rainforest" }
-          ],
-          "correct_answer": "c",
-          "explanation": "A «rainforest» is a tropical forest with abundant plant and animal life, matching the description exactly.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-009",
-          "question": "\"I make bread every morning.\" Who am I?",
-          "options": [
-            { "id": "a", "text": "Baker" },
-            { "id": "b", "text": "Fisherman" },
-            { "id": "c", "text": "Farmer" }
-          ],
-          "correct_answer": "a",
-          "explanation": "A «baker» makes bread and other baked goods, typically early in the morning. A fisherman catches fish and a farmer works the land.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-010",
-          "question": "A farmer usually works on a ______.",
-          "options": [
-            { "id": "a", "text": "hospital" },
-            { "id": "b", "text": "farm" },
-            { "id": "c", "text": "bank" },
-            { "id": "d", "text": "school" }
-          ],
-          "correct_answer": "b",
-          "explanation": "A «farmer» works on a «farm», cultivating crops or raising animals.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-011",
-          "question": "A teacher works in a ______.",
-          "options": [
-            { "id": "a", "text": "school" },
-            { "id": "b", "text": "supermarket" },
-            { "id": "c", "text": "factory" },
-            { "id": "d", "text": "airport" }
-          ],
-          "correct_answer": "a",
-          "explanation": "A «teacher» works in a «school», where they teach students.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-012",
-          "question": "Which job helps sick people?",
-          "options": [
-            { "id": "a", "text": "Chef" },
-            { "id": "b", "text": "Farmer" },
-            { "id": "c", "text": "Nurse" },
-            { "id": "d", "text": "Mechanic" }
-          ],
-          "correct_answer": "c",
-          "explanation": "A «nurse» cares for and helps sick people, usually working alongside doctors in a hospital or clinic.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-013",
-          "question": "Which job is common in the Galápagos Islands because of tourism?",
-          "options": [
-            { "id": "a", "text": "Tour guide" },
-            { "id": "b", "text": "Pilot" },
-            { "id": "c", "text": "Dentist" },
-            { "id": "d", "text": "Lawyer" }
-          ],
-          "correct_answer": "a",
-          "explanation": "Due to the strong tourism industry in the Galápagos Islands, «tour guide» is a very common job there.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-014",
-          "question": "A fisherman usually works ______.",
-          "options": [
-            { "id": "a", "text": "in an office" },
-            { "id": "b", "text": "on the sea" },
-            { "id": "c", "text": "in a hospital" },
-            { "id": "d", "text": "in a library" }
-          ],
-          "correct_answer": "b",
-          "explanation": "A «fisherman» works «on the sea», catching fish from boats.",
-          "source": "vocabulary-worksheet.pdf"
-        },
-        {
-          "id": "ing-jb-015",
-          "question": "Which province is well known for banana production, where many people work in agriculture?",
-          "options": [
-            { "id": "a", "text": "El Oro" },
-            { "id": "b", "text": "Pichincha" },
-            { "id": "c", "text": "Bolívar" },
-            { "id": "d", "text": "Napo" }
-          ],
-          "correct_answer": "a",
-          "explanation": "El Oro is one of Ecuador's leading banana-producing provinces, and agriculture employs many people there.",
-          "source": "vocabulary-worksheet.pdf"
-        }
-      ]
-    },
-    {
-      "id": "ecuador-geography-in-english",
-      "name": "Ecuador Geography in English",
-      "description": "Basic facts about Ecuador's capital city, provinces, natural regions, and famous landmarks, asked and answered in English.",
-      "questions": [
-        {
-          "id": "ing-eg-001",
+          "id": "geo-001",
           "question": "What is the capital city of Ecuador?",
           "options": [
-            { "id": "a", "text": "Guayaquil" },
-            { "id": "b", "text": "Quito" },
-            { "id": "c", "text": "Cuenca" },
-            { "id": "d", "text": "Loja" }
+            {
+              "id": "a",
+              "text": "Guayaquil"
+            },
+            {
+              "id": "b",
+              "text": "Quito"
+            },
+            {
+              "id": "c",
+              "text": "Cuenca"
+            },
+            {
+              "id": "d",
+              "text": "Loja"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "«Quito» is the capital city of Ecuador.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Quito is the capital city of Ecuador.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-002",
+          "id": "geo-002",
           "question": "Which province is Cuenca in?",
           "options": [
-            { "id": "a", "text": "Azuay" },
-            { "id": "b", "text": "Manabí" },
-            { "id": "c", "text": "Chimborazo" },
-            { "id": "d", "text": "Esmeraldas" }
+            {
+              "id": "a",
+              "text": "Azuay"
+            },
+            {
+              "id": "b",
+              "text": "Manabí"
+            },
+            {
+              "id": "c",
+              "text": "Chimborazo"
+            },
+            {
+              "id": "d",
+              "text": "Esmeraldas"
+            }
           ],
           "correct_answer": "a",
-          "explanation": "Cuenca is the capital city of «Azuay» province.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Cuenca is the capital of Azuay Province.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-003",
+          "id": "geo-003",
           "question": "Which city is the capital of Guayas Province?",
           "options": [
-            { "id": "a", "text": "Manta" },
-            { "id": "b", "text": "Guayaquil" },
-            { "id": "c", "text": "Ambato" },
-            { "id": "d", "text": "Ibarra" }
+            {
+              "id": "a",
+              "text": "Manta"
+            },
+            {
+              "id": "b",
+              "text": "Guayaquil"
+            },
+            {
+              "id": "c",
+              "text": "Ambato"
+            },
+            {
+              "id": "d",
+              "text": "Ibarra"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "«Guayaquil» is the capital of Guayas Province, and the largest city in Ecuador.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Guayaquil is the capital of Guayas.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-004",
+          "id": "geo-004",
           "question": "Which region is Napo Province in?",
           "options": [
-            { "id": "a", "text": "Coast" },
-            { "id": "b", "text": "Highlands" },
-            { "id": "c", "text": "Amazon" },
-            { "id": "d", "text": "Insular" }
+            {
+              "id": "a",
+              "text": "Coast"
+            },
+            {
+              "id": "b",
+              "text": "Highlands"
+            },
+            {
+              "id": "c",
+              "text": "Amazon"
+            },
+            {
+              "id": "d",
+              "text": "Insular"
+            }
           ],
           "correct_answer": "c",
-          "explanation": "Napo Province is located in the «Amazon» region of Ecuador.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Napo belongs to the Amazon Region.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-005",
+          "id": "geo-005",
           "question": "Which province is famous for the Cotopaxi Volcano?",
           "options": [
-            { "id": "a", "text": "Cotopaxi" },
-            { "id": "b", "text": "Carchi" },
-            { "id": "c", "text": "El Oro" },
-            { "id": "d", "text": "Loja" }
+            {
+              "id": "a",
+              "text": "Cotopaxi"
+            },
+            {
+              "id": "b",
+              "text": "Carchi"
+            },
+            {
+              "id": "c",
+              "text": "El Oro"
+            },
+            {
+              "id": "d",
+              "text": "Loja"
+            }
           ],
           "correct_answer": "a",
-          "explanation": "The Cotopaxi Volcano is located in «Cotopaxi» Province, which is named after it.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Cotopaxi Volcano is in Cotopaxi Province.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-006",
+          "id": "geo-006",
           "question": "The Galápagos Islands belong to which region of Ecuador?",
           "options": [
-            { "id": "a", "text": "Coast" },
-            { "id": "b", "text": "Highlands" },
-            { "id": "c", "text": "Amazon" },
-            { "id": "d", "text": "Insular" }
+            {
+              "id": "a",
+              "text": "Coast"
+            },
+            {
+              "id": "b",
+              "text": "Highlands"
+            },
+            {
+              "id": "c",
+              "text": "Amazon"
+            },
+            {
+              "id": "d",
+              "text": "Insular"
+            }
           ],
           "correct_answer": "d",
-          "explanation": "The Galápagos Islands make up Ecuador's «Insular» region.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "The Galápagos are the Insular Region.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-007",
+          "id": "geo-007",
           "question": "Which city is the capital of Azuay Province?",
           "options": [
-            { "id": "a", "text": "Loja" },
-            { "id": "b", "text": "Cuenca" },
-            { "id": "c", "text": "Tena" },
-            { "id": "d", "text": "Machala" }
+            {
+              "id": "a",
+              "text": "Loja"
+            },
+            {
+              "id": "b",
+              "text": "Cuenca"
+            },
+            {
+              "id": "c",
+              "text": "Tena"
+            },
+            {
+              "id": "d",
+              "text": "Machala"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "«Cuenca» is the capital city of Azuay Province.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Cuenca is the capital of Azuay.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-eg-008",
+          "id": "geo-008",
           "question": "Ecuador has ______ natural regions.",
           "options": [
-            { "id": "a", "text": "Two" },
-            { "id": "b", "text": "Three" },
-            { "id": "c", "text": "Four" },
-            { "id": "d", "text": "Five" }
+            {
+              "id": "a",
+              "text": "Two"
+            },
+            {
+              "id": "b",
+              "text": "Three"
+            },
+            {
+              "id": "c",
+              "text": "Four"
+            },
+            {
+              "id": "d",
+              "text": "Five"
+            }
           ],
           "correct_answer": "c",
-          "explanation": "Ecuador has «Four» natural regions: Coast, Highlands, Amazon and Insular (Galápagos).",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Ecuador has four natural regions.",
+          "source": "teacher-notes"
         }
       ]
     },
     {
-      "id": "present-simple-routines",
-      "name": "Present Simple: Daily Routines",
-      "description": "Using the present simple tense to talk about daily routines and habits, with correct third-person singular verb forms.",
+      "id": "vocabulary",
+      "name": "Vocabulary",
+      "description": "Jobs, clothing and places.",
       "questions": [
         {
-          "id": "ing-ps-001",
+          "id": "voc-001",
+          "question": "An artisan is a person who...",
+          "options": [
+            {
+              "id": "a",
+              "text": "wears warm clothing"
+            },
+            {
+              "id": "b",
+              "text": "makes things by hand"
+            },
+            {
+              "id": "c",
+              "text": "lives near the ocean"
+            },
+            {
+              "id": "d",
+              "text": "helps tourists"
+            }
+          ],
+          "correct_answer": "b",
+          "explanation": "Artisans make handmade products.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "voc-002",
+          "question": "The Coast is...",
+          "options": [
+            {
+              "id": "a",
+              "text": "land near the ocean"
+            },
+            {
+              "id": "b",
+              "text": "a rainforest"
+            },
+            {
+              "id": "c",
+              "text": "a mountain"
+            },
+            {
+              "id": "d",
+              "text": "an island"
+            }
+          ],
+          "correct_answer": "a",
+          "explanation": "The coast is land next to the ocean.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "voc-003",
+          "question": "I am a tropical forest with many animals.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Artisan"
+            },
+            {
+              "id": "b",
+              "text": "Sweater"
+            },
+            {
+              "id": "c",
+              "text": "Rainforest"
+            },
+            {
+              "id": "d",
+              "text": "Beach"
+            }
+          ],
+          "correct_answer": "c",
+          "explanation": "A rainforest is a tropical forest.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "voc-004",
+          "question": "I make bread every morning.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Baker"
+            },
+            {
+              "id": "b",
+              "text": "Fisherman"
+            },
+            {
+              "id": "c",
+              "text": "Farmer"
+            },
+            {
+              "id": "d",
+              "text": "Teacher"
+            }
+          ],
+          "correct_answer": "a",
+          "explanation": "A baker makes bread.",
+          "source": "teacher-notes"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "name": "Jobs",
+      "description": "Occupations.",
+      "questions": [
+        {
+          "id": "job-001",
+          "question": "A farmer usually works on a ______.",
+          "options": [
+            {
+              "id": "a",
+              "text": "hospital"
+            },
+            {
+              "id": "b",
+              "text": "farm"
+            },
+            {
+              "id": "c",
+              "text": "bank"
+            },
+            {
+              "id": "d",
+              "text": "school"
+            }
+          ],
+          "correct_answer": "b",
+          "explanation": "Farmers work on farms.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "job-002",
+          "question": "A teacher works in a ______.",
+          "options": [
+            {
+              "id": "a",
+              "text": "school"
+            },
+            {
+              "id": "b",
+              "text": "supermarket"
+            },
+            {
+              "id": "c",
+              "text": "factory"
+            },
+            {
+              "id": "d",
+              "text": "airport"
+            }
+          ],
+          "correct_answer": "a",
+          "explanation": "Teachers work in schools.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "job-003",
+          "question": "Which job helps sick people?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Chef"
+            },
+            {
+              "id": "b",
+              "text": "Farmer"
+            },
+            {
+              "id": "c",
+              "text": "Nurse"
+            },
+            {
+              "id": "d",
+              "text": "Mechanic"
+            }
+          ],
+          "correct_answer": "c",
+          "explanation": "Nurses care for sick people.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "job-004",
+          "question": "Which job is common in the Galápagos Islands because of tourism?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tour guide"
+            },
+            {
+              "id": "b",
+              "text": "Pilot"
+            },
+            {
+              "id": "c",
+              "text": "Dentist"
+            },
+            {
+              "id": "d",
+              "text": "Lawyer"
+            }
+          ],
+          "correct_answer": "a",
+          "explanation": "Tour guides are common due to tourism.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "job-005",
+          "question": "A fisherman usually works ______.",
+          "options": [
+            {
+              "id": "a",
+              "text": "in an office"
+            },
+            {
+              "id": "b",
+              "text": "on the sea"
+            },
+            {
+              "id": "c",
+              "text": "in a hospital"
+            },
+            {
+              "id": "d",
+              "text": "in a library"
+            }
+          ],
+          "correct_answer": "b",
+          "explanation": "Fishermen work at sea.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "job-006",
+          "question": "Which province is well known for banana production?",
+          "options": [
+            {
+              "id": "a",
+              "text": "El Oro"
+            },
+            {
+              "id": "b",
+              "text": "Pichincha"
+            },
+            {
+              "id": "c",
+              "text": "Bolívar"
+            },
+            {
+              "id": "d",
+              "text": "Napo"
+            }
+          ],
+          "correct_answer": "a",
+          "explanation": "El Oro is famous for banana production.",
+          "source": "teacher-notes"
+        }
+      ]
+    },
+    {
+      "id": "daily-life",
+      "name": "Daily Life and Places",
+      "description": "Daily routines, grammar and places.",
+      "questions": [
+        {
+          "id": "day-001",
           "question": "What time do you usually get up?",
           "options": [
-            { "id": "a", "text": "I usually get up at 7:00 a.m." },
-            { "id": "b", "text": "I got up yesterday." },
-            { "id": "c", "text": "I am getting up now." },
-            { "id": "d", "text": "I will get up tomorrow." }
+            {
+              "id": "a",
+              "text": "I usually get up at 7:00 a.m."
+            },
+            {
+              "id": "b",
+              "text": "I got up yesterday."
+            },
+            {
+              "id": "c",
+              "text": "I am getting up now."
+            },
+            {
+              "id": "d",
+              "text": "I will get up tomorrow."
+            }
           ],
           "correct_answer": "a",
-          "explanation": "A question about a habitual action («usually») is answered in the present simple: «I usually get up at 7:00 a.m.». The other options use past, present continuous and future tenses.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "The question asks about a routine.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-ps-002",
+          "id": "day-002",
           "question": "She ______ breakfast at 7:30 every day.",
           "options": [
-            { "id": "a", "text": "have" },
-            { "id": "b", "text": "has" },
-            { "id": "c", "text": "having" },
-            { "id": "d", "text": "had" }
+            {
+              "id": "a",
+              "text": "have"
+            },
+            {
+              "id": "b",
+              "text": "has"
+            },
+            {
+              "id": "c",
+              "text": "having"
+            },
+            {
+              "id": "d",
+              "text": "had"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "«She» is third person singular, so the verb «have» becomes «has» in the present simple.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Third person singular uses 'has'.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-ps-003",
+          "id": "day-003",
           "question": "She ______ the piano every day.",
           "options": [
-            { "id": "a", "text": "play" },
-            { "id": "b", "text": "plays" },
-            { "id": "c", "text": "playing" }
+            {
+              "id": "a",
+              "text": "play"
+            },
+            {
+              "id": "b",
+              "text": "plays"
+            },
+            {
+              "id": "c",
+              "text": "playing"
+            },
+            {
+              "id": "d",
+              "text": "played"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "With «she» (third person singular) in the present simple, the verb takes an -s ending: «plays».",
-          "source": "vocabulary-worksheet.pdf"
-        }
-      ]
-    },
-    {
-      "id": "prepositions-of-place",
-      "name": "Prepositions of Place",
-      "description": "Common prepositions used to describe the location of places in a town or city: next to, between, across from, near.",
-      "questions": [
-        {
-          "id": "ing-pp-001",
-          "question": "People swim at the ___________________",
-          "options": [
-            { "id": "a", "text": "market" },
-            { "id": "b", "text": "square" },
-            { "id": "c", "text": "beach" }
-          ],
-          "correct_answer": "c",
-          "explanation": "People swim at the «beach». A «market» is for shopping and a «square» is a public open space, neither used for swimming.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Third person singular uses 'plays'.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-pp-002",
+          "id": "day-004",
+          "question": "People swim at the ______.",
+          "options": [
+            {
+              "id": "a",
+              "text": "market"
+            },
+            {
+              "id": "b",
+              "text": "square"
+            },
+            {
+              "id": "c",
+              "text": "beach"
+            },
+            {
+              "id": "d",
+              "text": "bank"
+            }
+          ],
+          "correct_answer": "c",
+          "explanation": "People usually swim at the beach.",
+          "source": "teacher-notes"
+        },
+        {
+          "id": "day-005",
           "question": "The bank is ______ the supermarket.",
           "options": [
-            { "id": "a", "text": "next to" },
-            { "id": "b", "text": "between" },
-            { "id": "c", "text": "across from" }
+            {
+              "id": "a",
+              "text": "next to"
+            },
+            {
+              "id": "b",
+              "text": "between"
+            },
+            {
+              "id": "c",
+              "text": "across from"
+            }
           ],
           "correct_answer": "a",
-          "explanation": "«Next to» describes two places that are directly beside each other, the most natural reading when only one reference point is given.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "'Next to' means beside.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-pp-003",
+          "id": "day-006",
           "question": "The library is ______ the school and the park.",
           "options": [
-            { "id": "a", "text": "next to" },
-            { "id": "b", "text": "between" },
-            { "id": "c", "text": "near" }
+            {
+              "id": "a",
+              "text": "next to"
+            },
+            {
+              "id": "b",
+              "text": "between"
+            },
+            {
+              "id": "c",
+              "text": "near"
+            }
           ],
           "correct_answer": "b",
-          "explanation": "«Between» is used when a place is located in the middle of two other reference points, here the school and the park.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "'Between' is used for two reference points.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-pp-004",
+          "id": "day-007",
           "question": "The hospital is ______ the police station. You need to cross the street.",
           "options": [
-            { "id": "a", "text": "near" },
-            { "id": "b", "text": "in front of" },
-            { "id": "c", "text": "across from" }
+            {
+              "id": "a",
+              "text": "near"
+            },
+            {
+              "id": "b",
+              "text": "in front of"
+            },
+            {
+              "id": "c",
+              "text": "across from"
+            }
           ],
           "correct_answer": "c",
-          "explanation": "«Across from» is used when two places face each other on opposite sides of a street, matching the clue «you need to cross the street».",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "Across from means on the opposite side.",
+          "source": "teacher-notes"
         },
         {
-          "id": "ing-pp-005",
+          "id": "day-008",
           "question": "The bus stop is ______ the shopping mall. It is only a two-minute walk.",
           "options": [
-            { "id": "a", "text": "near" },
-            { "id": "b", "text": "far from" },
-            { "id": "c", "text": "between" }
+            {
+              "id": "a",
+              "text": "near"
+            },
+            {
+              "id": "b",
+              "text": "far from"
+            },
+            {
+              "id": "c",
+              "text": "between"
+            }
           ],
           "correct_answer": "a",
-          "explanation": "«Near» fits with the clue «only a two-minute walk», indicating the two places are close together.",
-          "source": "vocabulary-worksheet.pdf"
+          "explanation": "A two-minute walk means it is near.",
+          "source": "teacher-notes"
         }
       ]
     }
