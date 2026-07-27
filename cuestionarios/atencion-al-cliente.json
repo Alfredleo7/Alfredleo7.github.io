@@ -519,8 +519,8 @@
             { "id": "c", "text": "Nos permite tomar decisiones más acertadas." },
             { "id": "d", "text": "Todas las opciones." }
           ],
-          "correct_answer": "d",
-          "explanation": "La inteligencia emocional abarca el manejo de impulsos, el reconocimiento y gestión de las propias emociones, y la toma de decisiones más acertadas; las tres son facetas de un mismo concepto.",
+          "correct_answer": "b",
+          "explanation": "La inteligencia emocional se centra en la capacidad de reconocer, comprender y gestionar nuestras propias emociones, lo cual es fundamental para interactuar efectivamente con los demás.",
           "source": "aporte-atencion-al-cliente.pdf"
         },
         {
