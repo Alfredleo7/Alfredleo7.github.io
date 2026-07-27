@@ -204,8 +204,8 @@
             { "id": "b", "text": "Fiesta del durazno (marzo)." },
             { "id": "c", "text": "Fiesta de los toros (octubre y noviembre)." }
           ],
-          "correct_answer": "a",
-          "explanation": "Girón es reconocido por su producción de caña de azúcar y celebra la Fiesta de la Caña en septiembre.",
+          "correct_answer": "c",
+          "explanation": "Girón celebra la Fiesta de los Toros en octubre y noviembre, destacando su tradición taurina.",
           "source": "cuestionario-geografia-segundo-credito.pdf"
         },
         {
@@ -228,8 +228,8 @@
             { "id": "b", "text": "Fiesta del durazno (marzo)." },
             { "id": "c", "text": "Fiesta de los toros (octubre y noviembre)." }
           ],
-          "correct_answer": "c",
-          "explanation": "Santa Isabel celebra la Fiesta de los Toros en octubre y noviembre, vinculada a su tradición ganadera.",
+          "correct_answer": "a",
+          "explanation": "Santa Isabel celebra la Fiesta de la Caña en septiembre, destacando su producción de caña de azúcar.",
           "source": "cuestionario-geografia-segundo-credito.pdf"
         },
         {
@@ -618,8 +618,8 @@
             { "id": "a", "text": "Verdadero." },
             { "id": "b", "text": "Falso." }
           ],
-          "correct_answer": "a",
-          "explanation": "Según el cuestionario, esta característica se incluye entre las ventajas de la energía hidráulica.",
+          "correct_answer": "b",
+          "explanation": "La fluctuación de la disponibilidad de energía es una desventaja de la energía hidráulica, no una ventaja.",
           "source": "cuestionario-geografia-segundo-credito.pdf"
         },
         {
