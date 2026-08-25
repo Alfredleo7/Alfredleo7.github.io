@@ -5,7 +5,7 @@
     "teacher": "Docente del Sindicato"
   },
   "exam": {
-    "title": "Cuestionario de Psicología Aplicada a la Conducción",
+    "title": "Cuestionario Final de Psicología Aplicada a la Conducción",
     "parallel": "I",
     "license": "Profesional Tipo C"
   },
@@ -13,356 +13,374 @@
     {
       "id": "fundamentos-de-la-psicologia",
       "name": "Fundamentos de la psicología",
-      "description": "Definición de la psicología como ciencia, su origen histórico, y los conceptos básicos de sensación, percepción y actitud.",
+      "description": "Origen de la psicología como ciencia, causalidad, sensación, percepción y actitud.",
       "questions": [
         {
           "id": "psi-fp-001",
-          "question": "La psicología es la ciencia que estudia los procesos mentales, sensaciones, percepciones y comportamiento del ser humano, en relación con el ambiente físico y social.",
+          "question": "Señale lo correcto. La psicología como ciencia nace en el año:",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
+            { "id": "a", "text": "1879" },
+            { "id": "b", "text": "1890" },
+            { "id": "c", "text": "1770" }
           ],
           "correct_answer": "a",
-          "explanation": "Esta es la definición correcta y completa de la psicología como ciencia.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La psicología se consolida como ciencia en 1879, con la fundación del primer laboratorio de psicología experimental por Wilhelm Wundt.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
           "id": "psi-fp-002",
-          "question": "La psicología como ciencia nace en el año:",
+          "question": "El concepto de la causalidad hace referencia a:",
           "options": [
-            { "id": "a", "text": "1879." },
-            { "id": "b", "text": "1890." },
-            { "id": "c", "text": "1770." }
+            { "id": "a", "text": "Vinculación entre una causa y su efecto" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "La psicología nace como ciencia en 1879, con la fundación del primer laboratorio de psicología experimental por Wilhelm Wundt.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La causalidad es la relación entre un hecho (causa) y el resultado que produce (efecto).",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
           "id": "psi-fp-003",
-          "question": "¿Cuál es el concepto de sensación?",
+          "question": "Señale lo correcto. Concepto de sensación:",
           "options": [
-            { "id": "a", "text": "Información que llega a nosotros a través de los órganos de los sentidos." },
-            { "id": "b", "text": "Proceso mediante el cual el cerebro organiza, interpreta y dota de significado a los datos sensoriales que recibe." }
+            { "id": "a", "text": "Información que llega a nosotros a través de los órganos de los sentidos" },
+            { "id": "b", "text": "Proceso mediante el cual el cerebro organiza, interpreta y dota de significado a los datos sensoriales que recibe" }
           ],
           "correct_answer": "a",
-          "explanation": "La sensación es la información captada directamente por los órganos de los sentidos. La opción b describe a la percepción, que organiza e interpreta esa información.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La sensación es la captación pura de información a través de los órganos de los sentidos; la opción b describe la percepción, que es el paso siguiente.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
           "id": "psi-fp-004",
-          "question": "¿Cuál es el concepto de actitud?",
+          "question": "Señale lo correcto. Concepto de sensación (repetición del cuestionario):",
           "options": [
-            { "id": "a", "text": "Capacidad, talento, habilidad o destreza que tiene una persona para realizar una tarea o desempeñar una función de manera eficiente." },
-            { "id": "b", "text": "Disposición o forma de responder de una persona ante determinadas situaciones." }
+            { "id": "a", "text": "Información que llega a nosotros a través de los órganos de los sentidos" },
+            { "id": "b", "text": "Proceso mediante el cual el cerebro organiza, interpreta y dota de significado a los datos sensoriales que recibe" }
           ],
-          "correct_answer": "b",
-          "explanation": "La actitud es la disposición o forma de responder ante situaciones. La opción a describe en realidad a la aptitud (con «p»), un concepto distinto.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "correct_answer": "a",
+          "explanation": "La sensación es la captación pura de información a través de los órganos de los sentidos; la opción b describe la percepción, que es el paso siguiente.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
           "id": "psi-fp-005",
-          "question": "¿A qué concepto corresponde el siguiente enunciado? «Proceso psicológico complejo mediante el cual el cerebro organiza, interpreta y otorga significado a los datos sensoriales que recibimos del entorno.»",
+          "question": "Señale lo correcto. A qué concepto corresponde el siguiente enunciado: \"Proceso psicológico complejo mediante el cual el cerebro organiza, interpreta y otorga significado a los datos sensoriales que recibimos del entorno.\"",
           "options": [
-            { "id": "a", "text": "Atención." },
-            { "id": "b", "text": "Actitud." },
-            { "id": "c", "text": "Ninguna de las anteriores." }
+            { "id": "a", "text": "Atención" },
+            { "id": "b", "text": "Actitud" },
+            { "id": "c", "text": "Ninguna de las anteriores" }
           ],
           "correct_answer": "c",
-          "explanation": "Este enunciado describe a la percepción, concepto que no está entre las opciones a y b, por lo que la respuesta correcta es «ninguna de las anteriores».",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El enunciado describe la percepción, que no está entre las opciones a y b; por eso la respuesta correcta es \"ninguna de las anteriores\".",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
           "id": "psi-fp-006",
-          "question": "¿A qué concepto corresponde el siguiente enunciado? «Respuesta inmediata de los órganos sensoriales ante un estímulo.»",
+          "question": "Señale verdadero o falso. Durante el proceso psicológico del procesamiento de información primero va la percepción y luego la sensación.",
           "options": [
-            { "id": "a", "text": "Percepción." },
-            { "id": "b", "text": "Sensación." },
-            { "id": "c", "text": "Atención." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "b",
-          "explanation": "La sensación es precisamente la respuesta inmediata de los órganos sensoriales ante un estímulo, previa a cualquier interpretación cerebral.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El orden correcto es al revés: primero la sensación (captación de estímulos por los sentidos) y luego la percepción (interpretación de esos datos).",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-fp-007",
+          "question": "Señale lo correcto. Concepto de actitud:",
+          "options": [
+            { "id": "a", "text": "Capacidad, talento, habilidad o destreza que tiene una persona para realizar una tarea o desempeñar una función de manera eficiente" },
+            { "id": "b", "text": "Disposición o forma de responder de una persona ante determinadas situaciones" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La actitud es la disposición o forma de reaccionar/responder ante situaciones; la opción a corresponde a la definición de aptitud/habilidad.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         }
       ]
     },
     {
-      "id": "percepcion-conceptos-y-tipos",
-      "name": "Percepción: conceptos y tipos",
-      "description": "La perspectiva lineal, la percepción social, y las percepciones de espacio bidimensional y tridimensional aplicadas a situaciones de conducción.",
+      "id": "percepcion-en-la-conduccion",
+      "name": "Percepción en la conducción",
+      "description": "Percepción de espacio bidimensional y tridimensional aplicada a la conducción.",
       "questions": [
         {
-          "id": "psi-pc-001",
-          "question": "La Perspectiva Lineal hace referencia a que las líneas paralelas parecen converger a medida que se alejan hacia un punto de fuga en el horizonte.",
+          "id": "psi-perc-001",
+          "question": "Señale lo correcto. ¿A qué concepto corresponde el siguiente enunciado? \"Capacidad cognitiva y sensorial para interpretar el entorno en tres dimensiones: profundidad, volumen y distancia.\"",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
-          ],
-          "correct_answer": "a",
-          "explanation": "Esta es la definición correcta de la perspectiva lineal, un principio visual clave para juzgar distancias en la vía.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-002",
-          "question": "¿A qué concepto corresponde el siguiente enunciado? «Capacidad cognitiva y sensorial para interpretar el entorno en tres dimensiones: profundidad, volumen y distancia.»",
-          "options": [
-            { "id": "a", "text": "Percepción auditiva." },
-            { "id": "b", "text": "Perspectiva lineal." },
-            { "id": "c", "text": "Percepción de espacio tridimensional." }
+            { "id": "a", "text": "Percepción Auditiva" },
+            { "id": "b", "text": "Perspectiva Lineal" },
+            { "id": "c", "text": "Percepción de Espacio Tridimensional" }
           ],
           "correct_answer": "c",
-          "explanation": "La percepción de espacio tridimensional permite interpretar profundidad, volumen y distancia del entorno.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La percepción de espacio tridimensional permite estimar profundidad, volumen y distancia, elementos clave para juzgar espacios en la vía.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pc-003",
-          "question": "¿A qué concepto corresponde el siguiente enunciado? «Interpretación que hacemos de las intenciones de otros actores viales.»",
+          "id": "psi-perc-002",
+          "question": "Señale verdadero o falso. La percepción de espacio bidimensional (2D) hace referencia a la capacidad de interpretar formas y proporciones únicamente en una superficie plana con largo y ancho.",
           "options": [
-            { "id": "a", "text": "Percepción de espacio bidimensional." },
-            { "id": "b", "text": "Percepción háptica." },
-            { "id": "c", "text": "Percepción social." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La percepción 2D se limita a largo y ancho, sin considerar la profundidad; por eso es una lectura plana del entorno.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-perc-003",
+          "question": "Señale lo correcto. ¿A qué tipo de percepción corresponde el siguiente ejemplo? Cuando estás tras un vehículo en una carretera de doble sentido y evalúas si tienes el espacio suficiente para cambiar de carril y rebasarlo de forma segura, tu cerebro tiene que estimar a qué distancia exacta viene el vehículo en sentido contrario y cuánto espacio ocupa el auto que deseas pasar.",
+          "options": [
+            { "id": "a", "text": "Percepción Social" },
+            { "id": "b", "text": "Percepción Bidimensional" },
+            { "id": "c", "text": "Percepción Tridimensional" }
           ],
           "correct_answer": "c",
-          "explanation": "La percepción social es la interpretación de las intenciones de otros actores viales, como peatones u otros conductores.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-004",
-          "question": "La percepción de espacio bidimensional (2D) hace referencia a la capacidad de interpretar formas y proporciones únicamente en una superficie plana, con largo y ancho.",
-          "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
-          ],
-          "correct_answer": "a",
-          "explanation": "Esta es la definición correcta de la percepción de espacio bidimensional: interpretar formas y proporciones en una superficie plana, sin profundidad.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-005",
-          "question": "¿A qué tipo de percepción corresponde el siguiente ejemplo? «Cuando estás tras un vehículo en una carretera de doble sentido y evalúas si tienes el espacio suficiente para cambiar de carril y rebasarlo de forma segura, tu cerebro tiene que estimar a qué distancia exacta viene el vehículo en sentido contrario y cuánto espacio ocupa el auto que deseas pasar.»",
-          "options": [
-            { "id": "a", "text": "Percepción social." },
-            { "id": "b", "text": "Percepción bidimensional." },
-            { "id": "c", "text": "Percepción tridimensional." }
-          ],
-          "correct_answer": "c",
-          "explanation": "Estimar distancias y espacios exactos para rebasar requiere percepción de espacio tridimensional, ya que involucra profundidad y volumen.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-006",
-          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Se enciende en el panel de instrumentos el testigo rojo que indica que una puerta está mal cerrada o que falta aceite.»",
-          "options": [
-            { "id": "a", "text": "Percepción 2D." },
-            { "id": "b", "text": "Percepción 3D." }
-          ],
-          "correct_answer": "a",
-          "explanation": "El panel de instrumentos es una superficie plana; interpretar sus testigos no requiere estimar profundidad ni distancia, por lo que es percepción 2D.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-007",
-          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Vas por una vía de doble sentido y tienes enfrente a un camión lento. Debes decidir si te da el espacio y el tiempo para pasarlo viendo al carro que viene en sentido contrario.»",
-          "options": [
-            { "id": "a", "text": "Percepción 2D." },
-            { "id": "b", "text": "Percepción 3D." }
-          ],
-          "correct_answer": "b",
-          "explanation": "Evaluar espacio y tiempo para rebasar un vehículo requiere estimar distancia y profundidad, por lo que es percepción 3D.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-pc-008",
-          "question": "¿El siguiente ejemplo corresponde a una percepción 2D o 3D? «Observas la línea amarilla doble continua que divide los carriles en una carretera.»",
-          "options": [
-            { "id": "a", "text": "Percepción 2D." },
-            { "id": "b", "text": "Percepción 3D." }
-          ],
-          "correct_answer": "a",
-          "explanation": "La línea divisoria es una marca plana sobre el pavimento; observarla no requiere estimar profundidad, por lo que es percepción 2D.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "Estimar distancia, profundidad y espacio ocupado por otro vehículo es un ejercicio de percepción tridimensional.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         }
       ]
     },
     {
-      "id": "atencion-tipos-y-ejemplos",
-      "name": "Atención: tipos y ejemplos",
-      "description": "Los tipos de atención (selectiva, sostenida, dividida) y su aplicación en situaciones de conducción real.",
+      "id": "atencion-en-la-conduccion",
+      "name": "Atención en la conducción",
+      "description": "Tipos de atención: sostenida, selectiva y dividida.",
       "questions": [
         {
-          "id": "psi-at-001",
-          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Realizas un viaje de transporte que dura toda la mañana, manteniendo la concentración en todo momento.»",
+          "id": "psi-aten-001",
+          "question": "Señale lo correcto. ¿A qué tipo de atención corresponde el siguiente ejemplo? \"Realizas un viaje de transporte que dura toda la mañana, manteniendo la concentración en todo momento\".",
           "options": [
-            { "id": "a", "text": "Atención selectiva." },
-            { "id": "b", "text": "Atención sostenida." },
-            { "id": "c", "text": "Atención dividida." }
+            { "id": "a", "text": "Atención Selectiva" },
+            { "id": "b", "text": "Atención Sostenida" },
+            { "id": "c", "text": "Atención Dividida" }
           ],
           "correct_answer": "b",
-          "explanation": "Mantener la concentración durante un período prolongado corresponde a la atención sostenida.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "Mantener la concentración en una sola tarea durante un período prolongado es atención sostenida.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-at-002",
-          "question": "Durante el proceso psicológico del procesamiento de información, primero va la percepción y luego la sensación.",
+          "id": "psi-aten-002",
+          "question": "Señale verdadero o falso. El siguiente ejemplo corresponde a una Atención Dividida: \"Estás conduciendo en una autopista recta y solitaria durante una hora, manteniendo la vista fija en la calzada para detectar cualquier obstáculo o irregularidad en el pavimento\".",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "b",
-          "explanation": "El orden correcto es al revés: primero va la sensación (captación del estímulo) y luego la percepción (interpretación de ese estímulo).",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El ejemplo describe una sola tarea sostenida en el tiempo (vigilar la calzada), no dos o más tareas simultáneas; por lo tanto no es un caso de atención dividida.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-at-003",
-          "question": "El siguiente ejemplo corresponde a una atención sostenida: «Proceso que tiene lugar a nivel cognitivo y que permite orientarnos hacia aquellos estímulos que son relevantes, ignorando los que no lo son, para actuar en consecuencia.»",
+          "id": "psi-aten-003",
+          "question": "Señale verdadero o falso. El siguiente ejemplo corresponde a una Atención Selectiva: \"Hay camiones, buses y autos, pero logras detectar rápidamente a un ciclista que intenta rebasar por la derecha, ignorando los demás vehículos menos peligrosos en ese instante\".",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
-          ],
-          "correct_answer": "b",
-          "explanation": "Este enunciado describe a la atención selectiva, no a la sostenida: se trata de filtrar estímulos relevantes e ignorar los irrelevantes.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-at-004",
-          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Al acercarte a un cruce muy transitado, ignoras los carteles publicitarios y vitrinas para centrarte solo en los vehículos que se aproximan.»",
-          "options": [
-            { "id": "a", "text": "Atención selectiva." },
-            { "id": "b", "text": "Atención sostenida." },
-            { "id": "c", "text": "Atención dividida." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "Ignorar estímulos irrelevantes (carteles, vitrinas) para centrarse solo en lo relevante (vehículos) es atención selectiva.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-at-005",
-          "question": "El siguiente concepto corresponde a una atención selectiva: «Mantener la atención ininterrumpida en un tiempo prolongado con el fin de evitar errores antes de que lleguen a cometerse.»",
-          "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
-          ],
-          "correct_answer": "b",
-          "explanation": "Mantener la atención de forma ininterrumpida por un tiempo prolongado corresponde a la atención sostenida, no a la selectiva.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-at-006",
-          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Al acercarte a un cruce muy transitado, ignoras los carteles publicitarios y vitrinas para centrarte solo en los vehículos que se aproximan.»",
-          "options": [
-            { "id": "a", "text": "Atención selectiva." },
-            { "id": "b", "text": "Atención sostenida." }
-          ],
-          "correct_answer": "a",
-          "explanation": "Centrarse únicamente en los vehículos que se aproximan, filtrando otros estímulos, es un caso de atención selectiva.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
-        {
-          "id": "psi-at-007",
-          "question": "¿A qué tipo de atención corresponde el siguiente ejemplo? «Conduces por una carretera interurbana durante 2 horas, manteniendo siempre la vista en el camino y controlando la velocidad sin descuidarte.»",
-          "options": [
-            { "id": "a", "text": "Atención selectiva." },
-            { "id": "b", "text": "Atención sostenida." }
-          ],
-          "correct_answer": "b",
-          "explanation": "Mantener el enfoque de forma continua durante un período extenso (2 horas) es un ejemplo clásico de atención sostenida.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "Filtrar el entorno para priorizar el estímulo más relevante (el ciclista) e ignorar el resto es atención selectiva.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         }
       ]
     },
     {
-      "id": "psicologia-aplicada-al-conductor",
-      "name": "Psicología aplicada al conductor",
-      "description": "Percepción propioceptiva, los pilares de la conducción, factores personales, la falsa seguridad, y la dimensión individual vs. social de la conducta al volante.",
+      "id": "estres-y-manejo-del-estres",
+      "name": "Estrés y técnicas de manejo del estrés",
+      "description": "Tipos y fases del estrés, y técnicas para gestionarlo al conducir.",
       "questions": [
         {
-          "id": "psi-pd-001",
-          "question": "La Percepción Propioceptiva hace referencia al sentido que permite al cerebro conocer la posición, ubicación y movimientos del cuerpo.",
+          "id": "psi-estres-001",
+          "question": "¿A qué tipo de estrés hace referencia el siguiente concepto? \"Estrés necesario que moviliza energía para el desempeño (ej. antes de una presentación)\".",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
+            { "id": "a", "text": "Eustrés" },
+            { "id": "b", "text": "Distrés" }
           ],
           "correct_answer": "a",
-          "explanation": "La propiocepción es el sentido que informa al cerebro sobre la posición y el movimiento del propio cuerpo, esencial para maniobrar un vehículo.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El eustrés es el estrés positivo o adaptativo que activa y moviliza energía para afrontar un desafío.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-002",
-          "question": "Señale los principios básicos de la conducción:",
+          "id": "psi-estres-002",
+          "question": "Señale lo correcto: ¿a qué fase del estrés corresponde el siguiente enunciado? \"Respuesta inmediata e involuntaria del organismo\".",
           "options": [
-            { "id": "a", "text": "Pilar técnico." },
-            { "id": "b", "text": "Pilar social y emocional." },
-            { "id": "c", "text": "Pilar normativo." }
+            { "id": "a", "text": "Fase de Agotamiento" },
+            { "id": "b", "text": "Fase de Resistencia" },
+            { "id": "c", "text": "Fase de Alarma" }
+          ],
+          "correct_answer": "c",
+          "explanation": "La fase de alarma es la reacción inmediata e involuntaria del organismo ante el estresor.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-estres-003",
+          "question": "¿A qué etapa del estrés hacen referencia los siguientes síntomas? \"El estrés se mantiene en el tiempo, supera por completo la capacidad de adaptación de la persona, la memoria se ve alterada\".",
+          "options": [
+            { "id": "a", "text": "Etapa de alarma" },
+            { "id": "b", "text": "Etapa de resistencia" },
+            { "id": "c", "text": "Etapa de agotamiento" }
+          ],
+          "correct_answer": "c",
+          "explanation": "Cuando el estrés se prolonga y supera la capacidad de adaptación, afectando funciones como la memoria, se llega a la etapa de agotamiento.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-estres-004",
+          "question": "Técnicas de manejo de estrés: la técnica del \"tiempo fuera\" emocional hace referencia a:",
+          "options": [
+            { "id": "a", "text": "Retirarse de la situación física o conversacional durante 10-15 minutos para realizar una actividad neutra" },
+            { "id": "b", "text": "Cuestionar el significado que se le da al evento" }
+          ],
+          "correct_answer": "a",
+          "explanation": "El \"tiempo fuera\" consiste en alejarse temporalmente de la situación estresante para realizar una actividad neutra y bajar la activación emocional.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-estres-005",
+          "question": "Señale el correcto concepto de la técnica \"Reencuadre cognitivo\":",
+          "options": [
+            { "id": "a", "text": "Atender primero lo importante y urgente, planificar lo importante pero no urgente, delega lo urgente pero no importante, y descarta lo que no aporte valor" },
+            { "id": "b", "text": "Cuestionar el significado que se le da a un evento" },
+            { "id": "c", "text": "Escribir en un papel o documento, de forma totalmente desordenada y sin censura" }
           ],
           "correct_answer": "b",
-          "explanation": "Los pilares básicos de la conducción son el pilar psicotécnico, el pilar social-emocional y el pilar normativo. La opción «pilar técnico» no es correcta: el nombre exacto es «psicotécnico», no «técnico».",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El reencuadre cognitivo consiste en cuestionar y cambiar la interpretación (el significado) que se le da a una situación, para modificar la respuesta emocional ante ella.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-003",
-          "question": "Señale los principios básicos de la conducción:",
+          "id": "psi-estres-006",
+          "question": "Señale verdadero o falso: técnicas de manejo de estrés: el siguiente enunciado corresponde a la \"técnica de parada de pensamiento\": \"Escribir en un papel o documento, de forma totalmente desordenada y sin censura, todo lo que se tiene en la cabeza durante 3 minutos\".",
           "options": [
-            { "id": "a", "text": "Pilar técnico." },
-            { "id": "b", "text": "Pilar normativo." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "b",
-          "explanation": "El pilar normativo es uno de los tres pilares básicos de la conducción (junto al psicotécnico y al social-emocional). «Pilar técnico» no es un nombre correcto.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
-        },
+          "explanation": "Ese enunciado describe una técnica de vaciado o descarga escrita de pensamientos, no la parada de pensamiento (que consiste en interrumpir deliberadamente un pensamiento repetitivo o negativo).",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        }
+      ]
+    },
+    {
+      "id": "teorias-del-riesgo-y-la-conduccion",
+      "name": "Teorías del riesgo y la conducción",
+      "description": "Compensación del riesgo, riesgo subjetivo, riesgo cero, teoría de amenaza y evitación, y el modelo jerárquico de Boucher y van der Mollen.",
+      "questions": [
         {
-          "id": "psi-pd-004",
-          "question": "Los factores personales que influyen en la conducción son la edad, la experiencia, la personalidad y el estado físico.",
+          "id": "psi-riesgo-001",
+          "question": "Señale verdadero o falso: la teoría de la compensación del riesgo se da cuando los conductores adaptan su comportamiento al nivel de riesgo aceptado.",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "Estos son, efectivamente, los principales factores personales que influyen en la conducción.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La compensación del riesgo describe cómo el conductor ajusta su comportamiento según el nivel de riesgo que está dispuesto a aceptar.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-005",
-          "question": "«La Falsa Seguridad» hace referencia al exceso de confianza que tiene el conductor: «Yo manejo bien, nunca me va a pasar nada.»",
+          "id": "psi-riesgo-002",
+          "question": "El siguiente ejemplo representa la teoría de compensación de riesgo: un conductor se compra un auto nuevo con frenos ABS, control de estabilidad y 6 bolsas de aire. Al sentirse muy protegido, empieza a conducir más rápido y a seguir muy pegado al vehículo que le adelante, diciendo: \"este auto frena solo\".",
           "options": [
-            { "id": "a", "text": "Verdadero." },
-            { "id": "b", "text": "Falso." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "La falsa seguridad es precisamente ese exceso de confianza que lleva a subestimar los riesgos de la conducción.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El conductor compensa la mayor seguridad tecnológica del vehículo asumiendo más riesgo en su conducción, ejemplo clásico de compensación del riesgo.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-006",
-          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Siento miedo o inseguridad al pasar por puentes angostos.»",
+          "id": "psi-riesgo-003",
+          "question": "Señale verdadero o falso: el riesgo subjetivo hace referencia al riesgo que creemos que existe.",
           "options": [
-            { "id": "a", "text": "Dimensión individual." },
-            { "id": "b", "text": "Dimensión social." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "El miedo o la inseguridad ante un puente angosto son una respuesta emocional interna y personal, propia de la dimensión individual.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "El riesgo subjetivo es la percepción personal del peligro, que puede diferir del riesgo real/objetivo.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-007",
-          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Cedo el paso a las ambulancias y vehículos de emergencia.»",
+          "id": "psi-riesgo-004",
+          "question": "Señale verdadero o falso. La teoría del riesgo cero habla sobre dos tipos de respuesta: respuesta anticipada y respuesta retardada.",
           "options": [
-            { "id": "a", "text": "Dimensión individual." },
-            { "id": "b", "text": "Dimensión social." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "b",
-          "explanation": "Ceder el paso a vehículos de emergencia es una conducta orientada hacia los demás y hacia el bienestar colectivo, propia de la dimensión social.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La teoría del riesgo cero plantea que el conductor ajusta su comportamiento para mantener el riesgo percibido en un nivel subjetivamente aceptable, no se define por tipos de respuesta anticipada/retardada.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         },
         {
-          "id": "psi-pd-008",
-          "question": "¿El siguiente ejemplo corresponde a una dimensión individual o social? «Me distraigo pensando en mis problemas personales, y esto provocó un accidente de tránsito.»",
+          "id": "psi-riesgo-005",
+          "question": "El siguiente ejemplo representa la teoría de amenaza y evitación: un joven va conduciendo y piensa: \"yo no quiero chocar, no soy loco\". Sin embargo, cruza un semáforo en rojo porque \"nadie viene\" y no ve ningún peligro en ello. Solo cuando escucha el claxon de otro auto se da cuenta de lo que hizo.",
           "options": [
-            { "id": "a", "text": "Dimensión individual." },
-            { "id": "b", "text": "Dimensión social." }
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "b",
+          "explanation": "En este ejemplo el joven no reconoce ni evita activamente la señal de peligro, sino que actúa sin percibir el riesgo hasta que ya ocurrió; no aplica la teoría de amenaza y evitación, que se basa en anticipar y responder ante la señal de peligro.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-006",
+          "question": "Señale verdadero o falso. El siguiente caso pertenece a la teoría de amenaza y evitación: una conductora ve la señal de \"cruce de animales\" 200 metros antes. Inmediatamente baja la velocidad y va muy atenta. En cambio, otra persona que pasa por el mismo lugar no nota la señal y frena de golpe justo cuando ve un perro en la carretera.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
           ],
           "correct_answer": "a",
-          "explanation": "Aunque el accidente afecta a terceros, el origen de la distracción es un estado interno y personal, por lo que corresponde a la dimensión individual.",
-          "source": "cuestionario-psicologia-conduccion.pdf"
+          "explanation": "La conductora reconoce la señal de peligro y actúa preventivamente (evitación), a diferencia de la otra persona que no la percibe; ese contraste ilustra la teoría de amenaza y evitación.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-007",
+          "question": "Señale verdadero o falso: la teoría de amenaza y evitación hace referencia a reconocer señales de peligro y actuar antes de que pase.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "Esa es la definición central de la teoría: detectar la amenaza y actuar preventivamente para evitarla.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-008",
+          "question": "Señale verdadero o falso: señale los 3 niveles del modelo jerárquico de Boucher y van der Mollen.",
+          "options": [
+            { "id": "a", "text": "Democrático-Táctico-Operativo" },
+            { "id": "b", "text": "Estratégico-Táctico-Operativo" },
+            { "id": "c", "text": "Estratégico-Administrativo-Operativo" }
+          ],
+          "correct_answer": "b",
+          "explanation": "El modelo jerárquico de Boucher y van der Mollen organiza la conducción en tres niveles: estratégico, táctico y operativo.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-009",
+          "question": "Señale verdadero o falso: el siguiente caso hace referencia al modelo jerárquico Boucher y van der Mollen: un señor decide salir tarde de su casa y se propone llegar a toda costa en 30 minutos (decisión inicial). Por eso, luego elige ir más rápido y adelantar en lugares prohibidos. Al final, tiene que frenar muy fuerte y casi choca.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La decisión inicial de llegar en 30 minutos es el nivel estratégico, adelantar en lugares prohibidos es el nivel táctico, y la frenada de emergencia es el nivel operativo: los tres niveles del modelo se ven reflejados en cascada.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-010",
+          "question": "Señale verdadero o falso: el siguiente caso hace referencia al modelo jerárquico Boucher y van der Mollen (repetición del cuestionario): un señor decide salir tarde de su casa y se propone llegar a toda costa en 30 minutos (decisión inicial). Por eso, luego elige ir más rápido y adelantar en lugares prohibidos. Al final, tiene que frenar muy fuerte y casi choca.",
+          "options": [
+            { "id": "a", "text": "Verdadero" },
+            { "id": "b", "text": "Falso" }
+          ],
+          "correct_answer": "a",
+          "explanation": "La decisión inicial de llegar en 30 minutos es el nivel estratégico, adelantar en lugares prohibidos es el nivel táctico, y la frenada de emergencia es el nivel operativo: los tres niveles del modelo se ven reflejados en cascada.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
+        },
+        {
+          "id": "psi-riesgo-011",
+          "question": "Un taxista decide aceptar muchos pasajes para ganar más dinero. Por eso va corriendo todo el tiempo, cambia de carril sin mirar y se arriesga en los cruces. Todo empieza con la decisión de ganar más dinero en el día.",
+          "options": [
+            { "id": "a", "text": "Teoría del Riesgo cero" },
+            { "id": "b", "text": "Modelo Jerárquico de Boucher y Vander Mollen" }
+          ],
+          "correct_answer": "b",
+          "explanation": "La decisión de fondo (ganar más dinero) es el nivel estratégico, y las maniobras arriesgadas que se derivan de ella son los niveles táctico y operativo del modelo jerárquico.",
+          "source": "materias/psicologia-aplicada-a-la-conduccion/cuestionario-final.pdf"
         }
       ]
     }
