@@ -453,6 +453,8 @@ h1{font-size:2rem; font-weight:700; letter-spacing:-.02em; line-height:1.1}
 /* Encabezado de la página de cuenta: avatar + tipo (como la fecha de Inicio) + título grande; saldo debajo */
 .acct-head{display:flex; align-items:center; gap:14px; margin:14px 0 0}
 .acct-head .avatar{flex:none; width:52px; height:52px; font-size:1.0588rem}
+.acct-head .avatar.aicon{border-radius:12px}
+.acct-head .aicon svg{width:28px; height:28px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round}
 .acct-ht{min-width:0}
 .acct-ht .today-k{margin:2px 0 0}
 .acct-ht h1{margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -529,6 +531,100 @@ h1{font-size:2rem; font-weight:700; letter-spacing:-.02em; line-height:1.1}
 .igroup > .lrow + .lrow::before{left:66px}
 #settingsMain .igroup,#destScreen .igroup,#destDetail .igroup,#manageScreen .igroup,#typesScreen .igroup{margin-top:16px}
 #settingsMain .set-sec + .igroup{margin-top:0}
+/* Iconos de tipo de cuenta: círculo tintado con el color de acento */
+.ticon{order:0; flex:none; width:36px; height:36px; border-radius:50%; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center}
+.ticon svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.ticon.big{width:84px; height:84px; box-shadow:0 6px 18px rgba(0,122,255,.18)}
+.ticon.big svg{width:42px; height:42px; stroke-width:1.6}
+.ti-prev{display:flex; justify-content:center; margin:6px 0 18px}
+#typeForm .set-sec{margin:24px 18px 6px}
+.ti-grid{display:grid; grid-template-columns:repeat(6, 1fr); gap:10px; padding:14px; border-radius:26px; background:#FFFFFF; border:.5px solid var(--line)}
+.ti-opt{aspect-ratio:1; width:100%; max-width:48px; justify-self:center; border:0; border-radius:50%; background:var(--raised); color:var(--ink-2); display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0; transition:transform .15s, background .15s}
+.ti-opt svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.ti-opt:active{transform:scale(.9)}
+.ti-opt[aria-checked="true"]{background:var(--accent); color:#fff; box-shadow:0 0 0 2px var(--bg), 0 0 0 4px var(--accent)}
+.ti-opt:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ti-grid{background:#1C1C1E}}
+:root[data-theme="dark"] .ti-grid{background:#1C1C1E}
+#manageList{display:contents}
+/* Primer uso (sin cuentas) */
+.first-run{text-align:center; padding:40px 24px 24px}
+.first-run .fr-ic{display:inline-flex; width:72px; height:72px; border-radius:18px; background:var(--accent-soft); color:var(--accent); align-items:center; justify-content:center; margin-bottom:16px}
+.first-run .fr-ic svg{width:38px; height:38px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round}
+.first-run h2{font-size:1.1765rem; font-weight:600; margin:0 0 6px}
+.first-run p{margin:0 auto 20px; max-width:30ch; color:var(--ink-2); font-size:.9412rem}
+.fr-btn{border:0; border-radius:999px; background:var(--accent); color:#fff; font:inherit; font-weight:600; padding:12px 26px; cursor:pointer}
+.fr-btn:active{opacity:.7}
+#txBody .title,#transfersList .title{display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+#transfersList .rt{display:flex; align-items:center; gap:6px; min-width:0; font-size:.9412rem; line-height:1.2941rem; color:var(--ink)}
+#transfersList .rt .chip{flex:none}
+#transfersList .rt .aicon{flex:none; width:22px; height:22px; border-radius:6px}
+#transfersList .rt .aicon svg{width:14px; height:14px; stroke-width:2}
+#transfersList .rt-o{flex:0 1 auto; min-width:1.5em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:var(--ink-2)}
+#transfersList .rt-d{flex:0 0 auto; max-width:58%; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:600}
+#transfersList .rt-ar{flex:none; width:14px; height:14px; fill:none; stroke:var(--ink-3); stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+#transfersList .rt-sub{padding-left:28px}
+#transfersList .rt-amt{font-size:1rem}
+#transfersList .rt.s-cancelled .rt-d,#transfersList .rt.s-cancelled .rt-o{color:var(--ink-3)}
+#transfersList .grp.st-cancelled .rt .aicon{opacity:.45}
+#transfersList .grp.route{min-height:0}
+#txBody .body.acc-body{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 12px; align-items:baseline}
+#txBody .acc-body .ab-l > span,#txBody .acc-body .ab-r > span{display:block}
+#txBody .ab-l{min-width:0}
+#txBody .ab-r{text-align:right; white-space:nowrap}
+#txBody .ab-r .after{display:block}
+/* Mismo tamaño que el nombre de la cuenta: el valor principal y el saldo después; las adicionales, como la descripción */
+#txBody .acc-body .amt:not(.sm),#txBody .acc-body .after{font-size:1rem; line-height:1.2941rem}
+#txBody .acc-body .amt.sm,#txBody .acc-body .sub{font-size:.8824rem; line-height:1.2941rem}
+#txBody .sub.sub-add.s-cancelled{text-decoration:line-through; color:var(--ink-3)}
+#txBody .sub,#transfersList .sub{display:block; font-size:.8824rem; line-height:1.1765rem; color:var(--ink-2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+/* Nueva transferencia: icono de la cuenta elegida (origen y principal 32 px; adicionales 28 px) y en el menú de cuentas */
+#fAccGroup .aicon{width:32px; height:32px; border-radius:8px}
+#fAccGroup .aicon svg{width:18px; height:18px}
+#fAccGroup .swipe .aicon{width:28px; height:28px; border-radius:7px; margin:0 2px}
+#fAccGroup .swipe .aicon svg{width:16px; height:16px}
+.vmenu .aicon{width:28px; height:28px; border-radius:7px}
+/* Detalle de la transferencia: origen y principal 32 px; adicionales 28 px con el nombre alineado */
+#detailBody .aicon{width:32px; height:32px; border-radius:8px}
+#detailBody .aicon svg{width:18px; height:18px}
+#detailBody .aicon.sm{width:28px; height:28px; border-radius:7px; margin:0 2px}
+#detailBody .aicon.sm svg{width:16px; height:16px}
+#detailBody .dt-off .aicon{opacity:.45}
+/* Estadísticas: iconos de cuenta en desgloses, movimientos y filtros */
+.aicon.xs{width:22px; height:22px; border-radius:6px}
+.aicon.xs svg{width:14px; height:14px; stroke-width:2}
+.brk-n{gap:10px}
+.brk-n .ellip{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+#stList .st-row{grid-template-columns:minmax(0,1fr) auto; padding:10px 18px}
+#stList .st-row .d{grid-column:1 / -1; padding-left:28px}
+#stList .st-row + .st-row::before{left:46px; right:18px}
+#stList .rt{display:flex; align-items:center; gap:6px; min-width:0; font-weight:400; overflow-wrap:normal; font-size:.9412rem; line-height:1.2941rem}
+#stList .st-row .a{font-weight:400; font-size:1rem; line-height:1.2941rem}
+#stList .st-row .d{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+#stList .st-row{padding:10px 16px}
+#stList .rt-o{flex:0 1 auto; min-width:1.5em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:var(--ink-2)}
+#stList .rt-d{flex:0 0 auto; max-width:58%; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:600}
+#stList .rt-ar{flex:none; width:14px; height:14px; fill:none; stroke:var(--ink-3); stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+#stList .st-row.child .rt{font-size:inherit; color:inherit}
+#stList .st-row.cancelled .aicon{opacity:.45}
+#statFilters .fl > .aicon{order:0; margin:0 0 0 0}
+#statFilters .fl > svg.ic[hidden]{display:none}
+.vmenu .aicon.vm-all{background:var(--mute-soft); color:var(--ink-2)}
+.vmenu .aicon.vm-all svg.ic{width:15px; height:15px; stroke:currentColor}
+#detailBody .igroup.dt-from{margin-bottom:0}
+#detailBody .igroup.dt-to{margin-top:0}
+#detailBody .dt-flow{position:relative; height:22px; z-index:2}
+#detailBody .dt-flow span{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:34px; height:34px; border-radius:50%; background:#FFFFFF; border:.5px solid var(--line); box-shadow:0 0 0 5px var(--bg-sheet, var(--raised)), 0 2px 8px rgba(0,0,0,.08); display:flex; align-items:center; justify-content:center; color:var(--accent)}
+#detailBody .dt-flow svg{width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #detailBody .dt-flow span{background:#2C2C2E}}
+:root[data-theme="dark"] #detailBody .dt-flow span{background:#2C2C2E}
+#detailBody .dt-add .dt-amt{color:var(--ink-2); font-size:.8824rem}
+.vmenu .aicon svg{width:16px; height:16px; stroke-width:1.9}
+.avatar.aicon{border-radius:9px}
+.aicon svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+#manageList .set-sec + .igroup{margin-top:0}
+#manageList > .set-sec:first-child{margin-top:16px}
+#manageScreen .topbar{position:relative; z-index:5}
 #settingsMain .igroup + .f-hint{margin:8px 18px 0}
 .igroup > .empty{padding:16px 18px; margin:0}
 #dataScreen .set-sec{margin-top:22px}
@@ -822,13 +918,16 @@ select.f-in{-webkit-appearance:none; appearance:none; padding-right:36px; text-o
 #txBody .list,#transfersList .list{background:none; border:0; border-radius:0; overflow:visible; display:flex; flex-direction:column; gap:0}
 #txBody .day,#transfersList .day{font-size:1.1765rem; font-weight:600; letter-spacing:-.01em; margin:22px 0 8px; padding-bottom:10px; border-bottom:.5px solid var(--line)}
 #txBody .day:first-child,#transfersList .day:first-child{margin-top:8px}
-#txBody .grp,#transfersList .grp{align-items:center; gap:12px; padding:7px 12px; border-radius:12px}
+#txBody .grp,#transfersList .grp{align-items:center; gap:12px; padding:7px 8px; margin:0 -8px; border-radius:12px}
+/* El contenido queda alineado con la fecha; el fondo (pendiente o al tocar) sobresale 8 px a cada lado. */
 #txBody .grp + .grp::before,#transfersList .grp + .grp::before{display:none}
 #txBody .grp,#transfersList .grp{align-items:stretch; box-sizing:border-box;
   /* Alto mínimo = una línea de principal (22) + una de adicional (20) + relleno (7+7) */
   min-height:calc(1.2941rem + 1.1765rem + 14px)}
 .grp .bar{flex:none; width:4px; border-radius:2px; background:var(--bar, var(--ink-3)); margin:2px 0}
 .grp.st-cancelled .bar{opacity:.35}
+.grp > .aicon{order:0; flex:none; align-self:flex-start; width:36px; height:36px; margin-top:1px}
+.grp.st-cancelled > .aicon{opacity:.45}
 #txBody .body,#transfersList .body{gap:1px 12px; align-items:baseline}
 #txBody .title,#transfersList .title{font-weight:600; font-size:1rem; line-height:1.2941rem}
 #txBody .title.plain,#transfersList .title.plain{font-weight:400; font-size:0.8824rem; line-height:1.1765rem; color:var(--ink-3)}
@@ -897,8 +996,7 @@ body.scrolled-y .edge-top{opacity:1}
   .nav-in,.add,.back,.pay,.sheet-x,.tgroup,.kb-done{background:var(--glass-fallback); -webkit-backdrop-filter:none; backdrop-filter:none}
 }
 </style>
-</head>
-<body>
+
 <div class="wrap">
   <div id="sec-home">
   <section id="screen-list">
@@ -929,7 +1027,7 @@ body.scrolled-y .edge-top{opacity:1}
     </div>
     </div>
     <header class="acct-head">
-      <span class="avatar" id="txAv" aria-hidden="true"></span>
+      <span class="avatar aicon" id="txAv" aria-hidden="true"></span>
       <div class="acct-ht"><h1 id="txTitle"></h1><p class="today-k" id="txKind"></p></div>
     </header>
     <div class="summary" id="txSummary"></div>
@@ -1029,12 +1127,21 @@ body.scrolled-y .edge-top{opacity:1}
     <div id="manageScreen" hidden>
       <div class="topbar">
         <button class="back back-text" type="button" id="manageBack" aria-label="Volver a configuración"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span>Configuración</span></button>
-        <button class="add" id="addAccountBtn" type="button" aria-label="Nueva cuenta">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
+        <div class="tg-wrap">
+        <div class="tgroup">
+          <button class="tg-btn" id="mViewBtn" type="button" aria-label="Mostrar cuentas" aria-haspopup="menu" aria-expanded="false" aria-controls="mViewMenu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2" class="dot"/><circle cx="4.5" cy="12" r="1.2" class="dot"/><circle cx="4.5" cy="18" r="1.2" class="dot"/></svg></button>
+          <button class="tg-btn" id="addAccountBtn" type="button" aria-label="Nueva cuenta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        </div>
+        <div class="vmenu" id="mViewMenu" role="menu" aria-label="Mostrar" hidden>
+          <button type="button" role="menuitemradio" data-st="active" aria-checked="true"><span class="vm-chk">✓</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg><span>Activas</span></button>
+          <button type="button" role="menuitemradio" data-st="inactive" aria-checked="false"><span class="vm-chk">✓</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg><span>Inactivas</span></button>
+          <button type="button" role="menuitemradio" data-st="all" aria-checked="false"><span class="vm-chk">✓</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.2" class="dot"/><circle cx="4.5" cy="12" r="1.2" class="dot"/><circle cx="4.5" cy="18" r="1.2" class="dot"/></svg><span>Todas</span></button>
+        </div>
+        </div>
       </div>
       <h1>Cuentas</h1>
-      <div class="igroup" id="manageList"></div>
+      <p class="muted-p" id="manageEmpty" hidden></p>
+      <div id="manageList"></div>
     </div>
     <div id="typesScreen" hidden>
       <div class="topbar">
@@ -1104,6 +1211,7 @@ body.scrolled-y .edge-top{opacity:1}
       </button>
     </div>
     <form id="typeForm" novalidate>
+      <div class="ti-prev" id="typeIconPrev"></div>
       <label class="sr-only" for="typeName">Nombre</label>
       <input class="f-in f-pill" id="typeName" type="text" maxlength="40" autocomplete="off" placeholder="Nombre del tipo de cuenta">
       <div class="igroup">
@@ -1117,6 +1225,8 @@ body.scrolled-y .edge-top{opacity:1}
         <label class="f-check irow" id="typeEnabledWrap" for="typeEnabled" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg><input type="checkbox" id="typeEnabled" checked><span>Habilitado</span></label>
       </div>
       <p class="f-hint">Si «Mostrar en Inicio» está apagado, las cuentas de este tipo no aparecen en la pantalla de inicio. Siguen disponibles para transferir.</p>
+      <h3 class="section set-sec" id="typeIconLab">Icono</h3>
+      <div class="ti-grid" id="typeIcons" role="radiogroup" aria-labelledby="typeIconLab"></div>
       <fieldset class="dir" hidden>
         <legend>Dirección</legend>
         <label class="dir-opt"><input type="radio" name="dir" value="BOTH" checked><span><b>Origen y destino</b><small>Puede enviar y recibir. Ejemplo: banco.</small></span></label>
@@ -1230,58 +1340,53 @@ const dayKey = d => d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate
 /* Color opcional de la cuenta: tiñe su avatar. Sin color, el avatar queda neutro. */
 /* show_on_home: si es false, las cuentas de ese tipo no se muestran en Inicio. Por defecto true. */
 const TYPE_HOME = { 'Impuesto': false };
+/* Icono de cada tipo (clave de ICON_LIB). */
+const TYPE_ICON = { 'Banco': 'bank', 'Tarjeta de crédito': 'card', 'Persona': 'person', 'Impuesto': 'percent' };
 const PALETTE = ['#2563eb', '#059669', '#d97706', '#dc2626', '#7c3aed', '#db2777', '#0891b2', '#475569'];
 const barStyle = a => a && a.color ? ' style="--bar:' + a.color + '"' : '';
 const avStyle = a => a && a.color ? ' style="background:color-mix(in srgb,' + a.color + ' 18%,transparent); color:' + a.color + '"' : '';
-const accounts = [
-  { id: 'bp', name: 'Banco principal', type: 'Banco', initial: 150000, active: true, color: '#2563eb', isOwn: true, isLiquid: true },
-  { id: 'ah', name: 'Ahorros', type: 'Banco', initial: 80000, active: true, color: '#059669', isOwn: true, isLiquid: false },
-  { id: 'tj', name: 'Tarjeta personal', type: 'Tarjeta de crédito', initial: 0, active: true, allowNeg: true, isOwn: true, isLiquid: false },
-  { id: 'ca', name: 'Casero', type: 'Persona', initial: 0, active: true, isOwn: false, isLiquid: false },
-  { id: 'im', name: 'Impuestos', type: 'Impuesto', initial: 0, active: true, additionalOnly: true, isOwn: false, isLiquid: false },
-  { id: 'old', name: 'Cuenta antigua', type: 'Banco', initial: 0, active: false, isOwn: true, isLiquid: true }
+/* Biblioteca de iconos: trazo de 24 px, sin relleno, extremos redondeados (mismo estilo que el resto de la app).
+   Cada entrada: clave estable (se guarda en account_types.icon), nombre visible y trazos SVG. */
+const ICON_LIB = [
+  ['bank', 'Banco', '<path d="M3 9.5 12 4l9 5.5M5 10v7.5M9.5 10v7.5M14.5 10v7.5M19 10v7.5M3 20h18"/>'],
+  ['card', 'Tarjeta', '<rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18M7 15h4"/>'],
+  ['wallet', 'Billetera', '<path d="M19 8V6.5A1.5 1.5 0 0 0 17.5 5h-12A1.5 1.5 0 0 0 4 6.5v11A1.5 1.5 0 0 0 5.5 19h13a1.5 1.5 0 0 0 1.5-1.5V10a2 2 0 0 0-2-2H4"/><circle cx="16" cy="13.5" r="1.1"/>'],
+  ['cash', 'Efectivo', '<rect x="2.5" y="6.5" width="19" height="11" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.5M17.5 12h.5"/>'],
+  ['coins', 'Ahorro', '<ellipse cx="12" cy="6.5" rx="7" ry="2.5"/><path d="M5 6.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5M5 11.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5"/>'],
+  ['safe', 'Caja fuerte', '<rect x="3.5" y="4" width="17" height="15" rx="2"/><circle cx="12" cy="11.5" r="3.5"/><path d="M12 8v1M12 14v1M8.5 11.5h1M14.5 11.5h1M7 19v1.5M17 19v1.5"/>'],
+  ['chart', 'Inversión', '<path d="M4 4v16h16"/><path d="m7.5 14.5 3.5-4 3 2.5 5-6"/>'],
+  ['coin', 'Moneda', '<circle cx="12" cy="12" r="9"/><path d="M14.8 9.3c-.5-.9-1.5-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2.1 0 2.9 5.8 1.4 5.8 4.3 0 1.3-1.2 2.1-2.9 2.1-1.4 0-2.5-.6-3-1.6M12 6.3v1.6M12 16.4v1.4"/>'],
+  ['person', 'Persona', '<circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/>'],
+  ['people', 'Grupo', '<circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c.6-3 2.8-4.5 5.5-4.5s4.9 1.5 5.5 4.5M15.5 5.8a3 3 0 0 1 0 5.4M17 14.7c1.9.5 3.1 1.9 3.5 4.3"/>'],
+  ['home', 'Hogar', '<path d="M4 11 12 4l8 7M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>'],
+  ['building', 'Empresa', '<path d="M4.5 20V5.5A1.5 1.5 0 0 1 6 4h6.5A1.5 1.5 0 0 1 14 5.5V20M14 10h4a1.5 1.5 0 0 1 1.5 1.5V20M3 20h18M8 8h2.5M8 12h2.5M8 16h2.5"/>'],
+  ['briefcase', 'Trabajo', '<rect x="3" y="7" width="18" height="12.5" rx="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/>'],
+  ['receipt', 'Factura', '<path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"/><path d="M9 8h6M9 11.5h6M9 15h3"/>'],
+  ['percent', 'Impuesto', '<path d="M18 6 6 18"/><circle cx="7.5" cy="7.5" r="2.2"/><circle cx="16.5" cy="16.5" r="2.2"/>'],
+  ['cart', 'Compras', '<path d="M3 4h2.2l2.1 10.4a1.5 1.5 0 0 0 1.5 1.1h8.4a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.1"/><circle cx="17" cy="19.5" r="1.1"/>'],
+  ['food', 'Comida', '<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 21V3c-2 1.5-3 4-3 7v3h3"/>'],
+  ['car', 'Vehículo', '<path d="M5 16.5V12l1.8-4.6A2 2 0 0 1 8.7 6h6.6a2 2 0 0 1 1.9 1.4L19 12v4.5M3.5 12h17v4.5h-17zM6 16.5V19M18 16.5V19M7.5 14.2h.5M16 14.2h.5"/>'],
+  ['bolt', 'Servicios', '<path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/>'],
+  ['phone', 'Teléfono', '<rect x="6.5" y="3" width="11" height="18" rx="2.5"/><path d="M10.5 18h3"/>'],
+  ['heart', 'Salud', '<path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/>'],
+  ['school', 'Educación', '<path d="m2.5 9.5 9.5-5 9.5 5-9.5 5z"/><path d="M6.5 11.6V16c1.5 1.4 3.4 2 5.5 2s4-.6 5.5-2v-4.4M21.5 9.5v5"/>'],
+  ['gift', 'Regalo', '<rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5V20h14v-7.5M12 8.5V20M12 8.5C10.5 5 7 4.5 7 6.8c0 1.7 5 1.7 5 1.7zM12 8.5c1.5-3.5 5-4 5-1.7 0 1.7-5 1.7-5 1.7z"/>'],
+  ['globe', 'Viajes', '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/>'],
+  ['shield', 'Seguro', '<path d="M12 3.5 5 6v5.5c0 4.3 3 7.6 7 9 4-1.4 7-4.7 7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/>'],
+  ['tag', 'Etiqueta', '<path d="M3.5 12.2V4.5a1 1 0 0 1 1-1h7.7l8.3 8.3a1.5 1.5 0 0 1 0 2.1l-6.6 6.6a1.5 1.5 0 0 1-2.1 0z"/><circle cx="8" cy="8" r="1.5"/>'],
+  ['calendar', 'Suscripción', '<rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/>'],
+  ['folder', 'Otro', '<path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h4l2 2h8a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 19.5H5A1.5 1.5 0 0 1 3.5 18z"/>']
 ];
+const ICONS = Object.fromEntries(ICON_LIB.map(([k, n, d]) => [k, { name: n, d: d }]));
+const DEFAULT_ICON = 'folder';
+const iconOf = k => ICONS[k] ? k : DEFAULT_ICON;
+/* Icono de un tipo de cuenta dentro de un círculo tintado (lista de tipos, vista previa del formulario). */
+const typeIcon = (k, cls) => '<span class="ticon' + (cls ? ' ' + cls : '') + '" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICONS[iconOf(k)].d + '</svg></span>';
+/* Icono de la cuenta: el icono de su tipo, con el color y fondo del avatar, en forma de cuadrado redondeado (como los iconos de Ajustes de iOS). */
+const accIcon = (a, cls) => '<span class="avatar aicon' + (cls ? ' ' + cls : '') + '" aria-hidden="true"' + avStyle(a) + '><svg viewBox="0 0 24 24">' + ICONS[iconOf(TYPE_ICON[a.type])].d + '</svg></span>';
+const accounts = [];
 /* status: COMPLETED | PENDING | CANCELLED. date: fecha del movimiento (estimada si está pendiente). parent: id de la principal. */
-const txs = [
-  { id: 1, parent: null, src: 'bp', dst: 'ca', amount: 25000, desc: 'Arriendo de octubre', status: 'COMPLETED', date: dayOffset(-22) },
-  { id: 2, parent: 1, src: 'bp', dst: 'im', amount: 250, desc: '', status: 'COMPLETED', date: dayOffset(-22) },
-  { id: 3, parent: null, src: 'tj', dst: 'ca', amount: 12000, desc: 'Reparación de la puerta', status: 'COMPLETED', date: dayOffset(-13) },
-  { id: 4, parent: null, src: 'bp', dst: 'ah', amount: 10000, desc: 'Ahorro extra', status: 'CANCELLED', date: dayOffset(-5) },
-  { id: 5, parent: null, src: 'bp', dst: 'ah', amount: 5000, desc: 'Ahorro de hoy', status: 'COMPLETED', date: dayOffset(0) },
-  { id: 6, parent: null, src: 'bp', dst: 'ah', amount: 20000, desc: 'Ahorro mensual', status: 'PENDING', date: dayOffset(-3) },
-  { id: 7, parent: null, src: 'bp', dst: 'ca', amount: 25000, desc: 'Arriendo de noviembre', status: 'PENDING', date: dayOffset(9), auto: true },
-  { id: 8, parent: 7, src: 'bp', dst: 'im', amount: 250, desc: '', status: 'PENDING', date: dayOffset(9), auto: true },
-  { id: 9, parent: null, src: 'bp', dst: 'ca', amount: 5000, desc: 'Pago automático', status: 'PENDING', date: dayOffset(-2), auto: true },
-  /* Más movimientos de Banco principal para pruebas */
-  { id: 10, parent: null, src: 'bp', dst: 'ca', amount: 25000, desc: 'Arriendo de septiembre', status: 'COMPLETED', date: dayOffset(-52) },
-  { id: 11, parent: 10, src: 'bp', dst: 'im', amount: 250, desc: '', status: 'COMPLETED', date: dayOffset(-52) },
-  { id: 12, parent: null, src: 'bp', dst: 'ah', amount: 20000, desc: 'Ahorro mensual de septiembre', status: 'COMPLETED', date: dayOffset(-48) },
-  { id: 13, parent: null, src: 'ah', dst: 'bp', amount: 15000, desc: 'Retiro para gastos', status: 'COMPLETED', date: dayOffset(-40) },
-  { id: 14, parent: null, src: 'bp', dst: 'ca', amount: 3500, desc: 'Agua y luz', status: 'COMPLETED', date: dayOffset(-35) },
-  { id: 15, parent: null, src: 'bp', dst: 'ah', amount: 20000, desc: 'Ahorro mensual de octubre', status: 'COMPLETED', date: dayOffset(-18) },
-  { id: 16, parent: null, src: 'bp', dst: 'ca', amount: 8000, desc: 'Mantenimiento', status: 'COMPLETED', date: dayOffset(-10) },
-  { id: 17, parent: 16, src: 'bp', dst: 'im', amount: 80, desc: '', status: 'COMPLETED', date: dayOffset(-10) },
-  { id: 18, parent: null, src: 'bp', dst: 'ca', amount: 4000, desc: 'Pago duplicado', status: 'CANCELLED', date: dayOffset(-9) },
-  { id: 19, parent: 18, src: 'bp', dst: 'im', amount: 40, desc: '', status: 'CANCELLED', date: dayOffset(-9) },
-  { id: 20, parent: null, src: 'ah', dst: 'bp', amount: 6000, desc: 'Devolución', status: 'COMPLETED', date: dayOffset(-7) },
-  { id: 21, parent: null, src: 'bp', dst: 'ca', amount: 2500, desc: 'Internet', status: 'COMPLETED', date: dayOffset(-1) },
-  { id: 22, parent: null, src: 'bp', dst: 'ca', amount: 3500, desc: 'Agua y luz de noviembre', status: 'PENDING', date: dayOffset(5) },
-  { id: 23, parent: null, src: 'bp', dst: 'ah', amount: 20000, desc: 'Ahorro mensual de noviembre', status: 'PENDING', date: dayOffset(20), auto: true },
-  { id: 24, parent: null, src: 'bp', dst: 'ca', amount: 25000, desc: 'Arriendo de diciembre', status: 'PENDING', date: dayOffset(39), auto: true },
-  { id: 25, parent: 24, src: 'bp', dst: 'im', amount: 250, desc: '', status: 'PENDING', date: dayOffset(39), auto: true },
-  /* Varias transacciones en el mismo día */
-  { id: 26, parent: null, src: 'bp', dst: 'ca', amount: 1250, desc: 'Gas', status: 'COMPLETED', date: dayOffset(0) },
-  { id: 27, parent: null, src: 'ah', dst: 'bp', amount: 10000, desc: 'Transferencia para el mes', status: 'COMPLETED', date: dayOffset(0) },
-  { id: 28, parent: null, src: 'bp', dst: 'tj', amount: 8550, desc: 'Pago de tarjeta', status: 'COMPLETED', date: dayOffset(0) },
-  { id: 29, parent: 28, src: 'bp', dst: 'im', amount: 86, desc: '', status: 'COMPLETED', date: dayOffset(0) },
-  { id: 30, parent: null, src: 'bp', dst: 'ca', amount: 1800, desc: 'Limpieza', status: 'COMPLETED', date: dayOffset(-1) },
-  { id: 31, parent: null, src: 'bp', dst: 'ah', amount: 3000, desc: 'Redondeo semanal', status: 'COMPLETED', date: dayOffset(-1) },
-  { id: 32, parent: null, src: 'tj', dst: 'ca', amount: 4500, desc: 'Compra de focos', status: 'COMPLETED', date: dayOffset(-7) },
-  { id: 33, parent: null, src: 'bp', dst: 'ca', amount: 2000, desc: 'Pago repetido', status: 'CANCELLED', date: dayOffset(-5) },
-  { id: 34, parent: null, src: 'bp', dst: 'ca', amount: 1500, desc: 'Recolección de basura', status: 'PENDING', date: dayOffset(5) },
-  { id: 35, parent: null, src: 'bp', dst: 'tj', amount: 12000, desc: 'Pago de tarjeta de noviembre', status: 'PENDING', date: dayOffset(5) },
-  { id: 36, parent: 35, src: 'bp', dst: 'im', amount: 120, desc: '', status: 'PENDING', date: dayOffset(5) }
-];
+const txs = [];
 accounts.forEach(a => { a.balance = a.initial; });
 txs.filter(t => t.status === 'COMPLETED').forEach(t => {
   accounts.find(a => a.id === t.src).balance -= t.amount;
@@ -1359,43 +1464,80 @@ function renderList() {
     '<button type="button" role="menuitemradio" data-type="' + esc(v || '') + '" aria-checked="' + ((v || null) === activeType) + '"><span class="vm-chk">✓</span><span class="vm-t">' + esc(l) + '<small>' + n + (n === 1 ? ' cuenta' : ' cuentas') + '</small></span></button>').join('');
   $('#homeViewBtn').classList.toggle('on', !!activeType);
   const row = a => '<button type="button" class="irow acct-row" data-id="' + a.id + '">' +
-      '<span class="avatar" aria-hidden="true"' + avStyle(a) + '>' + esc(initials(a.name)) + '</span>' +
+      accIcon(a) +
       '<span class="irow-l">' + esc(a.name) + '</span>' +
       '<span class="irow-val"><span class="ar-bal' + (a.balance < 0 ? ' neg' : '') + '">' + esc(money(a.balance)) + '</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>' +
     '</button>';
   $('#list').innerHTML = shown.length ? types.filter(t => !activeType || t === activeType).map(t =>
     '<section class="home-sec"><h2 class="section">' + esc(t) + '</h2><div class="igroup">' + shown.filter(a => a.type === t).map(row).join('') + '</div></section>').join('')
-    : '<div class="igroup"><p class="empty">No hay cuentas activas.</p></div>';
+    : accounts.length ? '<div class="igroup"><p class="empty">No hay cuentas activas.</p></div>'
+    /* Primer uso: invita a crear la primera cuenta. */
+    : '<div class="first-run"><span class="fr-ic" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICONS.wallet.d + '</svg></span>' +
+      '<h2>Empieza creando tus cuentas</h2><p>Registra tus bancos, tarjetas y las personas o servicios a los que pagas.</p>' +
+      '<button type="button" class="fr-btn" data-first="account">Crear cuenta</button></div>';
 }
 
 function initials(name) {
   const w = name.split(/\s+/).filter(Boolean);
   return (w.length > 1 ? w[0][0] + w[1][0] : name.slice(0, 2)).toUpperCase();
 }
-/* Tarjeta: grid [avatar | detalle (principal + adicionales) | valores | total después]. Los valores quedan alineados en vertical. */
+/* Tarjeta de transferencia: [icono | descripción + cuenta | total (y saldo después)].
+   En Transferencias (sin cuenta de referencia) importa de dónde sale el dinero: icono y subtítulo del origen.
+   En la página de una cuenta importa a dónde va: icono y subtítulo del destino (o del origen si el dinero entra).
+   El monto es el total de la transferencia (principal + adicionales activas), para no atribuirlo a un solo destino. */
 function card(items, id, balance) {
-  const neutral = id == null; /* En Transferencias no hay una cuenta de referencia: sin signo ni saldo. */
+  const neutral = id == null;
   const head = items[0];
-  const headOut = neutral || head.src === id;
-  const n = items.length;
-  let out = '<div class="grp link st-' + head.status.toLowerCase() + '" role="button" tabindex="0" data-tx="' + (head.parent || head.id) + '">' +
-    /* Como en Calendario: una barra vertical con el color de la cuenta de la transacción principal. */
-    '<span class="bar" aria-hidden="true"' + barStyle(byId(headOut ? head.dst : head.src)) + '></span><div class="body">';
-  /* Dos columnas, como la lista de Calendario: a la izquierda el título y las adicionales;
-     a la derecha los valores (monto en negro, adicionales y saldo después en gris). */
-  let left = '', right = '';
-  items.forEach((t, i) => {
-    const outgoing = neutral || t.src === id;
-    const other = byId(outgoing ? t.dst : t.src);
-    const chip = t.status === 'CANCELLED' ? '<span class="chip">Cancelada</span> ' : '';
-    const cls = ' s-' + t.status.toLowerCase();
-    /* Las adicionales no tienen descripción: solo muestran su cuenta. */
-    const title = i === 0 ? esc(other.name) + (t.desc ? ' - ' + esc(t.desc) : '') : esc(other.name);
-    left += '<span class="title' + (i ? ' plain' : '') + cls + '">' + chip + title + '</span>';
-    right += '<span class="amt' + (outgoing ? '' : ' in') + (i ? ' sm' : '') + cls + '">' + (neutral ? '' : outgoing ? '−' : '+') + esc(money(t.amount)) + '</span>';
-  });
-  if (balance != null) right += '<span class="after">' + esc(money(balance)) + '</span>';
-  return out + '<div class="col-l">' + left + '</div><div class="col-r">' + right + '</div></div></div>';
+  const parentTx = head.parent ? txs.find(x => x.id === head.parent) : null;
+  const desc = ((parentTx || head).desc || '').trim();
+  const incoming = !neutral && head.dst === id && head.src !== id;
+  const cancelled = head.status === 'CANCELLED';
+  const live = cancelled ? items : items.filter(t => t.status !== 'CANCELLED');
+  const total = live.reduce((n, t) => n + t.amount, 0);
+  const src = byId(head.src), dsts = live.map(t => byId(t.dst));
+  const dstNames = dsts.map(a => a.name);
+  const iconAcc = neutral || incoming ? src : dsts[0];
+  const who = incoming ? src.name : dstNames.join(', ');
+  let title, sub;
+  if (neutral) { title = desc || dstNames.join(', '); sub = 'Desde ' + src.name + (live.length > 1 ? ' · ' + live.length + ' destinos' : ''); }
+  else if (incoming) { title = desc || src.name; sub = desc ? 'Desde ' + src.name : ''; }
+  else { title = desc || who; sub = desc ? 'Para ' + who : (live.length > 1 ? live.length + ' destinos' : ''); }
+  const st = ' s-' + head.status.toLowerCase();
+  const chip = cancelled ? '<span class="chip">Cancelada</span> ' : '';
+  const sign = neutral ? '' : incoming ? '+' : '−';
+  /* Página de cuenta: filas alineadas [texto | valor]. 1) cuenta destino (o origen si entra) en negrita y su valor;
+     2) descripción; 3) cada adicional con su valor; 4) saldo de esta cuenta después de la transacción. */
+  if (!neutral) {
+    const kst = t => ' s-' + t.status.toLowerCase();
+    const rows = [];
+    rows.push(['<span class="title' + st + '">' + chip + esc(incoming ? src.name : byId(head.dst).name) + '</span>',
+      '<span class="amt' + (incoming ? ' in' : '') + st + '">' + sign + esc(money(head.amount)) + '</span>']);
+    /* Segunda línea: «descripción + adicionales» con la suma de las adicionales a la derecha (sin nombrarlas). */
+    const kids = items.slice(1), liveKids = cancelled ? kids : kids.filter(k => k.status !== 'CANCELLED');
+    if (kids.length) {
+      const addSum = (liveKids.length ? liveKids : kids).reduce((n, k) => n + k.amount, 0), ks = liveKids.length ? '' : ' s-cancelled';
+      rows.push(['<span class="sub">' + (desc ? esc(desc) + ' + adicionales' : 'Adicionales') + '</span>',
+        '<span class="amt sm' + (cancelled ? st : ks) + '">' + sign + esc(money(addSum)) + '</span>']);
+    } else if (desc) rows.push(['<span class="sub">' + esc(desc) + '</span>', '']);
+    if (balance != null) {
+      const bal = '<span class="after">' + esc(money(balance)) + '</span>', last = rows[rows.length - 1];
+      if (rows.length > 1 && !last[1]) last[1] = bal; else rows.push(['', bal]);
+    }
+    return '<div class="grp link st-' + head.status.toLowerCase() + '" role="button" tabindex="0" data-tx="' + (head.parent || head.id) + '">' +
+      accIcon((incoming ? src : byId(head.dst)) || {}) + '<div class="body acc-body">' +
+      rows.map(r => '<div class="ab-l">' + r[0] + '</div><div class="ab-r">' + r[1] + '</div>').join('') + '</div></div>';
+  }
+  /* Transferencias: ruta «[icono] origen → [icono] destino» (destino en negrita) y, debajo, la descripción
+     y cuántas adicionales tiene. El valor es solo lo que recibió el destino principal. */
+  const dHead = byId(head.dst), nAdd = items.length - 1;
+  const meta = [desc, nAdd ? '+' + nAdd + (nAdd === 1 ? ' adicional' : ' adicionales') : ''].filter(Boolean).join(' · ');
+  return '<div class="grp link route st-' + head.status.toLowerCase() + '" role="button" tabindex="0" data-tx="' + (head.parent || head.id) + '">' +
+    '<div class="body">' +
+    '<div class="col-l"><span class="rt' + st + '">' + chip + accIcon(src, 'xs') + '<span class="rt-o">' + esc(src.name) + '</span>' +
+      '<svg class="rt-ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>' +
+      accIcon(dHead, 'xs') + '<b class="rt-d">' + esc(dHead.name) + '</b></span>' +
+      (meta ? '<span class="sub rt-sub">' + esc(meta) + '</span>' : '') + '</div>' +
+    '<div class="col-r"><span class="amt rt-amt' + st + '">' + esc(money(head.amount)) + '</span></div></div></div>';
 }
 
 let currentId = null;
@@ -1464,7 +1606,7 @@ function openAccount(id) {
   /* Sobre el título va el saldo actual, con el mismo estilo que la fecha de Inicio. */
   $('#txKind').textContent = money(a.balance) + (a.active ? '' : ' · Inactiva');
   $('#txKind').classList.toggle('neg', a.balance < 0);
-  $('#txAv').textContent = initials(a.name); $('#txAv').setAttribute('style', (avStyle(a).match(/style="(.*)"/) || [0, ''])[1]);
+  $('#txAv').innerHTML = '<svg viewBox="0 0 24 24">' + ICONS[iconOf(TYPE_ICON[a.type])].d + '</svg>'; $('#txAv').setAttribute('style', (avStyle(a).match(/style="(.*)"/) || [0, ''])[1]);
   $('#txSummary').innerHTML =
     '<span class="bal' + (a.balance < 0 ? ' neg' : '') + '">' + esc(money(a.balance)) + '</span>';
   $('#txBody').innerHTML = html;
@@ -1550,7 +1692,7 @@ function renderTransfers() {
   });
   if (open) html += '</div></section>';
   $('#transfersList').classList.toggle('only-cancelled', statusTab === 'CANCELLED');
-  $('#transfersList').innerHTML = html || '<div class="list"><p class="empty">No hay transferencias en este estado.</p></div>';
+  $('#transfersList').innerHTML = html || '<div class="list"><p class="empty">' + (accounts.length ? 'No hay transferencias en este estado.' : 'Para registrar transferencias, primero crea tus cuentas en Configuración › Cuentas.') + '</p></div>';
 }
 $('#tViewBtn').addEventListener('click', e => { e.stopPropagation(); setViewMenu($('#tViewMenu').hidden, '#tViewMenu', '#tViewBtn'); });
 $('#tViewMenu').addEventListener('click', e => {
@@ -1620,8 +1762,9 @@ function confirmForm() {
   if (!f.src) return fail('Selecciona la cuenta origen.');
   if (f.dests.some(d => !d.id)) return fail('Selecciona la cuenta destino de cada fila.');
   if (f.dests.some(d => d.amt <= 0)) return fail('Cada destino debe tener un valor mayor que cero.');
-  if (f.date < iso(today)) return fail('La fecha no puede ser anterior a hoy.');
-  const now = f.date === iso(today), p = f.date.split('-').map(Number), date = new Date(p[0], p[1] - 1, p[2]);
+  /* Hoy o en el pasado: se completa en esa fecha. Futura: queda pendiente (opcionalmente se completa sola ese día). */
+  const now = f.date <= iso(today), p = f.date.split('-').map(Number), date = new Date(p[0], p[1] - 1, p[2]);
+  const at = new Date(), doneAt = f.date === iso(today) ? at : new Date(p[0], p[1] - 1, p[2], at.getHours(), at.getMinutes());
   const status = now ? 'COMPLETED' : 'PENDING', desc = (f.desc || '').trim();
   const blocked = now && inactiveBlock(f.src, f.dests.map(d => d.id));
   if (blocked) return fail(blocked);
@@ -1630,7 +1773,7 @@ function confirmForm() {
   const pid = txs.reduce((m, t) => Math.max(m, t.id), 0) + 1;
   /* El primer destino es la transferencia principal; los demás son adicionales con el mismo origen. */
   f.dests.forEach((d, i) => {
-    txs.push({ id: pid + i, parent: i ? pid : null, src: f.src, dst: d.id, amount: d.amt, desc: i ? '' : desc, status: status, date: date, auto: !now && f.auto, createdAt: new Date(), completedAt: now ? new Date() : null, cancelledAt: null });
+    txs.push({ id: pid + i, parent: i ? pid : null, src: f.src, dst: d.id, amount: d.amt, desc: i ? '' : desc, status: status, date: date, auto: !now && f.auto, createdAt: at, completedAt: now ? doneAt : null, cancelledAt: null });
     if (now) { byId(f.src).balance -= d.amt; byId(d.id).balance += d.amt; }
   });
   const stay = fixedSrc;
@@ -1719,7 +1862,7 @@ let pickIdx = 0;
 function openSrcMenu() {
   pickIdx = -1;
   const m = $('#fDestMenu'), row = $('#fSrcBtn');
-  m.innerHTML = sheetAccts.map(a => '<button type="button" role="menuitemradio" data-acc="' + a.id + '" aria-checked="' + (a.id === form.src) + '"><span class="vm-chk">✓</span><span class="vm-t">' + esc(a.name) + '<small>' + esc(a.type) + ' · ' + esc(money(a.balance)) + '</small></span></button>').join('');
+  m.innerHTML = !sheetAccts.length ? '<p class="vm-empty">No hay cuentas que puedan enviar dinero. Créalas en Configuración › Cuentas.</p>' : sheetAccts.map(a => '<button type="button" role="menuitemradio" data-acc="' + a.id + '" aria-checked="' + (a.id === form.src) + '"><span class="vm-chk">✓</span>' + accIcon(a) + '<span class="vm-t">' + esc(a.name) + '<small>' + esc(a.type) + ' · ' + esc(money(a.balance)) + '</small></span></button>').join('');
   m.style.top = (row.offsetTop + row.offsetHeight - 6) + 'px';
   setViewMenu(true, '#fDestMenu', '#fSrcBtn');
 }
@@ -1738,7 +1881,7 @@ function openDestMenu(i) {
   const d = form.dests[i], acc = d.id ? byId(d.id) : null;
   const opts = destOptions(d, i).concat(acc ? [acc] : []).filter((a, k, arr) => arr.indexOf(a) === k);
   const m = $('#fDestMenu'), row = $('#formView [data-pick="' + i + '"]').closest('.irow');
-  m.innerHTML = opts.length ? opts.map(a => '<button type="button" role="menuitemradio" data-acc="' + a.id + '" aria-checked="' + (a.id === d.id) + '"><span class="vm-chk">✓</span><span class="vm-t">' + esc(a.name) + '<small>' + esc(a.type) + '</small></span></button>').join('')
+  m.innerHTML = opts.length ? opts.map(a => '<button type="button" role="menuitemradio" data-acc="' + a.id + '" aria-checked="' + (a.id === d.id) + '"><span class="vm-chk">✓</span>' + accIcon(a) + '<span class="vm-t">' + esc(a.name) + '<small>' + esc(a.type) + '</small></span></button>').join('')
     : '<p class="vm-empty">No hay cuentas disponibles.</p>';
   m.style.top = (row.offsetTop + row.offsetHeight - 6) + 'px';
   setViewMenu(true, '#fDestMenu', '#formView [data-pick="' + i + '"]');
@@ -1753,12 +1896,12 @@ function renderForm() {
     '<label class="sr-only" for="fDesc">Descripción</label><input class="f-in f-pill" id="fDesc" type="text" maxlength="120" placeholder="Descripción (opcional)" value="' + esc(f.desc || '') + '">' +
     /* Grupo de cuentas: origen y destinos (principal + adicionales), cada destino con su monto a la derecha. */
     '<div class="igroup" id="fAccGroup">' +
-      '<button type="button" class="irow" id="fSrcBtn"' + (fixedSrc ? ' disabled' : ' aria-haspopup="menu"') + ' aria-label="Origen: ' + (src ? esc(src.name) : 'seleccionar cuenta') + '">' + IC_SRC +
+      '<button type="button" class="irow" id="fSrcBtn"' + (fixedSrc ? ' disabled' : ' aria-haspopup="menu"') + ' aria-label="Origen: ' + (src ? esc(src.name) : 'seleccionar cuenta') + '">' + (src ? accIcon(src) : IC_SRC) +
         '<span class="dpick-t"><b class="' + (src ? '' : 'ph') + '">' + (src ? esc(src.name) : 'Origen') + '</b><small>' + (src ? esc(src.type) : 'Seleccionar cuenta') + '</small></span>' + (fixedSrc ? '' : CHEV_UD) + '</button>' +
       f.dests.map((d, i) => {
         const acc = d.id ? byId(d.id) : null;
         const cells =
-          '<button type="button" class="dpick" data-pick="' + i + '"' + (src ? '' : ' disabled') + ' aria-haspopup="menu" aria-label="' + (i ? 'Adicional ' + i : 'Destino') + ': ' + (acc ? esc(acc.name) : 'seleccionar cuenta') + '">' + (i ? IC_ADD : IC_DST) +
+          '<button type="button" class="dpick" data-pick="' + i + '"' + (src ? '' : ' disabled') + ' aria-haspopup="menu" aria-label="' + (i ? 'Adicional ' + i : 'Destino') + ': ' + (acc ? esc(acc.name) : 'seleccionar cuenta') + '">' + (acc ? accIcon(acc) : (i ? IC_ADD : IC_DST)) +
             '<span class="dpick-t"><b class="' + (acc ? '' : 'ph') + '">' + (acc ? esc(acc.name) : (i ? 'Adicional' : 'Destino')) + '</b><small>' + (acc ? esc(acc.type) : 'Seleccionar cuenta') + '</small></span>' + CHEV_UD + '</button>' +
           '<input class="irow-in f-amt" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-i="' + i + '" data-k="amt" value="' + (d.amt ? fromCents(d.amt) : '') + '" aria-label="Valor ' + (i + 1) + '">' +
           '';
@@ -1770,15 +1913,16 @@ function renderForm() {
             '</div>';
       }).join('') +
       '<button type="button" class="irow irow-add" id="fAdd"' + (free ? '' : ' disabled') + '>' + IC_PLUS + '<span class="irow-l">Agregar adicional</span></button>' +
-      '<div class="vmenu imenu noicon" id="fDestMenu" role="menu" aria-label="Cuenta destino" hidden></div>' +
+      '<div class="vmenu imenu" id="fDestMenu" role="menu" aria-label="Cuenta destino" hidden></div>' +
     '</div>' +
     (!src || configured ? '' : '<p class="f-hint">Este origen no tiene destinos habilitados. Configúralos en Configuración › Destinos permitidos.</p>') +
     /* Grupo de fecha */
     '<div class="igroup">' +
-      '<label class="irow" for="fDate">' + IC_CAL + '<span class="irow-l">Fecha</span><input class="irow-in irow-date" id="fDate" type="date" min="' + iso(today) + '" value="' + esc(f.date) + '"></label>' +
+      '<label class="irow" for="fDate">' + IC_CAL + '<span class="irow-l">Fecha</span><input class="irow-in irow-date" id="fDate" type="date" max="9999-12-31" value="' + esc(f.date) + '"></label>' +
       (f.date > iso(today) ? '<label class="f-check irow" for="fAuto">' + IC_AUTO + '<input type="checkbox" id="fAuto"' + (f.auto ? ' checked' : '') + '><span>Completar automáticamente</span></label>' : '') +
     '</div>' +
-    (f.date > iso(today) ? '<p class="f-hint">Queda pendiente hasta esa fecha.' + (f.auto ? ' Se completará sola ese día.' : '') + '</p>' : '') +
+    (f.date > iso(today) ? '<p class="f-hint">Queda pendiente hasta esa fecha.' + (f.auto ? ' Se completará sola ese día.' : '') + '</p>'
+      : f.date < iso(today) ? '<p class="f-hint">Se registrará como completada en esa fecha.</p>' : '') +
     '<p class="f-err" id="fErr" role="alert">' + esc(f.err || '') + '</p>';
   syncFDone();
   if (!src) $('#formView [data-k=amt][data-i="0"]').disabled = true;
@@ -1847,7 +1991,7 @@ document.addEventListener('keydown', e => { if (e.key !== 'Escape') return; if (
 
 /* Tipos de cuenta: nombre, dirección y si está habilitado. */
 const DIR_NAME = { BOTH: 'Origen y destino', SOURCE_ONLY: 'Solo origen', DESTINATION_ONLY: 'Solo destino' };
-const accountTypes = Object.keys(TYPE_DIR).map(n => ({ name: n, direction: TYPE_DIR[n], enabled: true, showHome: TYPE_HOME[n] !== false }));
+const accountTypes = Object.keys(TYPE_DIR).map(n => ({ name: n, direction: TYPE_DIR[n], enabled: true, showHome: TYPE_HOME[n] !== false, icon: TYPE_ICON[n] || DEFAULT_ICON }));
 /* Fila de lista de Configuración: icono o avatar, título, subtítulo gris, valor a la derecha y chevron. */
 const DIR_IC = { BOTH: '<path d="M4 8h15m0 0-4-4m4 4-4 4M20 16H5m0 0 4-4m-4 4 4 4"/>', SOURCE_ONLY: '<path d="M7 17 17 7M8 7h9v9"/>', DESTINATION_ONLY: '<path d="M17 7 7 17M16 17H7V8"/>' };
 const avHtml = a => '<span class="avatar" aria-hidden="true"' + avStyle(a) + '>' + esc(initials(a.name)) + '</span>';
@@ -1870,15 +2014,34 @@ function renderSettingsCounts() {
 document.addEventListener('click', () => setTimeout(renderSettingsCounts, 0));
 function renderTypes() {
   $('#typesList').innerHTML = accountTypes.map((t, i) =>
-    setRow('data-i="' + i + '"', ICS(DIR_IC[t.direction]), t.name, DIR_NAME[t.direction] + (t.showHome ? '' : ' · Oculto en Inicio') + (t.enabled ? '' : ' · Deshabilitado'), '', !t.enabled)).join('');
+    setRow('data-i="' + i + '"', typeIcon(t.icon), t.name, DIR_NAME[t.direction] + (t.showHome ? '' : ' · Oculto en Inicio') + (t.enabled ? '' : ' · Deshabilitado'), '', !t.enabled)).join('');
 }
 $('#optTypes').addEventListener('click', () => { renderTypes(); $('#settingsMain').hidden = true; $('#typesScreen').hidden = false; window.scrollTo(0, 0); });
-let editingType = null, typeOpener = null;
+let editingType = null, typeOpener = null, typeIconSel = DEFAULT_ICON;
+function renderTypeIcons() {
+  $('#typeIconPrev').innerHTML = typeIcon(typeIconSel, 'big');
+  $('#typeIcons').innerHTML = ICON_LIB.map(([k, n, d]) => '<button type="button" class="ti-opt" role="radio" data-icon="' + k + '" aria-label="' + n + '" title="' + n + '" aria-checked="' + (k === typeIconSel) + '" tabindex="' + (k === typeIconSel ? 0 : -1) + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + d + '</svg></button>').join('');
+}
+$('#typeIcons').addEventListener('click', e => {
+  const b = e.target.closest('[data-icon]');
+  if (!b) return;
+  typeIconSel = b.dataset.icon; renderTypeIcons();
+  $('#typeIcons [data-icon="' + typeIconSel + '"]').focus({ preventScroll: true });
+});
+/* Flechas para moverse por la cuadrícula (patrón de grupo de radios). */
+$('#typeIcons').addEventListener('keydown', e => {
+  const keys = { ArrowRight: 1, ArrowDown: 6, ArrowLeft: -1, ArrowUp: -6 };
+  if (!(e.key in keys)) return;
+  e.preventDefault();
+  const i = ICON_LIB.findIndex(x => x[0] === typeIconSel), n = Math.min(ICON_LIB.length - 1, Math.max(0, i + keys[e.key]));
+  typeIconSel = ICON_LIB[n][0]; renderTypeIcons(); $('#typeIcons [data-icon="' + typeIconSel + '"]').focus({ preventScroll: true });
+});
 function openTypeSheet(t, opener) {
   editingType = t || null; typeOpener = opener || $('#addTypeBtn');
   $('#typeForm').reset(); $('#typeErr').textContent = '';
   $('#typeTitle').textContent = t ? 'Editar tipo de cuenta' : 'Nuevo tipo de cuenta';
   $('#typeEnabledWrap').hidden = !t;
+  typeIconSel = t ? iconOf(t.icon) : DEFAULT_ICON; renderTypeIcons();
   if (t) {
     $('#typeName').value = t.name;
     $('#typeForm input[name=dir][value=' + t.direction + ']').checked = true;
@@ -1928,14 +2091,14 @@ $('#typeForm').addEventListener('submit', e => {
     const old = editingType.name;
     if (old !== name) {
       accounts.forEach(a => { if (a.type === old) a.type = name; });
-      delete TYPE_DIR[old]; delete TYPE_HOME[old];
+      delete TYPE_DIR[old]; delete TYPE_HOME[old]; delete TYPE_ICON[old];
       if (activeType === old) activeType = name;
     }
-    editingType.name = name; editingType.direction = direction; editingType.enabled = $('#typeEnabled').checked; editingType.showHome = $('#typeHome').checked;
+    editingType.name = name; editingType.direction = direction; editingType.enabled = $('#typeEnabled').checked; editingType.showHome = $('#typeHome').checked; editingType.icon = typeIconSel; TYPE_ICON[name] = typeIconSel;
     TYPE_DIR[name] = direction; TYPE_HOME[name] = editingType.showHome;
   } else {
-    accountTypes.push({ name: name, direction: direction, enabled: true, showHome: $('#typeHome').checked });
-    TYPE_DIR[name] = direction; TYPE_HOME[name] = $('#typeHome').checked;
+    accountTypes.push({ name: name, direction: direction, enabled: true, showHome: $('#typeHome').checked, icon: typeIconSel });
+    TYPE_DIR[name] = direction; TYPE_HOME[name] = $('#typeHome').checked; TYPE_ICON[name] = typeIconSel;
   }
   renderTypes();
   renderList();
@@ -1944,10 +2107,33 @@ $('#typeForm').addEventListener('submit', e => {
 $('#typesBack').addEventListener('click', () => { $('#typesScreen').hidden = true; $('#settingsMain').hidden = false; $('#optTypes').focus(); });
 
 /* Administrar cuentas: todas, activas e inactivas. */
+/* Agrupadas por tipo (en el orden de los tipos); el menú junto a (+) muestra activas, inactivas o todas. */
+let manageSt = 'active';
+const MANAGE_EMPTY = { active: 'No hay cuentas activas.', inactive: 'No hay cuentas inactivas.', all: 'Aún no hay cuentas.' };
 function renderManage() {
-  $('#manageList').innerHTML = accounts.map(a =>
-    setRow('data-id="' + a.id + '"', avHtml(a), a.name, a.type + (a.isOwn ? (a.isLiquid ? '' : ' · No disponible') : ' · Externa') + (a.active ? '' : ' · Inactiva'), money(a.balance), !a.active)).join('');
+  const show = accounts.filter(a => manageSt === 'all' || (manageSt === 'active') === !!a.active);
+  const order = accountTypes.map(t => t.name);
+  show.forEach(a => { if (order.indexOf(a.type) < 0) order.push(a.type); });
+  $('#manageList').innerHTML = order.map(tn => {
+    const rows = show.filter(a => a.type === tn);
+    if (!rows.length) return '';
+    return '<h2 class="section set-sec">' + esc(tn) + '</h2><div class="igroup">' + rows.map(a =>
+      setRow('data-id="' + a.id + '"', accIcon(a), a.name, (a.isOwn ? (a.isLiquid ? 'Propia' : 'No disponible') : 'Externa') + (a.active ? '' : ' · Inactiva'), money(a.balance), !a.active)).join('') + '</div>';
+  }).join('');
+  $('#manageEmpty').hidden = show.length > 0; $('#manageEmpty').textContent = MANAGE_EMPTY[manageSt];
+  $('#mViewBtn').classList.toggle('on', manageSt !== 'active');
 }
+VIEW_MENUS.push(['#mViewMenu', '#mViewBtn']);
+$('#mViewBtn').addEventListener('click', e => { e.stopPropagation(); setViewMenu($('#mViewMenu').hidden, '#mViewMenu', '#mViewBtn'); });
+$('#mViewMenu').addEventListener('click', e => {
+  const b = e.target.closest('[data-st]');
+  if (!b) return;
+  e.stopPropagation();
+  manageSt = b.dataset.st;
+  $('#mViewMenu').querySelectorAll('[data-st]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+  renderManage();
+  setViewMenu(false, '#mViewMenu', '#mViewBtn'); $('#mViewBtn').focus({ preventScroll: true });
+});
 $('#optAccounts').addEventListener('click', () => { renderManage(); $('#settingsMain').hidden = true; $('#manageScreen').hidden = false; window.scrollTo(0, 0); });
 $('#manageBack').addEventListener('click', () => { $('#manageScreen').hidden = true; $('#settingsMain').hidden = false; $('#optAccounts').focus(); });
 
@@ -1997,6 +2183,7 @@ function closeAccountSheet() {
   document.body.style.overflow = ''; if (accOpener && document.contains(accOpener)) accOpener.focus();
 }
 $('#addAccountBtn').addEventListener('click', () => openAccountSheet());
+$('#list').addEventListener('click', e => { const b = e.target.closest('[data-first="account"]'); if (b) { e.stopPropagation(); openAccountSheet(null, b); } });
 $('#manageList').addEventListener('click', e => {
   const r = e.target.closest('[data-id]');
   if (r) openAccountSheet(byId(r.dataset.id), r);
@@ -2049,11 +2236,7 @@ $('#accountForm').addEventListener('submit', e => {
 });
 
 /* Destinos permitidos (account_destinations): por origen, con monto por defecto y habilitado. */
-const accountDestinations = [
-  { src: 'bp', dst: 'ah', amt: 20000, desc: 'Ahorro mensual', enabled: true }, { src: 'bp', dst: 'ca', amt: 25000, desc: 'Arriendo', enabled: true }, { src: 'bp', dst: 'im', amt: 250, desc: '', enabled: true },
-  { src: 'ah', dst: 'bp', amt: 0, desc: '', enabled: true }, { src: 'ah', dst: 'ca', amt: 5000, desc: '', enabled: true },
-  { src: 'tj', dst: 'ca', amt: 12000, desc: '', enabled: true }, { src: 'tj', dst: 'im', amt: 100, desc: '', enabled: true }
-];
+const accountDestinations = [];
 const recvOK = a => a.active && TYPE_DIR[a.type] !== 'SOURCE_ONLY';
 let destSrc = null, destEditing = null, destOpener = null;
 function renderDestSources() {
@@ -2173,9 +2356,12 @@ function renderDetail() {
   const dtime = d => dlong(d) + (d.getHours() || d.getMinutes() ? ', ' + d.toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' }) : '');
   /* Diseño iOS: monto grande, estado y descripción; luego grupos blancos de cuentas, fechas y acciones. */
   const st = t.status.toLowerCase();
-  const accRow = (ic, a, amt, cls) => '<div class="irow irow-static dt-acc' + (cls || '') + '">' + ic +
-    '<span class="dpick-t"><b>' + esc(a.name) + '</b><small>' + esc(a.type) + '</small></span>' +
-    (amt != null ? '<span class="dt-amt">' + esc(money(amt)) + '</span>' : '') + '</div>';
+  const accRow = (ic, a, amt, cls, label, neg) => '<div class="irow irow-static dt-acc' + (cls || '') + '">' + ic +
+    '<span class="dpick-t"><b>' + esc(a.name) + '</b><small>' + esc(label || a.type) + '</small></span>' +
+    (amt != null ? '<span class="dt-amt">' + (neg ? '−' : '') + esc(money(amt)) + '</span>' : '') + '</div>';
+  /* Total que sale del origen: la transacción vista más sus adicionales activas (todas si está cancelada). */
+  const liveKids = t.parent ? [] : (t.status === 'CANCELLED' ? kids : kids.filter(k => k.status !== 'CANCELLED'));
+  const outTotal = t.amount + liveKids.reduce((n, k) => n + k.amount, 0);
   const infoRow = (ic, label, val) => '<div class="irow irow-static">' + ic + '<span class="irow-l">' + esc(label) + '</span><span class="irow-val">' + val + '</span></div>';
   const head = parent || t, others = parent ? [] : kids;
   const acts = [];
@@ -2183,15 +2369,17 @@ function renderDetail() {
   if (t.status !== 'CANCELLED' && !t.parent) acts.push('<button type="button" class="irow dt-act dt-bad' + (detailConfirm ? ' dt-confirm' : '') + '" data-d="cancel">' + ICS('<circle cx="12" cy="12" r="9"/><path d="m9 9 6 6m0-6-6 6"/>') + '<span class="irow-l">' + (detailConfirm ? 'Toca de nuevo para cancelar' : 'Cancelar transferencia') + '</span></button>');
   $('#detailBody').innerHTML =
     '<div class="dt-top">' +
-      '<div class="big' + (t.status === 'CANCELLED' ? ' dt-strike' : '') + '">' + esc(money(t.amount)) + '</div>' +
+      '<div class="big' + (t.status === 'CANCELLED' ? ' dt-strike' : '') + '">' + esc(money(outTotal)) + '</div>' +
       '<span class="d-st ' + st + '">' + STATUS_NAME[t.status] + (t.status === 'PENDING' && t.auto ? ' · automática' : '') + '</span>' +
       (head.desc ? '<p class="dt-desc">' + esc(head.desc) + '</p>' : '') +
     '</div>' +
-    '<div class="igroup">' +
-      accRow(IC_SRC, src, null) +
-      accRow(t.parent ? IC_ADD : IC_DST, dst, kids.length || parent ? t.amount : null) +
+    /* Origen y destinos en tarjetas separadas, unidas por una flecha centrada (de dónde sale → a dónde llega). */
+    '<div class="igroup dt-from">' + accRow(accIcon(src), src, outTotal, '', 'Origen', true) + '</div>' +
+    '<div class="dt-flow" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></span></div>' +
+    '<div class="igroup dt-to">' +
+      accRow(accIcon(dst, t.parent ? 'sm' : ''), dst, t.amount, '', t.parent ? 'Adicional' : 'Destino') +
       (parent ? '<div class="irow irow-static">' + IC_DST + '<span class="irow-l">Adicional de</span><span class="irow-val"><span class="ellip">' + esc(byId(parent.dst).name) + '</span></span></div>' : '') +
-      others.map(k => accRow(IC_ADD, byId(k.dst), k.amount, k.status === 'CANCELLED' ? ' dt-off' : '')).join('') +
+      others.map(k => accRow(accIcon(byId(k.dst), 'sm'), byId(k.dst), k.amount, k.status === 'CANCELLED' ? ' dt-off' : ' dt-add', k.status === 'CANCELLED' ? 'Adicional · cancelada' : 'Adicional')).join('') +
     '</div>' +
     '<div class="igroup">' +
       infoRow(IC_CAL, t.status === 'PENDING' ? 'Fecha estimada' : 'Fecha', esc(dlong(t.date))) +
@@ -2247,7 +2435,7 @@ function breakdown(title, rows) {
   if (!rows.length) return '';
   const max = Math.max.apply(null, rows.map(r => r[1]));
   return '<h2 class="section set-sec">' + esc(title) + '</h2><div class="igroup brk">' + rows.map(r =>
-    '<div class="brk-row"><div class="brk-top"><span class="brk-n"><i style="background:' + (r[2] || 'var(--ink-3)') + '"></i>' + esc(r[0]) + '</span><span>' + esc(money(r[1])) + '</span></div><div class="brk-bar"><i style="width:' + Math.max(2, Math.round(r[1] / max * 100)) + '%;background:' + (r[2] || 'var(--ink-3)') + '"></i></div></div>').join('') + '</div>';
+    '<div class="brk-row"><div class="brk-top"><span class="brk-n">' + accIcon(r[3], 'xs') + '<span class="ellip">' + esc(r[0]) + '</span></span><span>' + esc(money(r[1])) + '</span></div><div class="brk-bar"><i style="width:' + Math.max(2, Math.round(r[1] / max * 100)) + '%;background:' + (r[2] || 'var(--ink-3)') + '"></i></div></div>').join('') + '</div>';
 }
 function renderStats() {
   const custom = $('#fPeriod').value === 'custom';
@@ -2261,17 +2449,19 @@ function renderStats() {
   countTo($('#stSum'), sum);
   $('#stMeta').textContent = list.length ? list.length + (list.length === 1 ? ' transacción' : ' transacciones') + ' · promedio ' + money(Math.round(sum / list.length)) : 'Sin transacciones con estos filtros';
   const group = key => { const m = {}; list.forEach(t => { m[t[key]] = (m[t[key]] || 0) + t.amount; });
-    return Object.keys(m).map(id => [byId(id).name, m[id], byId(id).color]).sort((a, b) => b[1] - a[1]); };
+    return Object.keys(m).map(id => [byId(id).name, m[id], byId(id).color, byId(id)]).sort((a, b) => b[1] - a[1]); };
   $('#stBreak').innerHTML = (fd ? '' : breakdown('Por destino', group('dst'))) + (fs ? '' : breakdown('Por origen', group('src')));
   $('#stListLab').hidden = !list.length; $('#stList').hidden = !list.length;
   syncFilterLabels();
   $('#stList').innerHTML = list.map(t => {
     const p = t.parent ? txs.find(x => x.id === t.parent) : null;
-    const dc = byId(t.dst).color;
+    /* Igual que en Transferencias: «[icono] origen → [icono] destino» y debajo fecha, descripción y estado. */
+    const sa = byId(t.src), da = byId(t.dst);
     return '<div class="st-row ' + t.status.toLowerCase() + (p ? ' child' : '') + '" role="button" tabindex="0" data-tx="' + (t.parent || t.id) + '">' +
-      '<span class="bar" aria-hidden="true"' + (dc ? ' style="--bar:' + dc + '"' : '') + '></span>' +
-      '<span class="t">' + esc(byId(t.src).name) + ' → ' + esc(byId(t.dst).name) + '</span><span class="a">' + esc(money(t.amount)) + '</span>' +
-      '<span class="d">' + esc(dshort(t.date)) + (t.desc ? ' · ' + esc(t.desc) : p ? ' · Adicional' : '') + ' · ' + STATUS_NAME[t.status] + '</span></div>';
+      '<span class="t rt">' + accIcon(sa, 'xs') + '<span class="rt-o">' + esc(sa.name) + '</span>' +
+        '<svg class="rt-ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>' +
+        accIcon(da, 'xs') + '<b class="rt-d">' + esc(da.name) + '</b></span><span class="a">' + esc(money(t.amount)) + '</span>' +
+      '<span class="d">' + esc(dshort(t.date)) + (t.desc ? ' · ' + esc(t.desc) : p ? ' · Adicional' + (p.desc ? ' de «' + esc(p.desc) + '»' : '') : '') + (st === 'ALL' ? ' · ' + STATUS_NAME[t.status] : '') + '</span></div>';
   }).join('');
 }
 $('#statFilters').addEventListener('change', renderStats);
@@ -2284,6 +2474,13 @@ function syncFilterLabels() {
     if (!v) { v = document.createElement('span'); v.className = 'irow-val fl-val'; v.innerHTML = '<span class="ellip"></span>' + FL_CHEV; sel.after(v); }
     const o = sel.options[sel.selectedIndex];
     v.firstChild.textContent = o ? o.text : '';
+    /* Origen y destino: con una cuenta elegida, su icono reemplaza la flecha genérica de la fila. */
+    if (sel.id === 'fSrc' || sel.id === 'fDst') {
+      const row = sel.parentElement, ic = row.querySelector(':scope > svg.ic');
+      let ai = row.querySelector(':scope > .aicon'); if (ai) ai.remove();
+      ic.toggleAttribute('hidden', !!sel.value);
+      if (sel.value) ic.insertAdjacentHTML('afterend', accIcon(byId(sel.value), 'xs'));
+    }
   });
 }
 VIEW_MENUS.push(['#flMenu', '#fPeriod']);
@@ -2296,7 +2493,11 @@ $('#statFilters').addEventListener('click', e => {
   e.preventDefault(); e.stopPropagation();
   if (!$('#flMenu').hidden && flSel === sel) { setViewMenu(false, '#flMenu', '#' + sel.id); return; }
   flSel = sel;
-  $('#flMenu').innerHTML = [...sel.options].map(o => '<button type="button" role="menuitemradio" data-v="' + esc(o.value) + '" aria-checked="' + (o.value === sel.value) + '"><span class="vm-chk">✓</span><span class="vm-t">' + esc(o.text) + '</span></button>').join('');
+  const accMenu = sel.id === 'fSrc' || sel.id === 'fDst';
+  $('#flMenu').classList.toggle('noicon', !accMenu);
+  $('#flMenu').innerHTML = [...sel.options].map(o => '<button type="button" role="menuitemradio" data-v="' + esc(o.value) + '" aria-checked="' + (o.value === sel.value) + '"><span class="vm-chk">✓</span>' +
+    (accMenu ? (o.value ? accIcon(byId(o.value)) : '<span class="avatar aicon vm-all" aria-hidden="true">' + ICS('<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/>') + '</span>') : '') +
+    '<span class="vm-t">' + esc(o.text) + '</span></button>').join('');
   $('#flMenu').style.top = (row.offsetTop + row.offsetHeight - 6) + 'px';
   $('#flMenu').hidden = true; setViewMenu(true, '#flMenu', '#' + sel.id);
 });
@@ -2448,7 +2649,7 @@ function exportData() {
   return {
     version: 1,
     exportedAt: new Date().toISOString(),
-    accountTypes: accountTypes.map(t => ({ name: t.name, direction: t.direction, enabled: t.enabled, showOnHome: t.showHome })),
+    accountTypes: accountTypes.map(t => ({ name: t.name, direction: t.direction, enabled: t.enabled, showOnHome: t.showHome, icon: t.icon })),
     accounts: accounts.map(a => ({ id: a.id, name: a.name, type: a.type, initialBalance: a.initial, currentBalance: a.balance, allowNegativeBalance: !!a.allowNeg, additionalOnly: !!a.additionalOnly, isOwn: !!a.isOwn, isLiquid: !!a.isLiquid, color: a.color || null, status: a.active ? 'ACTIVE' : 'INACTIVE' })),
     accountDestinations: accountDestinations.map(d => ({ source: d.src, destination: d.dst, defaultAmount: d.amt, defaultDescription: d.desc || null, enabled: d.enabled })),
     transactions: txs.map(t => ({ id: t.id, parentId: t.parent || null, source: t.src, destination: t.dst, amount: t.amount, description: t.desc || null, status: t.status,
@@ -2464,8 +2665,8 @@ function importData(o) {
   const bad = o.transactions.find(t => !ids[t.source] || !ids[t.destination]) || o.accountDestinations.find(d => !ids[d.source] || !ids[d.destination]);
   if (bad) throw new Error('Hay referencias a cuentas que no existen en "accounts".');
   const pd = s => { const a = String(s).slice(0, 10).split('-'); return new Date(+a[0], a[1] - 1, +a[2]); };
-  accountTypes.length = 0; Object.keys(TYPE_DIR).forEach(k => delete TYPE_DIR[k]); Object.keys(TYPE_HOME).forEach(k => delete TYPE_HOME[k]);
-  o.accountTypes.forEach(t => { accountTypes.push({ name: t.name, direction: t.direction || 'BOTH', enabled: t.enabled !== false, showHome: t.showOnHome !== false });
+  accountTypes.length = 0; Object.keys(TYPE_DIR).forEach(k => delete TYPE_DIR[k]); Object.keys(TYPE_HOME).forEach(k => delete TYPE_HOME[k]); Object.keys(TYPE_ICON).forEach(k => delete TYPE_ICON[k]);
+  o.accountTypes.forEach(t => { accountTypes.push({ name: t.name, direction: t.direction || 'BOTH', enabled: t.enabled !== false, showHome: t.showOnHome !== false, icon: iconOf(t.icon) }); TYPE_ICON[t.name] = iconOf(t.icon);
     TYPE_DIR[t.name] = t.direction || 'BOTH'; if (t.showOnHome === false) TYPE_HOME[t.name] = false; });
   accounts.length = 0;
   o.accounts.forEach(a => accounts.push({ id: String(a.id), name: a.name, type: a.type, initial: a.initialBalance || 0, balance: a.currentBalance != null ? a.currentBalance : (a.initialBalance || 0),
@@ -2578,5 +2779,3 @@ $('#detailBody').addEventListener('click', async e => {
   refreshAll();
 });
 </script>
-</body>
-</html>
