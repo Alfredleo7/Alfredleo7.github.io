@@ -1492,6 +1492,10 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 .mock-ctl div{display:flex; gap:2px; padding:3px; border-radius:16px; background:rgba(120,120,128,.9); box-shadow:0 2px 10px rgba(0,0,0,.2)}
 .mock-ctl button{border:0; border-radius:12px; padding:5px 8px; background:none; color:#fff; font:600 11px/1.2 -apple-system, system-ui, sans-serif; cursor:pointer}
 .mock-ctl button[aria-pressed="true"]{background:#fff; color:#000}
+.mock-ctl{flex-wrap:wrap; justify-content:center; width:max-content; max-width:calc(100vw - 20px)}
+/* Pruebas del desenfoque (no son parte del diseño) */
+:root.no-blur .glass, :root.no-blur fin-toolbar-group .tgroup, :root.no-blur fin-back-button .back{-webkit-backdrop-filter:none !important; backdrop-filter:none !important}
+:root.drop-top #outlet{display:block !important; padding-top:20px}
 </style>
 </head>
 <body>
@@ -1516,6 +1520,8 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 <div class="mock-ctl">
   <div role="group" aria-label="Diseño"><button type="button" data-mock-design="actual" aria-pressed="false">Actual</button><button type="button" data-mock-design="ios27" aria-pressed="true">iOS 27</button></div>
   <div role="group" aria-label="Tema"><button type="button" data-mock-theme="" aria-pressed="true">Auto</button><button type="button" data-mock-theme="light" aria-pressed="false">Claro</button><button type="button" data-mock-theme="dark" aria-pressed="false">Oscuro</button></div>
+  <!-- Prueba del desenfoque de los botones de arriba en el iPhone: cada interruptor descarta una causa -->
+  <div role="group" aria-label="Pruebas"><button type="button" data-mock-test="no-blur" aria-pressed="false">Sin blur</button><button type="button" data-mock-test="drop-top" aria-pressed="false">Bajar</button></div>
 </div>
 
 <script>
@@ -4276,6 +4282,13 @@ function arrancar() {
   agregarDatosDePrueba();
   navigate('accounts');   /* DISEÑO: el mock abre en Configuración › Cuentas */
 }
+/* Pruebas del mock: «Sin blur» quita el desenfoque del vidrio; «Bajar» baja la página 20 px (cada uno se activa y desactiva) */
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-mock-test]');
+  if (!b) return;
+  const on = document.documentElement.classList.toggle(b.dataset.mockTest);
+  b.setAttribute('aria-pressed', String(on));
+});
 /* Control del mock: cambia la clase ios27 y el tema */
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-mock-design], [data-mock-theme]');
