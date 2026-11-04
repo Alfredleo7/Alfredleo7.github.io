@@ -1421,6 +1421,43 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 :root.ios27 fin-data-page.ios27-page .json-card + fin-list-group{--group-gap:12px}
 :root.ios27 fin-data-page.ios27-page .json-in{min-height:150px; height:150px; padding:14px 20px; border:0; border-radius:26px; box-shadow:none; background:var(--card); font-size:.8235rem}
 
+/* DIS-23: misma posición que las apps de iOS (comparado con Notas en el selector de apps)
+   - arriba: sin los 8 px bajo la barra de estado, la barra de botones queda pegada a ella como en las apps del sistema;
+   - abajo: la barra de pestañas baja hasta unos 26 pt del borde (antes 10 px por encima de la zona del indicador de inicio). */
+:root.ios27 fin-home-page, :root.ios27 fin-stats-page, :root.ios27 fin-account-types-page, :root.ios27 fin-accounts-page, :root.ios27 fin-data-page,
+:root.ios27 fin-destination-detail-page, :root.ios27 fin-destinations-page, :root.ios27 fin-settings-page, :root.ios27 fin-recurring-page,
+:root.ios27 fin-recurring-account-page, :root.ios27 fin-account-page, :root.ios27 fin-transfers-page{padding-top:0}
+:root.ios27 fin-account-page, :root.ios27 fin-transfers-page{height:100vh; height:100dvh}
+/* el body tenía el margen por defecto del navegador (8 px por lado): arriba bajaba todo y a los lados dejaba 24 px en vez de los 16 pt de iOS */
+:root.ios27 body{margin:0}
+:root.ios27 fin-tab-bar .nav{padding-bottom:max(8px, calc(env(safe-area-inset-bottom, 0px) - 8px))}
+
+/* DIS-25: hoja de tipo de cuenta
+   - el icono grande y el nombre en una tarjeta; el nombre centrado, en negrita y en un campo gris (como Recordatorios);
+   - el selector de iconos sin borde y con opciones en cuadrado redondeado (como el icono de arriba y los de toda la app);
+     la elegida, en azul con un anillo fino del mismo color. */
+:root.ios27 .ti-head{padding:20px 20px 16px; border-radius:26px; background:var(--card-in-sheet)}
+:root.ios27 .ti-head .ti-prev{display:flex; justify-content:center; margin:0 0 16px; padding:0}
+:root.ios27 .ti-head fin-text-field .f-in{height:50px; border-radius:14px; background:var(--mute-soft); text-align:center; font-size:1.118rem; font-weight:600}
+:root.ios27 .ti-head + fin-list-group{--group-gap:16px}
+/* DIS-26: hoja de cuenta: el icono grande de la cuenta y los colores en una fila */
+:root.ios27 .ac-head fin-account-icon .aicon.lg{width:84px; height:84px}
+:root.ios27 .ac-head fin-account-icon .aicon.lg fin-icon{width:42px; height:42px; stroke-width:1.7}
+:root.ios27 fin-account-form .swatches-row{padding:2px 20px 16px; margin-top:-2px}
+:root.ios27 fin-account-form fin-color-picker .swatches{flex-wrap:nowrap; justify-content:space-between; gap:6px}
+:root.ios27 fin-account-form fin-color-picker .sw{flex:none; width:30px; height:30px}
+:root.ios27 fin-icon-picker .ti-grid{gap:12px; padding:16px; border:0; background:var(--card-in-sheet)}
+:root.ios27 fin-icon-picker .ti-opt{border-radius:23%; background:var(--mute-soft); color:var(--ink)}
+:root.ios27 fin-icon-picker .ti-opt[aria-checked="true"]{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 78%, #fff), var(--accent)); color:#fff;
+  box-shadow:0 0 0 2px var(--card-in-sheet), 0 0 0 4px color-mix(in srgb, var(--accent) 55%, transparent)}
+
+/* DIS-27: paso «Tipo de cuenta» en la hoja de cuenta */
+:root.ios27 fin-account-picker.type-picker fin-list-group{--group-gap:0}
+:root.ios27 fin-account-picker.type-picker fin-section-title .set-sec{margin-top:22px}
+:root.ios27 fin-account-picker.type-picker fin-type-icon .ticon{width:30px; height:30px}
+:root.ios27 fin-account-picker.type-picker fin-type-icon .ticon fin-icon{width:17px; height:17px}
+@media (prefers-reduced-motion: no-preference){ :root.ios27 fin-account-form.ac-back{animation:ap-pop .32s cubic-bezier(.32,.72,0,1) both} }
+
 /* DIS-22: animaciones (ver la sección DIS-22 del script) */
 @media (prefers-reduced-motion: no-preference){
   @keyframes pg-push{from{transform:translateX(34%); opacity:0}to{transform:none; opacity:1}}
@@ -2980,7 +3017,9 @@ function transfersPageIos27() {
   });
   const emptyMessage = groups.length > 0 ? '' : db.accounts.length > 0 ? 'No hay transferencias en este estado.' : 'Para registrar transferencias, primero crea tus cuentas en Configuración › Cuentas.';
   const tabs = statusOptions.map(o => '<button type="button" class="tab" role="tab" aria-selected="' + (o.value === status) + '" data-act="transfers-status" data-value="' + o.value + '">' + o.label + '</button>').join('');
-  return '<fin-transfers-page class="ios27-page"><div class="tr-top">' + finToolbarGroup({ actions: [{ act: 'new-transfer', icon: 'plus', ariaLabel: 'Nueva transferencia' }] }) + '</div>' +
+  /* DIS-24: sin el botón «+» (la transferencia nueva se crea desde Inicio o desde una cuenta); la fila queda vacía para que
+     el título siga a la misma altura que en las demás páginas */
+  return '<fin-transfers-page class="ios27-page"><div class="tr-top" aria-hidden="true"></div>' +
     '<h1>Transferencias</h1><fin-segmented-control><div class="tabs" role="tablist" aria-label="Estado">' + tabs + '</div></fin-segmented-control>' +
     '<div class="list">' + groups.map(g => finDayGroup(g.title, g.items.join(''))).join('') + (emptyMessage ? finEmptyState(emptyMessage) : '') + '</div></fin-transfers-page>';
 }
@@ -3232,8 +3271,9 @@ document.addEventListener('pointerdown', e => {
 function openTypeForm(type) {
   const f = { name: type ? type.name : '', direction: type ? type.direction : 'BOTH', showOnHome: type ? type.showOnHome : true, enabled: type ? type.enabled : true, icon: type ? type.icon : DEFAULT_ICON };
   const editing = !!type;
-  const body = () => '<fin-account-type-form><form id="accountTypeForm" novalidate><div class="ti-prev">' + finTypeIcon(f.icon, 'big') + '</div>' +
-    finTextField('Nombre', 'Nombre del tipo de cuenta', f.name, 40, 'name') +
+  /* DIS-25 (iOS 27): el icono y el nombre van juntos en una tarjeta, como «Nueva lista» de Recordatorios */
+  const body = () => '<fin-account-type-form><form id="accountTypeForm" novalidate><div class="ti-head"><div class="ti-prev">' + finTypeIcon(f.icon, 'big') + '</div>' +
+    finTextField('Nombre', 'Nombre del tipo de cuenta', f.name, 40, 'name') + '</div>' +
     finListGroup(finSelectRow('swap', 'Dirección', DIRECTION_NAME[f.direction], 'type-direction') + finSwitchRow('show-home', 'Mostrar en Inicio', f.showOnHome, 'showOnHome') +
       (editing ? finSwitchRow('circle-check', 'Habilitado', f.enabled, 'enabled') : '')) +
     finHint('Si «Mostrar en Inicio» está apagado, las cuentas de este tipo no aparecen en la pantalla de inicio. Siguen disponibles para transferir.') +
@@ -3295,14 +3335,36 @@ function openAccountForm(account) {
   const f = {
     name: account ? account.name : '', accountTypeId: account ? account.accountTypeId : '', initialText: account && account.initialBalance !== 0 ? fromCents(account.initialBalance) : '',
     color: account ? account.color : null, isOwn: account ? account.isOwn : true, isLiquid: account ? account.isLiquid : true, additionalOnly: account ? account.additionalOnly : false,
-    allowNegativeBalance: account ? account.allowNegativeBalance : false, active: account ? account.status === 'ACTIVE' : true, typeHint: '', negTouched: editing
+    allowNegativeBalance: account ? account.allowNegativeBalance : false, active: account ? account.status === 'ACTIVE' : true, typeHint: '', negTouched: editing,
+    step: 'form', typeQuery: ''   /* DIS-27: paso «Tipo de cuenta» dentro de la hoja */
   };
   const typeOptions = () => db.accountTypes.slice().sort((a, b) => a.sortOrder - b.sortOrder)
     .filter(t => t.enabled || (account && t.id === account.accountTypeId)).map(t => ({ value: t.id, label: t.name }));
+  /* DIS-27 (iOS 27): elegir el tipo en un paso de la hoja (como el selector de cuentas de una transferencia), con buscador y
+     los tipos agrupados por dirección, en lugar de un menú largo que tapa la hoja */
+  const typeListHtml = () => {
+    const search = normalize(f.typeQuery.trim()), types = typeOptions().map(o => typeById(o.value)).filter(t => !search || normalize(t.name).includes(search));
+    const groups = DIRECTION_ORDER.map(direction => {
+      const list = types.filter(t => t.direction === direction);
+      return list.length ? finSectionTitle(DIRECTION_NAME[direction]) + finListGroup(list.map(t =>
+        '<fin-account-picker-row><button type="button" class="ap-row" role="option" aria-selected="' + (t.id === f.accountTypeId) + '" data-pick-type="' + t.id + '">' + finTypeIcon(t.icon) +
+        '<span class="ap-n">' + esc(t.name) + '</span>' + (t.id === f.accountTypeId ? finIcon('check', 'ap-ok') : '') + '</button></fin-account-picker-row>').join('')) : '';
+    }).join('');
+    return groups || finEmptyState('Sin resultados para «' + f.typeQuery.trim() + '».');
+  };
+  const typePickerHtml = () => '<fin-account-picker class="type-picker">' + finSearchField('Buscar tipo', f.typeQuery) + '<div role="listbox" aria-label="Tipos de cuenta" id="typePickList">' + typeListHtml() + '</div></fin-account-picker>';
+  const typeRowHtml = type => {
+    const row = finSelectRow('folder-ui', 'Tipo', type ? type.name : 'Seleccionar', 'account-type');
+    return isIos27() ? row.replace('aria-haspopup="menu" aria-expanded="false"', 'aria-haspopup="dialog"').replace('data-select="account-type"', 'data-type-pick').replace(finIcon('chevron-up-down'), finIcon('chevron-right')) : row;
+  };
   const body = () => {
+    if (f.step === 'type') return typePickerHtml();
     const type = typeById(f.accountTypeId), custom = f.color !== null && PALETTE.indexOf(f.color) < 0;
-    return '<fin-account-form><form id="accountForm" novalidate>' + finTextField('Nombre', 'Nombre de la cuenta', f.name, 40, 'name') +
-      finListGroup(finSelectRow('folder-ui', 'Tipo', type ? type.name : 'Seleccionar', 'account-type') +
+    /* DIS-26 (iOS 27): como la hoja de tipo de cuenta: el icono grande de la cuenta (con el tipo y el color elegidos) y el nombre en una tarjeta */
+    const nameField = finTextField('Nombre', 'Nombre de la cuenta', f.name, 40, 'name');
+    const head = isIos27() ? '<div class="ti-head ac-head"><div class="ti-prev">' + finAccountIcon(type ? type.icon : DEFAULT_ICON, f.color, 'lg') + '</div>' + nameField + '</div>' : nameField;
+    return '<fin-account-form><form id="accountForm" novalidate>' + head +
+      finListGroup(typeRowHtml(type) +
         /* V2 (bug 1): como en la app, el campo de saldo inicial es de texto con teclado decimal (inputmode="decimal"); sin tecla «−» en iOS no se puede escribir un negativo */
         finInputRow('money', 'Saldo inicial', 'amount', f.initialText, '0,00', 'initialText', { allowNegative: true, disabled: editing })) +
       finHint(f.typeHint) + (editing ? finHint('El saldo inicial no se puede cambiar.') : '') +
@@ -3320,22 +3382,41 @@ function openAccountForm(account) {
   const sheet = openSheet({ title: editing ? 'Editar cuenta' : 'Nueva cuenta', confirmForm: 'accountForm', confirmDisabled: !editing, body: body(), onClose: () => sheet.close() });
   const showError = m => { sheet.body.querySelector('[data-error]').innerHTML = finFormError(m); };
   const redraw = () => { sheet.body.innerHTML = body(); };
-  SELECTS['account-type'] = () => ({ label: 'Tipo de cuenta', options: typeOptions(), selected: f.accountTypeId, showIcons: false, onSelect: v => {
-    f.accountTypeId = v; showError('');
+  const chooseType = v => {
+    f.accountTypeId = v;   /* el error se limpia al volver a dibujar el formulario */
     const type = typeById(v);
     /* La nota de dirección aparece al elegir un tipo; un tipo solo origen (tarjeta) propone permitir saldo negativo, salvo que el usuario ya lo haya tocado */
     f.typeHint = type ? DIRECTION_NAME[type.direction] : '';
     if (type && !f.negTouched) f.allowNegativeBalance = type.direction === 'SOURCE_ONLY';
-    redraw();
-  } });
+  };
+  SELECTS['account-type'] = () => ({ label: 'Tipo de cuenta', options: typeOptions(), selected: f.accountTypeId, showIcons: false, onSelect: v => { chooseType(v); redraw(); } });
+  /* DIS-27: abrir y cerrar el paso «Tipo de cuenta»; la flecha (o tocar fuera) vuelve al formulario sin cambiar nada */
+  const formHeader = { title: editing ? 'Editar cuenta' : 'Nueva cuenta', subtitle: '', closeIcon: 'close', closeLabel: 'Cerrar', showConfirm: true, onClose: () => sheet.close() };
+  const closeTypeStep = () => {
+    f.step = 'form'; redraw();
+    const form = sheet.body.querySelector('fin-account-form'); if (form) form.classList.add('ac-back');   /* el formulario regresa desde la izquierda */
+    sheet.setHeader(formHeader);
+  };
+  const openTypeStep = () => {
+    f.step = 'type'; f.typeQuery = ''; redraw();
+    sheet.setHeader({ title: 'Tipo de cuenta', subtitle: '', closeIcon: 'back', closeLabel: 'Volver', showConfirm: false, onClose: closeTypeStep });
+    sheet.dialog.scrollTop = 0;
+  };
+  sheet.body.addEventListener('click', e => {
+    if (e.target.closest('[data-type-pick]')) { openTypeStep(); return; }
+    const option = e.target.closest('[data-pick-type]');
+    if (option) { chooseType(option.dataset.pickType); closeTypeStep(); }
+  });
   sheet.body.addEventListener('input', e => {
     const k = e.target.dataset.field;
+    if (k === 'query' && f.step === 'type') { f.typeQuery = e.target.value; sheet.body.querySelector('#typePickList').innerHTML = typeListHtml(); return; }   /* DIS-27 */
     if (k === 'name') { f.name = e.target.value; sheet.setConfirmDisabled(f.name.trim() === ''); }
     else if (k === 'initialText') f.initialText = e.target.value;
     else if (k === 'customColor') {
       f.color = e.target.value;
       sheet.body.querySelectorAll('.sw[data-color]').forEach(b => b.setAttribute('aria-checked', 'false'));
       const c = e.target.parentElement; c.classList.add('set'); c.style.setProperty('--c', f.color); c.setAttribute('aria-checked', 'true');
+      const preview = sheet.body.querySelector('.ac-head fin-account-icon .avatar'); if (preview) preview.style.color = f.color;   /* DIS-26 */
     } else return;
     showError('');
   });
