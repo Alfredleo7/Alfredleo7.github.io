@@ -1451,6 +1451,9 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 :root.ios27 fin-icon-picker .ti-opt[aria-checked="true"]{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 78%, #fff), var(--accent)); color:#fff;
   box-shadow:0 0 0 2px var(--card-in-sheet), 0 0 0 4px color-mix(in srgb, var(--accent) 55%, transparent)}
 
+/* DIS-28: saldo esperado negativo de una pendiente, en rojo */
+:root.ios27 fin-account-transaction-item.note .nt-meta.neg{color:var(--bad); font-weight:600}
+
 /* DIS-27: paso «Tipo de cuenta» en la hoja de cuenta */
 :root.ios27 fin-account-picker.type-picker fin-list-group{--group-gap:0}
 :root.ios27 fin-account-picker.type-picker fin-section-title .set-sec{margin-top:22px}
@@ -2891,7 +2894,7 @@ function accountItemHtml(transfer, account, status, balances) {
    3. las pendientes dicen «Pendiente» (o «Automática») al inicio del subtítulo, además de las rayas. */
 const isIos27 = () => document.documentElement.classList.contains('ios27');
 /* DIS-17: línea en gris con el icono pequeño de una cuenta (como la carpeta de una nota de iOS) */
-const noteMeta = (account, text) => '<span class="nt-meta">' + finIcon(iconOfAccount(account)) + esc(text) + '</span>';
+const noteMeta = (account, text, cls) => '<span class="nt-meta' + (cls ? ' ' + cls : '') + '">' + finIcon(iconOfAccount(account)) + esc(text) + '</span>';
 function accountItemIos27(transfer, account, status, balances) {
   const head = transfer.head, additionals = transfer.additionals;
   const source = accountById(head.sourceAccountId), destination = accountById(head.destinationAccountId);
@@ -2909,7 +2912,8 @@ function accountItemIos27(transfer, account, status, balances) {
     '<span class="title ' + state + '">' + (isCancelled && status !== 'CANCELLED' ? finChip('Cancelada') : '') + esc(counterpart.name) + '</span>' +
     '<span class="amt ' + state + (incoming ? ' in' : '') + '">' + sign + esc(formatMoney(total)) + '</span>' +
     (sub ? '<span class="sub wide">' + sub + '</span>' : '') +
-    (after !== null ? noteMeta(account, 'Saldo ' + formatMoney(after)) : '') + '</span></button></fin-account-transaction-item>';
+    /* DIS-28: una pendiente que dejaría en negativo una cuenta que no lo permite muestra su saldo esperado en rojo */
+    (after !== null ? noteMeta(account, 'Saldo ' + formatMoney(after), head.status === 'PENDING' && after < 0 && !account.allowNegativeBalance ? 'neg' : '') : '') + '</span></button></fin-account-transaction-item>';
 }
 PAGES.account = () => {
   const account = accountById(route.id);
@@ -2945,7 +2949,7 @@ PAGES.account = () => {
   const tools = '<div class="tb-mini" aria-hidden="true"><b>' + esc(account.name) + '</b><small>' + esc(formatMoney(account.currentBalance)) + '</small></div>' +
     finToolbarGroup({ actions: canPay ? [{ act: 'pay', icon: isIos27() ? 'plus' : 'send', ariaLabel: 'Pagar' }] : [], viewOptions: true, viewAriaLabel: 'Vista' });   /* DIS-3: «+» como en Calendario */
   return '<fin-account-page>' + finTopBar('Cuentas', 'Volver a cuentas', tools, compact) +
-    '<fin-account-header' + (compact ? ' class="compact"' : '') + '><header class="acct-head">' + finAccountIcon(iconOfAccount(account), account.color, 'lg') + '<div class="acct-ht"><h1>' + esc(account.name) + '</h1><p class="balance' + (account.currentBalance < 0 ? ' neg' : '') + '">' +
+    '<fin-account-header' + (compact ? ' class="compact"' : '') + '><header class="acct-head">' + finAccountIcon(iconOfAccount(account), account.color, 'lg') + '<div class="acct-ht"><h1>' + esc(account.name) + '</h1><p class="balance' + (account.currentBalance < 0 && !(isIos27() && account.allowNegativeBalance) ? ' neg' : '') + '">' +   /* DIS-28 */
     esc(formatMoney(account.currentBalance) + (account.status === 'ACTIVE' ? '' : ' · Inactiva')) + '</p></div></header></fin-account-header>' +
     '<div class="list">' + groups.map(g => finDayGroup(g.title, g.items.join(''))).join('') + (groups.length ? '' : finEmptyState(EMPTY_MESSAGES[status])) + '</div></fin-account-page>';
 };
@@ -4183,7 +4187,10 @@ function animatePage(from, to) {
   const sameTab = SECTION_OF[from] === SECTION_OF[to], dFrom = PAGE_DEPTH[from] || 0, dTo = PAGE_DEPTH[to] || 0;
   const kind = sameTab && dTo > dFrom ? 'push' : sameTab && dTo < dFrom ? 'pop' : 'tab';
   page.classList.add('pg-' + kind);
-  page.addEventListener('animationend', e => { if (e.target === page) page.classList.remove('pg-' + kind); }, { once: true });
+  /* DIS-28: se espera la animación de la propia página (las de sus hijos también llegan aquí); si la página quedara animada,
+     Safari en el iPhone deja borrosos los botones de vidrio de la barra */
+  const done = e => { if (e.target !== page) return; page.classList.remove('pg-' + kind); page.removeEventListener('animationend', done); };
+  page.addEventListener('animationend', done);
   stagger(page, STAGGER_SELECTOR);
   countUp(page);
 }
@@ -4193,7 +4200,8 @@ function stagger(root, selector, startIndex) {
   blocks.slice(0, STAGGER_MAX).forEach((el, i) => {
     el.style.setProperty('--i', (startIndex || 0) + i);
     el.classList.add('stg');
-    el.addEventListener('animationend', () => el.classList.remove('stg'), { once: true });
+    const done = e => { if (e.target !== el) return; el.classList.remove('stg'); el.removeEventListener('animationend', done); };   /* DIS-28 */
+    el.addEventListener('animationend', done);
   });
 }
 /* Cuenta desde 0 hasta el monto (totales de grupo de Inicio y saldo de una cuenta) */
