@@ -1163,7 +1163,7 @@ fin-bottom-sheet.recurring .src-value, fin-bottom-sheet.recurring .ap-v{display:
    - Fondo agrupado gris (#F2F2F7) con tarjetas blancas sin borde ni sombra, esquinas de 26 px.
    - Títulos de sección en frase normal (no MAYÚSCULAS), 17 px seminegrita y gris.
    - Filas más altas, márgenes de 20 px y separadores que empiezan donde empieza el texto.
-   - Icono de cuenta: círculo de color sólido con el glifo en blanco (como «Lista» de Recordatorios).
+   - Icono de cuenta: color sólido con el glifo en blanco (DIS-15: cuadrado redondeado, como las listas de iOS).
    - Botones de vidrio con el texto y los iconos en negro (no azules).
    - Interruptores verdes; hojas con el mismo fondo agrupado.
    ========================================================================================== */
@@ -1204,8 +1204,10 @@ fin-bottom-sheet.recurring .src-value, fin-bottom-sheet.recurring .ap-v{display:
 :root.ios27 fin-list-item-row .irow-val fin-icon{width:14px; height:14px; stroke-width:2.6}
 
 /* Icono de cuenta: círculo de color sólido con el glifo blanco; sin color, gris */
-:root.ios27 fin-account-icon .avatar{--aicon-size:32px; border-radius:50%; background:var(--plain-icon)}
-:root.ios27 fin-account-icon .avatar[style]{background:currentColor !important}   /* el color de la cuenta viene en style="color:…" */
+/* DIS-15: cuadrado redondeado (23 % del lado, como los iconos de las listas de iOS) con un ligero degradado */
+:root.ios27 fin-account-icon .avatar{--aicon-size:32px; border-radius:23%; background:linear-gradient(180deg, color-mix(in srgb, var(--plain-icon) 78%, #fff), var(--plain-icon))}
+/* el color de la cuenta viene en style="color:…" */
+:root.ios27 fin-account-icon .avatar[style]{background:linear-gradient(180deg, color-mix(in srgb, currentColor 78%, #fff), currentColor) !important}
 :root.ios27 fin-account-icon .avatar fin-icon{color:#FFFFFF}
 :root.ios27 fin-account-icon .aicon fin-icon{--aicon-glyph:18px; stroke-width:2}
 :root.ios27 fin-list-item-row .off fin-account-icon{opacity:.4}
@@ -1251,7 +1253,7 @@ fin-bottom-sheet.recurring .src-value, fin-bottom-sheet.recurring .ap-v{display:
      (Calendario también las usa).
    ========================================================================================== */
 :root.ios27 fin-account-header .acct-head{gap:14px; padding:0 4px}
-:root.ios27 fin-account-header .aicon.lg{width:48px; height:48px; border-radius:50%}
+:root.ios27 fin-account-header .aicon.lg{width:48px; height:48px}
 :root.ios27 fin-account-header .aicon.lg fin-icon{width:26px; height:26px}
 :root.ios27 fin-account-header h1{font-size:2rem; letter-spacing:-.02em}
 :root.ios27 fin-account-header .balance{margin:4px 0 0; font-size:1.647rem; line-height:1.15; font-weight:600; letter-spacing:-.01em; color:var(--ink)}
@@ -1259,8 +1261,8 @@ fin-bottom-sheet.recurring .src-value, fin-bottom-sheet.recurring .ap-v{display:
 :root.ios27 fin-account-page fin-account-header{margin:10px 0 4px}
 
 /* En las listas agrupadas de iOS el título de sección se desplaza con su tarjeta (no queda fijo) */
-:root.ios27 fin-account-page fin-day-group .day.sticky{position:static; padding:20px 20px 8px; border-bottom:0; background:var(--group-bg); font-size:1rem; font-weight:600; letter-spacing:-.01em; color:var(--ink-3)}
-:root.ios27 fin-account-page fin-day-group .day.today{color:var(--bad)}
+/* DIS-16: el día como título de nota de iOS: grande, en negrita y en negro (también «Hoy») */
+:root.ios27 fin-account-page fin-day-group .day.sticky{position:static; padding:24px 4px 10px; border-bottom:0; background:var(--group-bg); font-size:1.294rem; font-weight:700; letter-spacing:-.01em; color:var(--ink)}
 :root.ios27 fin-account-page fin-day-group + fin-day-group{margin-top:0}
 :root.ios27 fin-day-group .list{padding:0; background:var(--card); border-radius:26px; overflow:hidden}
 
@@ -1278,21 +1280,32 @@ fin-bottom-sheet.recurring .src-value, fin-bottom-sheet.recurring .ap-v{display:
 :root.ios27 fin-account-page .tb-mini small{font-size:.8235rem; font-weight:500; color:var(--ink-2)}
 
 /* DIS-4: página Transferencias (barra arriba, título grande, control segmentado y días en tarjetas) */
-:root.ios27 fin-transfers-page.ios27-page .tr-top{display:flex; justify-content:flex-end; flex:none; min-height:44px; margin-bottom:10px}
+:root.ios27 fin-transfers-page.ios27-page .tr-top{display:flex; justify-content:flex-end; flex:none; min-height:44px; margin-bottom:14px}
 :root.ios27 fin-transfers-page.ios27-page > h1{flex:none; margin:0 4px 12px; font-size:2rem; letter-spacing:-.02em}
 :root.ios27 fin-transfers-page.ios27-page fin-segmented-control{flex:none}
 :root.ios27 fin-transfers-page.ios27-page fin-segmented-control .tabs{margin-bottom:0; padding:4px}
 :root.ios27 fin-transfers-page.ios27-page fin-segmented-control .tab{padding:8px 12px; font-size:.882rem}
-:root.ios27 fin-transfers-page fin-day-group .day.sticky{position:static; padding:20px 20px 8px; border-bottom:0; background:var(--group-bg); font-size:1rem; font-weight:600; letter-spacing:-.01em; color:var(--ink-3)}
-:root.ios27 fin-transfers-page fin-day-group .day.today{color:var(--bad)}
+/* DIS-17: el día como título de nota, igual que en una cuenta */
+:root.ios27 fin-transfers-page fin-day-group .day.sticky{position:static; padding:24px 4px 10px; border-bottom:0; background:var(--group-bg); font-size:1.294rem; font-weight:700; letter-spacing:-.01em; color:var(--ink)}
 :root.ios27 fin-transfers-page fin-day-group + fin-day-group{margin-top:0}
 :root.ios27 fin-transfers-page fin-empty-state{padding:24px 0}
 :root.ios27 fin-account-transaction-item .sub.wide{grid-column:1 / -1}   /* sin saldo a la derecha, el subtítulo usa todo el ancho */
 
 /* DIS-5: Inicio (barra arriba, fecha, título y filas de cuenta) */
-:root.ios27 fin-home-page .home-top{display:flex; justify-content:flex-end; min-height:44px; margin-bottom:6px}
-:root.ios27 fin-home-page .home-date{margin:0 4px; font-size:.882rem; font-weight:600; color:var(--ink-3)}
-:root.ios27 fin-home-page .home-title{margin:0 4px 14px; font-size:2rem; letter-spacing:-.02em}
+/* DIS-21: barra arriba, título debajo y la fecha en gris bajo el título (como la descripción de las demás páginas) */
+:root.ios27 fin-home-page .home-head{display:flex; justify-content:flex-end; min-height:44px; margin-bottom:14px}
+:root.ios27 fin-home-page .home-title{margin:0 4px; font-size:2rem; line-height:1.1; letter-spacing:-.02em}
+:root.ios27 fin-home-page .home-date{margin:6px 4px 0; color:var(--ink-3)}
+/* DIS-14: título de grupo con la suma a la derecha (alineada con el borde derecho del contenido de la tarjeta) */
+:root.ios27 fin-home-page .home-sec{display:flex; justify-content:space-between; gap:12px; margin-right:20px}
+:root.ios27 fin-home-page .home-sec .sec-total{font-weight:600; color:var(--ink-3); font-variant-numeric:tabular-nums; white-space:nowrap}
+/* DIS-14: filas como las listas de iOS: icono cuadrado redondeado de color con el glifo blanco y el saldo en gris */
+:root.ios27 fin-account-row.home-row .irow{min-height:52px; gap:16px}
+:root.ios27 fin-account-row.home-row fin-account-icon .avatar{--aicon-size:30px}
+:root.ios27 fin-account-row.home-row fin-account-icon .aicon fin-icon{width:18px; height:18px}
+:root.ios27 fin-account-row.home-row:not(:first-child)::before{left:66px}
+:root.ios27 fin-account-row.home-row .irow-val{gap:8px; color:var(--ink-3)}
+:root.ios27 fin-account-row.home-row .ar-bal{color:var(--ink-3)}
 :root.ios27 fin-home-page fin-account-section:first-of-type{margin-top:0}
 :root.ios27 fin-home-page fin-list-group{--group-gap:0}
 :root.ios27 fin-account-row .irow{min-height:56px; padding:8px 20px; gap:14px}
@@ -1308,7 +1321,7 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 /* DIS-7: Estadísticas
    - el título a la misma altura que en las páginas con barra; el total en una tarjeta;
    - el desglose con su relleno (las barras no tocan el borde) y las filas de movimientos como en Transferencias. */
-:root.ios27 fin-stats-page.ios27-page > h1{margin:54px 4px 14px; font-size:2rem; letter-spacing:-.02em}
+:root.ios27 fin-stats-page.ios27-page > h1{margin:58px 4px 14px; font-size:2rem; letter-spacing:-.02em}
 :root.ios27 fin-stats-page.ios27-page fin-stats-total .st-total{align-items:flex-start; gap:2px; padding:16px 20px 18px; border-radius:26px; background:var(--card); text-align:left}
 :root.ios27 fin-stats-page.ios27-page fin-stats-total .st-lab{font-size:.882rem; font-weight:600; text-transform:none; color:var(--ink-3)}
 :root.ios27 fin-stats-page.ios27-page fin-stats-total b{font-size:2.118rem; line-height:1.15}
@@ -1369,12 +1382,12 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 
 /* DIS-11: Configuración y sus pantallas
    - el título de Configuración a la misma altura que en las páginas con barra (como Estadísticas);
-   - el icono de los tipos de cuenta en círculo sólido azul con el glifo blanco (como los iconos de cuenta);
+   - el icono de los tipos de cuenta en azul sólido con el glifo blanco (como los iconos de cuenta; DIS-15: cuadrado redondeado);
    - Destinos permitidos agrupado por tipo, con su título de sección a 20 px. */
-:root.ios27 fin-settings-page.ios27-page > h1{margin:54px 4px 0; font-size:2rem; letter-spacing:-.02em}
+:root.ios27 fin-settings-page.ios27-page > h1{margin:58px 4px 0; font-size:2rem; letter-spacing:-.02em}
 :root.ios27 fin-settings-page.ios27-page fin-section-title:first-of-type{margin-top:0}
 :root.ios27 fin-settings-page fin-list-group{--group-gap:0}
-:root.ios27 fin-type-icon .ticon{width:32px; height:32px; background:var(--accent); color:#fff}
+:root.ios27 fin-type-icon .ticon{width:32px; height:32px; border-radius:23%; background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 78%, #fff), var(--accent)); color:#fff}   /* DIS-15 */
 :root.ios27 fin-type-icon .ticon fin-icon{width:18px; height:18px; stroke-width:2}
 :root.ios27 fin-type-icon .ticon.big{width:84px; height:84px}
 :root.ios27 fin-type-icon .ticon.big fin-icon{width:42px; height:42px}
@@ -1385,6 +1398,54 @@ fin-home-more fin-icon{width:14px; height:14px; stroke-width:2.6; color:var(--ch
 /* DIS-12: Tipos de cuenta agrupado por dirección */
 :root.ios27 fin-account-types-page.ios27-page > p{margin:6px 4px 0; color:var(--ink-3)}
 :root.ios27 fin-account-types-page.ios27-page fin-list-group{--group-gap:0}
+
+/* DIS-16 / DIS-17: movimientos como notas de iOS (sin icono, tres líneas) en una cuenta, Transferencias y Estadísticas */
+:root.ios27 fin-account-transaction-item.note .grp{padding:14px 20px}
+:root.ios27 fin-account-transaction-item.note + fin-account-transaction-item.note::before{left:20px}
+:root.ios27 fin-account-transaction-item.note .body{row-gap:2px}
+:root.ios27 fin-account-transaction-item.note .title, :root.ios27 fin-account-transaction-item.note .amt{font-weight:600}
+:root.ios27 fin-account-transaction-item.note .sub{color:var(--ink-3)}
+:root.ios27 fin-account-transaction-item.note .nt-meta{grid-column:1 / -1; display:flex; align-items:center; gap:5px; font-size:.882rem; color:var(--ink-3); font-variant-numeric:tabular-nums}
+:root.ios27 fin-account-transaction-item.note .nt-meta fin-icon{flex:none; width:16px; height:16px; stroke-width:1.7}
+
+/* DIS-19: el botón de vidrio suelto («+» de Tipos de cuenta, de un origen y de Recurrentes) en negro, como los de las barras */
+:root.ios27 fin-icon-button .add{color:var(--ink)}
+
+/* DIS-18: las pendientes ya no llevan rayas diagonales; las distingue su etiqueta «Pendiente» / «Automática» */
+:root.ios27 fin-account-transaction-item .grp.pending{background:none}
+
+/* DIS-20: Exportar e importar */
+:root.ios27 fin-data-page.ios27-page > .muted-p{margin:6px 4px 0}
+:root.ios27 fin-data-page.ios27-page fin-section-title{margin-top:0}
+:root.ios27 fin-data-page.ios27-page fin-list-group{--group-gap:0}
+:root.ios27 fin-data-page.ios27-page .json-card + fin-list-group{--group-gap:12px}
+:root.ios27 fin-data-page.ios27-page .json-in{min-height:150px; height:150px; padding:14px 20px; border:0; border-radius:26px; box-shadow:none; background:var(--card); font-size:.8235rem}
+
+/* DIS-22: animaciones (ver la sección DIS-22 del script) */
+@media (prefers-reduced-motion: no-preference){
+  @keyframes pg-push{from{transform:translateX(34%); opacity:0}to{transform:none; opacity:1}}
+  @keyframes pg-pop{from{transform:translateX(-24%); opacity:0}to{transform:none; opacity:1}}
+  @keyframes pg-tab{from{transform:translateY(10px); opacity:0}to{transform:none; opacity:1}}
+  @keyframes stg-in{from{transform:translateY(14px); opacity:0}to{transform:none; opacity:1}}
+  :root.ios27 #outlet > .pg-push{animation:pg-push .42s cubic-bezier(.32,.72,0,1) both}
+  :root.ios27 #outlet > .pg-pop{animation:pg-pop .38s cubic-bezier(.32,.72,0,1) both}
+  :root.ios27 #outlet > .pg-tab{animation:pg-tab .3s cubic-bezier(.32,.72,0,1) both}
+  :root.ios27 .stg{animation:stg-in .46s cubic-bezier(.32,.72,0,1) both; animation-delay:calc(var(--i, 0) * 35ms)}
+  /* Toque: filas y tarjetas se encogen un poco y vuelven con un ligero rebote */
+  :root.ios27 fin-list-item-row .irow, :root.ios27 fin-account-row .irow, :root.ios27 fin-account-transaction-item .grp, :root.ios27 fin-settings-row .irow,
+  :root.ios27 fin-action-row .irow, :root.ios27 fin-account-type-row .tp-main, :root.ios27 fin-select-row .irow, :root.ios27 fin-detail-account-row .irow,
+  :root.ios27 fin-account-picker-row .ap-row, :root.ios27 fin-home-more button, :root.ios27 .st-chips .irow, :root.ios27 fin-segmented-control .tab{transition:transform .35s cubic-bezier(.34,1.56,.64,1), background .2s ease}
+  :root.ios27 fin-list-item-row .irow:active, :root.ios27 fin-account-row .irow:active, :root.ios27 fin-account-transaction-item .grp:active, :root.ios27 fin-settings-row .irow:active,
+  :root.ios27 fin-action-row .irow:active, :root.ios27 fin-account-type-row .tp-main:active, :root.ios27 fin-select-row .irow:active, :root.ios27 fin-detail-account-row .irow:active,
+  :root.ios27 fin-account-picker-row .ap-row:active, :root.ios27 fin-home-more button:active{transform:scale(.97); transition-duration:.12s}
+  :root.ios27 .st-chips .irow:active, :root.ios27 fin-segmented-control .tab:active{transform:scale(.92); transition-duration:.12s}
+  /* Control segmentado: píldora que se desliza */
+  :root.ios27 fin-segmented-control .tabs{position:relative}
+  :root.ios27 .seg-ghost{position:absolute; z-index:0; border-radius:999px; background:var(--glass-tinte-hover); border:1px solid var(--glass-borde); box-sizing:border-box; pointer-events:none;
+    transition:left .34s cubic-bezier(.34,1.3,.64,1), width .34s cubic-bezier(.34,1.3,.64,1)}
+  :root.ios27 fin-segmented-control .tab{position:relative; z-index:1}
+  :root.ios27 fin-segmented-control .tab.seg-hidden{background:none; border-color:transparent; box-shadow:none}
+}
 
 /* ---- Control flotante del mock (no es parte del diseño) ---- */
 .mock-ctl{position:fixed; left:50%; bottom:96px; z-index:60; display:flex; gap:6px; transform:translateX(-50%); opacity:.92}
@@ -2635,7 +2696,7 @@ function navigate(name, id, options) {
   const sameRoot = route.name === name && route.id === id && !(options && options.force);
   route.name = name; route.id = id || null;
   if (!sameRoot) { view = Object.assign(initialViewState(), { data: view.data }); if (name === 'stats') statsShown = 0; }
-  if (name === 'data') view.data = { json: JSON.stringify(exportData(), null, 2), error: null, ok: '', armed: null };   /* al entrar, el campo se llena con los datos actuales */
+  if (name === 'data') view.data = { json: isIos27() ? '' : JSON.stringify(exportData(), null, 2), error: null, ok: '', armed: null };   /* al entrar, el campo se llena con los datos actuales (DIS-20: con iOS 27 empieza vacío) */
   render();
   window.scrollTo(0, 0);
   if (options && options.after) options.after();
@@ -2706,7 +2767,10 @@ PAGES.home = () => {
 /* DIS-5 / DIS-6 / DIS-13 (iOS 27): Inicio
    - título «Inicio»; la barra de vidrio arriba a la derecha (filtro ☰ y «+» para una transferencia nueva) y la fecha;
    - el filtro ☰ no es por dirección (origen/destino) sino por propiedad: Todas, Propias o Externas;
-   - DIS-13: sin la tarjeta «Disponible» ni la sección «Próximas»: solo las cuentas. */
+   - DIS-13: sin la tarjeta «Disponible» ni la sección «Próximas»: solo las cuentas;
+   - DIS-14: cada grupo lleva a la derecha de su título la suma de
+     los saldos de sus cuentas; las filas siguen el estilo de las listas de iOS (icono cuadrado redondeado de color y el
+     saldo en gris, sin rojo para los negativos). */
 const OWNERSHIP_OPTIONS = [{ value: 'ALL', label: 'Todas', icon: 'grid' }, { value: 'OWN', label: 'Propias', icon: 'person' }, { value: 'EXTERNAL', label: 'Externas', icon: 'globe' }];
 const matchesOwnership = (account, ownership) => ownership === 'ALL' || (ownership === 'OWN') === account.isOwn;
 const homeAccountsIos27 = () => { const v = homeVisible(); return v.BOTH.concat(v.SOURCE_ONLY, v.DESTINATION_ONLY); };
@@ -2714,12 +2778,15 @@ function homePageIos27() {
   const ownership = view.homeOwnership, types = typesBySort(), shown = homeAccountsIos27().filter(a => matchesOwnership(a, ownership));
   const groups = types.map(type => ({ type, accounts: shown.filter(a => a.accountTypeId === type.id) })).filter(g => g.accounts.length > 0);
   const date = homeDate(new Date());
-  const top = '<div class="home-top">' + finToolbarGroup({ actions: [{ act: 'new-transfer', icon: 'plus', ariaLabel: 'Nueva transferencia' }], viewOptions: true, viewActive: ownership !== 'ALL', viewAriaLabel: 'Filtrar cuentas' }) + '</div>' +
-    '<p class="home-date">' + esc(date.charAt(0).toUpperCase() + date.slice(1)) + '</p><h1 class="home-title">Inicio</h1>';
+  /* DIS-21: como las demás páginas: la barra arriba a la derecha, el título debajo y la fecha en gris bajo el título */
+  const top = '<div class="home-head">' + finToolbarGroup({ actions: [{ act: 'new-transfer', icon: 'plus', ariaLabel: 'Nueva transferencia' }], viewOptions: true, viewActive: ownership !== 'ALL', viewAriaLabel: 'Filtrar cuentas' }) + '</div>' +
+    '<h1 class="home-title">Inicio</h1><p class="home-date">' + esc(date.charAt(0).toUpperCase() + date.slice(1)) + '</p>';
   const emptyMessage = groups.length === 0 && db.accounts.length > 0 ? (ownership === 'ALL' ? 'No hay cuentas activas.' : 'No hay cuentas ' + (ownership === 'OWN' ? 'propias' : 'externas') + ' en Inicio.') : '';
-  const accounts = groups.map(g => '<fin-account-section>' + finSectionTitle(g.type.name) + finListGroup(g.accounts.map(a =>
-    '<fin-account-row><button type="button" class="irow" data-act="open-account" data-id="' + a.id + '">' + finAccountIcon(g.type.icon, a.color) + '<span class="irow-l">' + esc(a.name) +
-    '</span><span class="irow-val"><span class="ar-bal' + (a.currentBalance < 0 ? ' neg' : '') + '">' + esc(formatMoney(a.currentBalance)) + '</span>' + finIcon('chevron-right') + '</span></button></fin-account-row>').join('')) + '</fin-account-section>').join('');
+  /* DIS-14: el título de cada grupo lleva a la derecha la suma de los saldos de sus cuentas */
+  const accounts = groups.map(g => '<fin-account-section><fin-section-title><h2 class="section set-sec home-sec"><span>' + esc(g.type.name) + '</span>' +
+    '<span class="sec-total">' + esc(formatMoney(g.accounts.reduce((n, a) => n + a.currentBalance, 0))) + '</span></h2></fin-section-title>' + finListGroup(g.accounts.map(a =>
+    '<fin-account-row class="home-row"><button type="button" class="irow" data-act="open-account" data-id="' + a.id + '">' + finAccountIcon(g.type.icon, a.color) + '<span class="irow-l">' + esc(a.name) +
+    '</span><span class="irow-val"><span class="ar-bal">' + esc(formatMoney(a.currentBalance)) + '</span>' + finIcon('chevron-right') + '</span></button></fin-account-row>').join('')) + '</fin-account-section>').join('');
   return '<fin-home-page class="ios27-page">' + top + (emptyMessage ? finListGroup(finEmptyState(emptyMessage)) : '') + accounts + '</fin-home-page>';
 }
 TOOLBAR_MENUS.home = () => {
@@ -2786,6 +2853,8 @@ function accountItemHtml(transfer, account, status, balances) {
    2. el saldo después va debajo del monto con una flecha (→ $645,30);
    3. las pendientes dicen «Pendiente» (o «Automática») al inicio del subtítulo, además de las rayas. */
 const isIos27 = () => document.documentElement.classList.contains('ios27');
+/* DIS-17: línea en gris con el icono pequeño de una cuenta (como la carpeta de una nota de iOS) */
+const noteMeta = (account, text) => '<span class="nt-meta">' + finIcon(iconOfAccount(account)) + esc(text) + '</span>';
 function accountItemIos27(transfer, account, status, balances) {
   const head = transfer.head, additionals = transfer.additionals;
   const source = accountById(head.sourceAccountId), destination = accountById(head.destinationAccountId);
@@ -2797,12 +2866,13 @@ function accountItemIos27(transfer, account, status, balances) {
   const text = transfer.description ? transfer.description + (hasAdd ? ' + adicionales' : '') : hasAdd ? 'Adicionales' : '';
   const flag = head.status === 'PENDING' ? '<b class="st">' + (head.autoComplete ? 'Automática' : 'Pendiente') + '</b>' : '';
   const sub = flag + (flag && text ? ' · ' : '') + esc(text);
-  return '<fin-account-transaction-item><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (head.parentTransactionId || head.id) + '">' +
-    finAccountIcon(iconOfAccount(counterpart), counterpart.color, 'md', isCancelled) + '<span class="body">' +
+/* DIS-16: como una nota de iOS: sin icono a la izquierda; 1) la otra cuenta en negrita y el monto, 2) estado y descripción
+     en gris, 3) el icono pequeño de esta cuenta con su saldo después (como la carpeta de una nota) */
+  return '<fin-account-transaction-item class="note"><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (head.parentTransactionId || head.id) + '"><span class="body">' +
     '<span class="title ' + state + '">' + (isCancelled && status !== 'CANCELLED' ? finChip('Cancelada') : '') + esc(counterpart.name) + '</span>' +
     '<span class="amt ' + state + (incoming ? ' in' : '') + '">' + sign + esc(formatMoney(total)) + '</span>' +
-    '<span class="sub">' + sub + '</span>' +
-    (after !== null ? '<span class="after">→ ' + esc(formatMoney(after)) + '</span>' : '<span></span>') + '</span></button></fin-account-transaction-item>';
+    (sub ? '<span class="sub wide">' + sub + '</span>' : '') +
+    (after !== null ? noteMeta(account, 'Saldo ' + formatMoney(after)) : '') + '</span></button></fin-account-transaction-item>';
 }
 PAGES.account = () => {
   const account = accountById(route.id);
@@ -2898,11 +2968,13 @@ function transfersPageIos27() {
     const additionals = transactions.filter(t => t.parentTransactionId === head.id), state = head.status.toLowerCase();
     const total = head.amount + additionals.reduce((n, a) => n + a.amount, 0);
     const count = additionals.length ? '+' + additionals.length + (additionals.length === 1 ? ' adicional' : ' adicionales') : '';
-    const text = ['Desde ' + source.name, head.description || '', count].filter(Boolean).join(' · ');
-    const flag = head.status === 'PENDING' && head.autoComplete ? '<b class="st">Automática</b> · ' : '';
-    const html = '<fin-account-transaction-item><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (head.parentTransactionId || head.id) + '">' +
-      accountIconOf(destination, 'md', head.status === 'CANCELLED') + '<span class="body"><span class="title ' + state + '">' + esc(destination.name) + '</span>' +
-      '<span class="amt ' + state + '">' + esc(formatMoney(total)) + '</span><span class="sub wide">' + flag + esc(text) + '</span></span></button></fin-account-transaction-item>';
+    /* DIS-17: como una nota: 1) el destino y el monto, 2) estado, descripción y adicionales en gris, 3) el origen con su icono */
+    const text = [head.description || '', count].filter(Boolean).join(' · ');
+    /* DIS-18: sin rayas, toda pendiente lleva su etiqueta («Pendiente» o «Automática») */
+    const flag = head.status === 'PENDING' ? '<b class="st">' + (head.autoComplete ? 'Automática' : 'Pendiente') + '</b>' + (text ? ' · ' : '') : '';
+    const html = '<fin-account-transaction-item class="note"><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (head.parentTransactionId || head.id) + '">' +
+      '<span class="body"><span class="title ' + state + '">' + esc(destination.name) + '</span><span class="amt ' + state + '">' + esc(formatMoney(total)) + '</span>' +
+      (flag || text ? '<span class="sub wide">' + flag + esc(text) + '</span>' : '') + noteMeta(source, 'Desde ' + source.name) + '</span></button></fin-account-transaction-item>';
     const date = head.estimatedCompletionDate, group = groups.find(g => g.date === date);
     if (group) group.items.push(html); else groups.push({ date, title: date === today ? 'Hoy' : dayTitle(parseIsoDate(date)), items: [html] });
   });
@@ -2984,9 +3056,11 @@ PAGES.stats = () => {
    «Desde <origen> · 30 oct · descripción» (movementDetail) */
 function statsMovementIos27(t, source, destination, parent, showStatus) {
   const state = t.status.toLowerCase();
-  return '<fin-account-transaction-item><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (t.parentTransactionId || t.id) + '">' +
-    accountIconOf(destination, 'md', t.status === 'CANCELLED') + '<span class="body"><span class="title ' + state + '">' + esc(destination.name) + '</span>' +
-    '<span class="amt ' + state + '">' + esc(formatMoney(t.amount)) + '</span><span class="sub wide">' + esc('Desde ' + source.name + ' · ' + movementDetail(t, parent, showStatus)) + '</span></span></button></fin-account-transaction-item>';
+  /* DIS-17: como una nota: 1) el destino y el monto, 2) fecha y descripción (movementDetail) en gris, 3) el origen con su icono */
+  return '<fin-account-transaction-item class="note"><button type="button" class="grp ' + state + '" data-act="open-detail" data-id="' + (t.parentTransactionId || t.id) + '">' +
+    '<span class="body"><span class="title ' + state + '">' + esc(destination.name) + '</span><span class="amt ' + state + '">' + esc(formatMoney(t.amount)) + '</span>' +
+    '<span class="sub wide">' + (t.status === 'PENDING' ? '<b class="st">' + (t.autoComplete ? 'Automática' : 'Pendiente') + '</b> · ' : '') +   /* DIS-18 */
+    esc(movementDetail(t, parent, showStatus && t.status !== 'PENDING')) + '</span>' + noteMeta(source, 'Desde ' + source.name) + '</span></button></fin-account-transaction-item>';
 }
 /* DIS-8 (iOS 27): Estadísticas más corta
    - los filtros son píldoras bajo el título (Período, Estado, Origen, Destino); la que no está en su valor por defecto se
@@ -3353,6 +3427,7 @@ function openDestinationForm(source, destination) {
    V2: al entrar el campo se llena con los datos actuales; el primer toque ya revisa el JSON (validateImport) y el segundo reemplaza los datos. */
 const IMPORT_LABEL = 'Importar', CONFIRM_LABEL = 'Toca de nuevo para reemplazar los datos';
 PAGES.data = () => {
+  if (isIos27()) return dataPageIos27();   /* DIS-20 */
   const d = view.data;
   return '<fin-data-page>' + finTopBar('Configuración', 'Volver a configuración', '') + '<h1>' + (isIos27() ? 'Exportar e importar' : 'Datos') + '</h1><p class="muted-p">Exporta todos los datos como JSON para guardarlos, o pega un JSON y reemplaza los datos actuales.</p>' +
     finListGroup(finActionRow('download', 'Exportar datos actuales', false, 'data-export') + finActionRow('copy', 'Copiar JSON', false, 'data-copy') + finActionRow('trash', 'Limpiar campo', true, 'data-clear')) +
@@ -3386,6 +3461,48 @@ document.addEventListener('click', e => {
   catch (err) { dataMessage('No se pudo importar. ' + (err instanceof Error ? err.message : String(err))); }
   dataDisarm();
 });
+
+/* DIS-20 (iOS 27): Exportar e importar en dos secciones
+   - Exportar: copiar los datos actuales o descargarlos como archivo, sin pasar por el campo de texto;
+   - Importar: el campo empieza vacío y es más bajo; «Importar y reemplazar» va en rojo (borra los datos actuales) y
+     confirma con la alerta de la app en lugar de tocar dos veces el mismo botón. */
+function dataPageIos27() {
+  const d = view.data;
+  return '<fin-data-page class="ios27-page">' + finTopBar('Configuración', 'Volver a configuración', '') + '<h1>Exportar e importar</h1>' +
+    '<p class="muted-p">Guarda una copia de tus datos o reemplázalos con una copia guardada.</p>' +
+    finSectionTitle('Exportar') + finListGroup(finActionRow('copy', 'Copiar datos actuales', false, 'data-copy-now') + finActionRow('download', 'Descargar archivo JSON', false, 'data-download')) +
+    finHint('Incluye cuentas, tipos de cuenta, destinos permitidos y transferencias.') +
+    finSectionTitle('Importar') + '<div class="json-card"><textarea class="json-in" aria-label="JSON a importar" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="Pega aquí el JSON a importar" id="dataJson">' + esc(d.json) + '</textarea></div>' +
+    finListGroup(finActionRow('trash', 'Limpiar campo', false, 'data-clear') + finActionRow('swap', 'Importar y reemplazar', true, 'data-import-ios')) +
+    finHint('Importar reemplaza todas las cuentas, tipos, destinos y transferencias actuales.') +
+    '<div id="dataError">' + finFormError(d.error) + '</div><p class="data-ok" role="status" id="dataOk">' + esc(d.ok) + '</p></fin-data-page>';
+}
+const exportJson = () => JSON.stringify(exportData(), null, 2);
+const exportSummary = data => data.accounts.length + ' cuentas y ' + data.transactions.length + ' transferencias';
+actions['data-copy-now'] = () => {
+  const json = exportJson(), done = () => dataMessage(null, 'Copiado al portapapeles: ' + exportSummary(JSON.parse(json)) + '.');
+  const fallback = () => { const t = document.createElement('textarea'); t.value = json; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); };
+  (navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(json).catch(fallback) : Promise.resolve(fallback())).then(done);
+};
+actions['data-download'] = () => {
+  const json = exportJson(), link = document.createElement('a');
+  link.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
+  link.download = 'libro-de-cuentas-' + toIsoDate(new Date()) + '.json';
+  link.click(); URL.revokeObjectURL(link.href);
+  dataMessage(null, 'Archivo descargado: ' + link.download + '.');
+};
+actions['data-import-ios'] = () => {
+  let data;
+  try { data = JSON.parse(view.data.json); } catch (err) { return dataMessage(view.data.json.trim() ? 'El texto no es un JSON válido: ' + err.message : 'Pega primero el JSON que quieres importar.'); }
+  const problem = validateImport(data);
+  if (problem) return dataMessage('No se pudo importar. ' + problem);
+  dataMessage();
+  showAlert({ title: '¿Reemplazar todos los datos?', message: 'Se importarán ' + exportSummary(data) + '. Los datos actuales se perderán.', confirmLabel: 'Reemplazar', cancelLabel: 'Cancelar', destructive: true,
+    onConfirm: () => {
+      try { importData(data); view.data.json = ''; $('#dataJson').value = ''; dataMessage(null, 'Datos importados: ' + exportSummary(data) + '.'); }
+      catch (err) { dataMessage('No se pudo importar. ' + (err instanceof Error ? err.message : String(err))); }
+    } });
+};
 
 /* DIS-11 (iOS 27): Destinos permitidos agrupado por tipo, como Cuentas y Transacciones recurrentes (el tipo ya no va en el subtítulo) */
 function destinationsPageIos27() {
@@ -3963,6 +4080,90 @@ actions['rec-month-mode'] = el => { F.customRule.monthMode = el.dataset.value; r
 SELECTS['rec-freq'] = () => ({ label: 'Frecuencia', options: FREQ_OPTIONS, selected: F.customRule.freq, onSelect: v => { F.customRule.freq = v; redrawCustom(); } });
 SELECTS['rec-interval'] = () => ({ label: 'Cada', selected: String(F.customRule.interval), onSelect: v => { F.customRule.interval = Number(v); redrawCustom(); },
   options: Array.from({ length: MAX_INTERVAL }, (_, i) => ({ value: String(i + 1), label: (i + 1) + ' ' + FREQ_UNITS[F.customRule.freq][i === 0 ? 0 : 1] })) });
+
+/* ==========================================================================================
+   DISEÑO iOS 27 · DIS-22: animaciones (solo con iOS 27 y si el sistema no pide reducir el movimiento)
+   1. Cambio de pantalla: a una subpantalla de la misma pestaña entra desde la derecha (push); al volver, desde la
+      izquierda (pop); al cambiar de pestaña, con un fundido que sube un poco.
+   2. Al abrir una pantalla, sus tarjetas y secciones aparecen escalonadas.
+   3. Los totales de Inicio y el saldo de una cuenta cuentan hasta su valor.
+   4. En el control segmentado, la selección se desliza a la nueva opción.
+   5. Al tocar «Ver las N», las filas nuevas aparecen escalonadas.
+   (El toque sobre filas y tarjetas está en el CSS.)
+   ========================================================================================== */
+const animateOn = () => isIos27() && motionOK();
+/* Profundidad de cada pantalla dentro de su pestaña: más profunda = subpantalla */
+const PAGE_DEPTH = { home: 0, account: 1, transfers: 0, stats: 0, settings: 0, types: 1, accounts: 1, destinations: 1, destination: 2, data: 1, recurring: 1, recurringAccount: 2 };
+const STAGGER_SELECTOR = 'fin-list-group, fin-account-section, fin-day-group, fin-breakdown, fin-stats-total, fin-segmented-control, .st-chips, fin-section-title, fin-hint, fin-account-header, .json-card';
+const STAGGER_MAX = 12, STAGGER_MS = 35, COUNT_MS = 600;
+function animatePage(from, to) {
+  const page = $('#outlet') && $('#outlet').firstElementChild;
+  if (!page || !animateOn() || from === to) return;
+  const sameTab = SECTION_OF[from] === SECTION_OF[to], dFrom = PAGE_DEPTH[from] || 0, dTo = PAGE_DEPTH[to] || 0;
+  const kind = sameTab && dTo > dFrom ? 'push' : sameTab && dTo < dFrom ? 'pop' : 'tab';
+  page.classList.add('pg-' + kind);
+  page.addEventListener('animationend', e => { if (e.target === page) page.classList.remove('pg-' + kind); }, { once: true });
+  stagger(page, STAGGER_SELECTOR);
+  countUp(page);
+}
+/* Escalona los bloques de primer nivel (no los que están dentro de otro bloque escalonado) */
+function stagger(root, selector, startIndex) {
+  const blocks = Array.from(root.querySelectorAll(selector)).filter(el => !el.parentElement.closest(selector) || !root.contains(el.parentElement.closest(selector)));
+  blocks.slice(0, STAGGER_MAX).forEach((el, i) => {
+    el.style.setProperty('--i', (startIndex || 0) + i);
+    el.classList.add('stg');
+    el.addEventListener('animationend', () => el.classList.remove('stg'), { once: true });
+  });
+}
+/* Cuenta desde 0 hasta el monto (totales de grupo de Inicio y saldo de una cuenta) */
+function countUp(root) {
+  root.querySelectorAll('.sec-total, fin-account-header .balance').forEach(el => {
+    const text = el.textContent;
+    if (text.includes('·')) return;   /* «$… · Inactiva»: se deja como está */
+    const target = toCents(text.replace('−', '-').replace(/[^\d,-]/g, '')), t0 = performance.now();
+    const step = now => {
+      const k = Math.min(1, (now - t0) / COUNT_MS), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = formatMoney(Math.round(target * e));
+      if (k < 1) requestAnimationFrame(step); else el.textContent = text;
+    };
+    requestAnimationFrame(step);
+  });
+}
+const navigateWithoutAnimation = navigate;
+navigate = (name, id, options) => { const from = route.name; navigateWithoutAnimation(name, id, options); animatePage(from, name); };
+
+/* Control segmentado: una píldora fantasma va de la opción anterior a la nueva y luego se muestra la selección real */
+function selectedSegment() {
+  const sel = $('#outlet fin-segmented-control .tab[aria-selected="true"]');
+  return sel ? { left: sel.offsetLeft, width: sel.offsetWidth } : null;
+}
+function slideSegment(before) {
+  const sel = $('#outlet fin-segmented-control .tab[aria-selected="true"]');
+  if (!before || !sel || !animateOn()) return;
+  const ghost = document.createElement('span');
+  ghost.className = 'seg-ghost';
+  Object.assign(ghost.style, { left: before.left + 'px', width: before.width + 'px', top: sel.offsetTop + 'px', height: sel.offsetHeight + 'px' });
+  sel.parentElement.appendChild(ghost); sel.classList.add('seg-hidden');
+  requestAnimationFrame(() => Object.assign(ghost.style, { left: sel.offsetLeft + 'px', width: sel.offsetWidth + 'px' }));
+  ghost.addEventListener('transitionend', () => { ghost.remove(); sel.classList.remove('seg-hidden'); }, { once: true });
+}
+const transfersStatusWithoutAnimation = actions['transfers-status'];
+actions['transfers-status'] = el => {
+  const before = selectedSegment();
+  transfersStatusWithoutAnimation(el);
+  slideSegment(before);
+  if (animateOn()) stagger($('#outlet .list'), 'fin-day-group');
+};
+
+/* «Ver las N»: las filas que aparecen entran escalonadas */
+const statsExpandWithoutAnimation = actions['stats-expand'];
+actions['stats-expand'] = el => {
+  const key = el.dataset.key, wasExpanded = view.stats.expanded[key];
+  statsExpandWithoutAnimation(el);
+  if (wasExpanded || !animateOn()) return;
+  const button = $('#outlet [data-act="stats-expand"][data-key="' + key + '"]'), rows = button ? button.closest('fin-list-group').querySelectorAll('fin-breakdown-row') : [];
+  Array.from(rows).slice(STATS_TOP).forEach((row, i) => { row.style.setProperty('--i', i); row.classList.add('stg'); row.addEventListener('animationend', () => row.classList.remove('stg'), { once: true }); });
+};
 
 /* ===== 6. Barra inferior ===== */
 /* Barra inferior (fin-tab-bar). Cada pestaña lleva a la raíz de su sección; si ya se está en ella no pasa nada
