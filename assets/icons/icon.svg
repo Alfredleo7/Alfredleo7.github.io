@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- B: libro de cuentas cerrado con renglones y moneda (verde, dinero) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4CD964"/>
+      <stop offset="1" stop-color="#1E9E45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- Tapa del libro -->
+  <rect x="270" y="210" width="484" height="604" rx="64" fill="#fff"/>
+  <!-- Lomo -->
+  <rect x="270" y="210" width="92" height="604" rx="46" fill="#D9F5E1"/>
+  <!-- Renglones -->
+  <g stroke="#1E9E45" stroke-width="30" stroke-linecap="round">
+    <path d="M430 360 H 664"/>
+    <path d="M430 450 H 664"/>
+    <path d="M430 540 H 580"/>
+  </g>
+  <!-- Moneda -->
+  <circle cx="640" cy="660" r="118" fill="#FFCC00" stroke="#fff" stroke-width="28"/>
+  <text x="640" y="706" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="150" font-weight="800" fill="#8A6A00">$</text>
+</svg>
