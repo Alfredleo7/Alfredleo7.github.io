@@ -1,1 +1,0 @@
-import"./chunk-5FZOKLP6.js";var n=[{path:"",loadComponent:()=>import("./chunk-5E53VQLU.js").then(o=>o.FinHomePageComponent)},{path:"cuentas/:id",loadComponent:()=>import("./chunk-GXMO7IK2.js").then(o=>o.FinAccountPageComponent)}];export{n as homeRoutes};
