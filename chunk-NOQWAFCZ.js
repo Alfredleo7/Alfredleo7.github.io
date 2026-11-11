@@ -1,0 +1,1 @@
+import{a as c}from"./chunk-FGYH3PLS.js";import{a as m}from"./chunk-UZ2PFQLU.js";var d=m.content;function h(e,t,r,p=d){if(e===t||c())return r(t),()=>{};let i,n=0,o=a=>{i??=a;let s=Math.min(1,(a-i)/p),u=1-Math.pow(1-s,3);r(Math.round(e+(t-e)*u)),s<1&&(n=requestAnimationFrame(o))};return n=requestAnimationFrame(o),()=>cancelAnimationFrame(n)}export{h as a};

@@ -1,1 +1,0 @@
-import{a as c}from"./chunk-FGYH3PLS.js";var u=600;function f(e,t,r,m=u){if(e===t||c())return r(t),()=>{};let i,n=0,a=o=>{i??=o;let s=Math.min(1,(o-i)/m),p=1-Math.pow(1-s,3);r(Math.round(e+(t-e)*p)),s<1&&(n=requestAnimationFrame(a))};return n=requestAnimationFrame(a),()=>cancelAnimationFrame(n)}export{f as a};
